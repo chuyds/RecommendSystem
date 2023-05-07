@@ -30,14 +30,8 @@
       <el-col :span="12" class="card-box">
         <el-card>
           <div class="el-table el-table--enable-row-hover el-table--medium">
-
-
-                <img src="../img/1.jpg" alt="奇瑞汽车">
-
                 <tr>
-                  <td>
-                    奇瑞新能源汽车技术有限公司于2010年4月正式成立，是奇瑞率先布局新能源产业后成立的一家独立子公司。2016年11月，奇瑞新能源拿到了发改委批准的新建纯电动乘用车生产项目资质，正式开启造车之路。
-                  </td>
+                  <td class="el-table__cell is-leaf">当前空闲率</td>
                 </tr>
           </div>
         </el-card>
@@ -46,8 +40,11 @@
       <el-col :span="12" class="card-box">
         <el-card>
           <div class="el-table el-table--enable-row-hover el-table--medium">
+                <img src="../img/2.jpg" alt="图片">
                 <tr>
-                  <td class="el-table__cell is-leaf">当前空闲率2</td>
+                  <td class="el-table__cell is-leaf">
+                    致钛7100plush：采用国产长鑫颗粒，最高连续读取速度为3631.48MB/s，连续写入速度达到2520.22MB/s。同时，最大4K随机读取速度达到了929.96MB/s，最大4K随机写入速度为408.52MB/s。
+                  </td>
                 </tr>
           </div>
         </el-card>
@@ -86,7 +83,8 @@
         </el-card>
       </el-col>
     </el-row>
-  <el-row>
+
+    <el-row>
       <el-col :span="12" class="card-box"><div class="grid-content bg-purple">hhh</div></el-col>
       <el-col :span="12"><div class="grid-content bg-purple-light">hhh</div></el-col>
     </el-row>

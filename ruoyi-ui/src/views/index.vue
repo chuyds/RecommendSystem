@@ -66,27 +66,28 @@
 				mouseEnter: false,      //鼠标是否悬浮在整个区域上
 				pictureShowing: 0,      //当前展示的是第几张图片，用来更新底部圆点
 				hasClicked:false,       //函数节流，防止用户快速、频繁点击图片变换导致出错，flase为图片变换操作不可执行
+        speed:1
 			};
 		},
 
 		watch: {
-			mouseEnter: {                           //鼠标移入区域，图片切换停止，离开则继续
-				immediate: true,
-				handler(newval, oldval) {           //使其在页面一上来就能执行
-					if (!newval) {
-						this.$mytimer = setInterval(() => {
-							if (this.pictureShowing < this.pictures.length-1) {
-								this.pictureShowing++;
-							} else {
-								this.pictureShowing = 0;
-							}
-							this.changeDefault(10);
-						}, 3000);
-					} else {
-						clearInterval(this.$mytimer);
-					}
-				},
-			},
+			// mouseEnter: {                           //鼠标移入区域，图片切换停止，离开则继续
+			// 	immediate: true,
+			// 	handler(newval, oldval) {           //使其在页面一上来就能执行
+			// 		if (!newval) {
+			// 			this.$mytimer = setInterval(() => {
+			// 				if (this.pictureShowing < this.pictures.length-1) {
+			// 					this.pictureShowing++;
+			// 				} else {
+			// 					this.pictureShowing = 0;
+			// 				}
+			// 				this.changeDefault(this.speed);
+			// 			}, 1000);
+			// 		} else {
+			// 			clearInterval(this.$mytimer);
+			// 		}
+			// 	},
+			// },
 			pictureShowing(newval) {                //当改变图片时，更新底部小圆圈
 				for (let i = 0; i < this.pictures.length; i++) {
 					(this.$refs.cicle)[i].style.background = "";
@@ -110,8 +111,8 @@
 	                        } else {
 	                            this.pictureShowing = 0;
 	                        }
-	                        this.changeDefault(10);
-	                    }, 3000);
+	                        this.changeDefault(this.speed);
+	                    }, 1000);
 	            }
 	        })
 
@@ -132,8 +133,8 @@
 	                t++;
 	                this.$refs.myul.style.left = this.$refs.myul.offsetLeft - Number(speed) + "px";
 
-	                if (t === 600/speed) {
-	                    if(this.$refs.myul.offsetLeft===-3000){             //当最后一张图片（第一张的克隆）刚好完全展示时回到第一张完全展示时的位置
+	                if (t === (document.body.clientWidth-200)/speed) {
+	                    if(this.$refs.myul.offsetLeft===-1*(document.body.clientWidth-200)*5){             //当最后一张图片（第一张的克隆）刚好完全展示时回到第一张完全展示时的位置
 	                        this.$refs.myul.style.left=0+"px";
 	                    }
 	                    clearInterval(timer);
@@ -144,15 +145,16 @@
 	        quickTurn(count,index) {              //count为用户点击的点与当前 被填充点 的距离
 	            let currentX = this.$refs.myul.offsetLeft;
 	            let t = setInterval(() => {
-	                this.$refs.myul.style.left = this.$refs.myul.offsetLeft - count * 20 + "px";
-	                if (this.$refs.myul.offsetLeft === currentX - 600 * count) {
+                // alert(this.$refs.myul.offsetLeft)
+	                this.$refs.myul.style.left = this.$refs.myul.offsetLeft - count * this.speed + "px";
+	                if (this.$refs.myul.offsetLeft === currentX - (document.body.clientWidth-200) * count) {
 	                    if(index===0){
 	                        this.$refs.myul.style.left=0+"px";
 	                    }
 	                    clearInterval(t);
 	                    this.hasClicked=false;
 	                }
-	            }, 1);
+	            }, 0.1);
 	        },
 	        gotoPicture(index) {
 	            let id = Number(index);
@@ -170,7 +172,7 @@
 	            }
 	            this.hasClicked=true;
 	            if(Number(this.pictureShowing)===0){
-	                this.$refs.myul.style.left=-3000+"px";
+	                this.$refs.myul.style.left=-1*(document.body.clientWidth-200)*5+"px";
 	                this.pictureShowing=this.pictures.length-1;
 	                this.quickTurn(-1,this.pictureShowing);
 	            }else{
@@ -183,7 +185,7 @@
 	            }
 	            this.hasClicked=true;
 	            if(Number(this.pictureShowing)===this.pictures.length-1){
-	                this.changeDefault(20);
+	                this.changeDefault(this.speed);
 	                this.pictureShowing=0;
 	            }else{
 	                this.gotoPicture(this.pictureShowing+1)
@@ -213,7 +215,6 @@
     border-radius: 4px;
   }
   .bg-purple-dark {
-    background: #99a9bf;
     height: 600px;
   }
   .bg-purple {
@@ -234,8 +235,6 @@
   .outest {
         width: 100%;
         height: 600px;
-        border: 2px rgb(115, 170, 243) solid;
-        border-radius: 5px;
         padding: 0px;
         position: absolute;
         overflow: hidden;
@@ -281,7 +280,7 @@
       display: inline-block;
       position: absolute;
       bottom: 0px;
-      left: 250px;
+      left: 45%;
       z-index: 5;
       opacity: 0.5;
   }

@@ -30,8 +30,14 @@
       <el-col :span="12" class="card-box">
         <el-card>
           <div class="el-table el-table--enable-row-hover el-table--medium">
+
+
+                <img src="../img/1.jpg" alt="奇瑞汽车">
+
                 <tr>
-                  <td class="el-table__cell is-leaf">当前空闲率</td>
+                  <td>
+                    奇瑞新能源汽车技术有限公司于2010年4月正式成立，是奇瑞率先布局新能源产业后成立的一家独立子公司。2016年11月，奇瑞新能源拿到了发改委批准的新建纯电动乘用车生产项目资质，正式开启造车之路。
+                  </td>
                 </tr>
           </div>
         </el-card>

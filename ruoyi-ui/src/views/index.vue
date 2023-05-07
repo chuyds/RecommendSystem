@@ -66,7 +66,7 @@
 				mouseEnter: false,      //鼠标是否悬浮在整个区域上
 				pictureShowing: 0,      //当前展示的是第几张图片，用来更新底部圆点
 				hasClicked:false,       //函数节流，防止用户快速、频繁点击图片变换导致出错，flase为图片变换操作不可执行
-        speed:4
+        speed:20
 			};
 		},
 
@@ -143,15 +143,25 @@
 	                }
 	            }, 1);
 	        },
-	        quickTurn(count,index) {              //count为用户点击的点与当前 被填充点 的距离
+	        quickTurn(count,index,method) {              //count为用户点击的点与当前 被填充点 的距离
 	            let currentX = this.$refs.myul.offsetLeft;
 	            let t = setInterval(() => {
-                // alert(this.$refs.myul.offsetLeft)
-                // if(this.$refs.myul.offsetLeft >= -1*(document.body.clientWidth-200)*index - count * this.speed){
-                  this.$refs.myul.style.left = this.$refs.myul.offsetLeft - count * this.speed + "px";
-                // }else{
-                //   this.$refs.myul.style.left = this.$refs.myul.offsetLeft - count * 1 + "px";
-                // }
+                // alert("left:"+this.$refs.myul.offsetLeft+"   index:"+index+"   count:"+count)
+                if(method === "next"){
+                  if(this.$refs.myul.offsetLeft >= -1*(document.body.clientWidth-200)*index+count*this.speed){
+                    this.$refs.myul.style.left = this.$refs.myul.offsetLeft - count * this.speed + "px";
+                  }else{
+                    this.$refs.myul.style.left = this.$refs.myul.offsetLeft - count * 1 + "px";
+                  }
+                }
+                if(method === "last"){
+                  if(this.$refs.myul.offsetLeft <= -1*(document.body.clientWidth-200)*index+count*this.speed){
+                    this.$refs.myul.style.left = this.$refs.myul.offsetLeft - count * this.speed + "px";
+                  }else{
+                    this.$refs.myul.style.left = this.$refs.myul.offsetLeft - count * 1 + "px";
+                  }
+                }
+
                 if (this.$refs.myul.offsetLeft === currentX - (document.body.clientWidth-200) * count) {
                     if(index===0){
                         this.$refs.myul.style.left=0+"px";
@@ -161,13 +171,13 @@
                 }
 	            }, 1);
 	        },
-	        gotoPicture(index) {
+	        gotoPicture(index,method) {
 	            let id = Number(index);
 	            let showing = this.pictureShowing;
 	            if (id === showing) {
 	                return null;
 	            } else {
-	                this.quickTurn(index - showing,index);
+	                this.quickTurn(index - showing,index,method);
 	                this.pictureShowing = index;
 	            }
 	        },
@@ -179,9 +189,9 @@
 	            if(Number(this.pictureShowing)===0){
 	                this.$refs.myul.style.left=-1*(document.body.clientWidth-200)*5+"px";
 	                this.pictureShowing=this.pictures.length-1;
-	                this.quickTurn(-1,this.pictureShowing);
+	                this.quickTurn(-1,this.pictureShowing,"last");
 	            }else{
-	                this.gotoPicture(this.pictureShowing-1);
+	                this.gotoPicture(this.pictureShowing-1,"last");
 	            }
 	        },
 	        gotoNext(){             //下一张
@@ -193,7 +203,7 @@
 	                this.changeDefault(this.speed);
 	                this.pictureShowing=0;
 	            }else{
-	                this.gotoPicture(this.pictureShowing+1)
+	                this.gotoPicture(this.pictureShowing+1,"next")
 	            }
 	        },
 	        gotoDirectly(index){    //跳到某一张

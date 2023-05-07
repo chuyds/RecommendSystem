@@ -6,7 +6,7 @@
           <!-- 最外层div -->
           <div class="outest" @mouseover="mouseEnter = true" @mouseleave="mouseEnter = false" >
             <!-- 向左img -->
-            <img class="icon _left" src="../img/向左.png" alt="向左" v-show="mouseEnter" @click="gotoLast()"/>
+            <img class="icon _left" src="../img/左箭头.png" alt="向左" v-show="mouseEnter" @click="gotoLast()"/>
             <!-- 主要图片 -->
             <ul ref="myul">
               <li v-for="e of pictures" :key="e.index" :ref="e.ref">
@@ -18,7 +18,7 @@
               <div class="empty-cicle" v-for="e of pictures" :key="e.index" ref="cicle" @click="gotoDirectly(e.index)" ></div>
             </div>
             <!-- 向右div -->
-            <img class="icon _right" src="../img/向右.png" alt="向右" v-show="mouseEnter" @click="gotoNext()"/>
+            <img class="icon _right" src="../img/右箭头.png" alt="向右" v-show="mouseEnter" @click="gotoNext()"/>
           </div>
         </div>
 
@@ -275,10 +275,10 @@
   }
   /* 左右图标设置 */
   .icon {
-      width: 30px;
+      width: 60px;
       height: 60px;
       position: absolute;
-      top: 268px;
+      top: 270px;
       z-index: 2;
       opacity: 0.5;
   }

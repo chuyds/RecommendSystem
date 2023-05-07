@@ -57,11 +57,11 @@
 		data() {
 			return {
 				pictures: [
-					{src: "https://img0.baidu.com/it/u=1491296277,1329539836&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500",alt: "撸起袖子加油干",index: "0",ref: "picture",},
-					{src: "https://img2.baidu.com/it/u=141235511,288522525&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=263",alt: "植树造林",index: "1",ref: "picture",},
-					{src: "https://img1.baidu.com/it/u=2564747122,3162867613&fm=253&fmt=auto&app=138&f=JPEG?w=888&h=500",alt: "疫情防控常态化",index: "2",ref: "picture",},
-					{src: "https://img1.baidu.com/it/u=1221896196,2147882061&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=250",alt: "1FCA0F23.png戴头盔",index: "3",ref: "picture",},
-					{src: "https://img1.baidu.com/it/u=3117634844,2583644829&fm=253&fmt=auto&app=138&f=JPEG?w=1024&h=492",alt: "培育文明之魂",index: "4",ref: "picture",},
+					{src: "https://youimg1.c-ctrip.com/target/100l0z000000mjd5k0B98.jpg",alt: "黄山",index: "0",ref: "picture",},
+					{src: "https://th.bing.com/th/id/R.6ef506fa7cabb8b64d3f05b7548fca92?rik=oAUrLRyftJWNBQ&riu=http%3a%2f%2f5b0988e595225.cdn.sohucs.com%2fimages%2f20181130%2fa356cf8490924a23b920543230b3ce21.jpeg&ehk=e%2b2EaDkZL3ZkvJP70IMluudS5lb5ph%2biezCrEj0hfOA%3d&risl=&pid=ImgRaw&r=0",alt: "奇瑞汽车",index: "1",ref: "picture",},
+					{src: "https://th.bing.com/th/id/R.4168404f8598063c9174543108396a0a?rik=XUKheBg2HMi57Q&riu=http%3a%2f%2fy0.ifengimg.com%2f11f4a4e95fb57115%2f2015%2f0528%2frdn_5566b78d33f78.png&ehk=9Nd9N1lTaV%2b%2fGdHoCQepMpemR3rkcRg%2fSgo36HySJCY%3d&risl=&pid=ImgRaw&r=0",alt: "合肥高新区",index: "2",ref: "picture",},
+					{src: "https://th.bing.com/th/id/R.07ca4de0567767ee8a941530613e8fb0?rik=7HeC7NE8EAUnTw&riu=http%3a%2f%2faticoc.com%2fuploadfiles%2f2021%2f06%2f20210630182313678.jpg%3fMzMuanBn&ehk=QtjaEYrwyH1h6uQaqe%2bv%2fME6Uz0RT6CA0YIxNWSIecQ%3d&risl=&pid=ImgRaw&r=0",alt: "安徽茶叶",index: "3",ref: "picture",},
+					{src: "https://img14.360buyimg.com/n0/jfs/t1/213190/12/4502/230293/61911e80E853097da/3e9ed0000383bfdf.jpg.avif",alt: "宣酒",index: "4",ref: "picture",},
 				],
 				mouseEnter: false,      //鼠标是否悬浮在整个区域上
 				pictureShowing: 0,      //当前展示的是第几张图片，用来更新底部圆点

@@ -66,7 +66,7 @@
 				mouseEnter: false,      //鼠标是否悬浮在整个区域上
 				pictureShowing: 0,      //当前展示的是第几张图片，用来更新底部圆点
 				hasClicked:false,       //函数节流，防止用户快速、频繁点击图片变换导致出错，flase为图片变换操作不可执行
-        speed:1
+        speed:4
 			};
 		},
 
@@ -101,20 +101,20 @@
 
 	        // 解决当前页面被最小化后，用户再打开时，轮播图播放情况出现异常的情况
 	        // 监视浏览器窗口的改变，当浏览器窗口最小化时，将默认定时器停掉，当浏览器可视时，再开启
-	        document.addEventListener('visibilitychange',()=>{
-	            if(document.visibilityState === 'hidden'){
-	                clearInterval(this.$mytimer);
-	            }else if(document.visibilityState === 'visible'){
-	                this.$mytimer= setInterval(() => {
-	                        if (this.pictureShowing < this.pictures.length-1) {
-	                            this.pictureShowing++;
-	                        } else {
-	                            this.pictureShowing = 0;
-	                        }
-	                        this.changeDefault(this.speed);
-	                    }, 1000);
-	            }
-	        })
+	        // document.addEventListener('visibilitychange',()=>{
+	        //     if(document.visibilityState === 'hidden'){
+	        //         clearInterval(this.$mytimer);
+	        //     }else if(document.visibilityState === 'visible'){
+	        //         this.$mytimer= setInterval(() => {
+	        //                 if (this.pictureShowing < this.pictures.length-1) {
+	        //                     this.pictureShowing++;
+	        //                 } else {
+	        //                     this.pictureShowing = 0;
+	        //                 }
+	        //                 this.changeDefault(this.speed);
+	        //             }, 1000);
+	        //     }
+	        // })
 
 	        let li_0 = this.$refs[`picture`][0];
 	        let li_end = li_0.cloneNode(true);
@@ -133,12 +133,13 @@
 	                t++;
 	                this.$refs.myul.style.left = this.$refs.myul.offsetLeft - Number(speed) + "px";
 
-	                if (t === (document.body.clientWidth-200)/speed) {
-	                    if(this.$refs.myul.offsetLeft===-1*(document.body.clientWidth-200)*5){             //当最后一张图片（第一张的克隆）刚好完全展示时回到第一张完全展示时的位置
+	                if (t >= (document.body.clientWidth-200)/speed) {
+	                    if(this.$refs.myul.offsetLeft<=-1*(document.body.clientWidth-200)*5){             //当最后一张图片（第一张的克隆）刚好完全展示时回到第一张完全展示时的位置
 	                        this.$refs.myul.style.left=0+"px";
 	                    }
 	                    clearInterval(timer);
 	                    this.hasClicked=false;
+                      t = 0;
 	                }
 	            }, 1);
 	        },
@@ -146,15 +147,19 @@
 	            let currentX = this.$refs.myul.offsetLeft;
 	            let t = setInterval(() => {
                 // alert(this.$refs.myul.offsetLeft)
-	                this.$refs.myul.style.left = this.$refs.myul.offsetLeft - count * this.speed + "px";
-	                if (this.$refs.myul.offsetLeft === currentX - (document.body.clientWidth-200) * count) {
-	                    if(index===0){
-	                        this.$refs.myul.style.left=0+"px";
-	                    }
-	                    clearInterval(t);
-	                    this.hasClicked=false;
-	                }
-	            }, 0.1);
+                // if(this.$refs.myul.offsetLeft >= -1*(document.body.clientWidth-200)*index - count * this.speed){
+                  this.$refs.myul.style.left = this.$refs.myul.offsetLeft - count * this.speed + "px";
+                // }else{
+                //   this.$refs.myul.style.left = this.$refs.myul.offsetLeft - count * 1 + "px";
+                // }
+                if (this.$refs.myul.offsetLeft === currentX - (document.body.clientWidth-200) * count) {
+                    if(index===0){
+                        this.$refs.myul.style.left=0+"px";
+                    }
+                    clearInterval(t);
+                    this.hasClicked=false;
+                }
+	            }, 1);
 	        },
 	        gotoPicture(index) {
 	            let id = Number(index);
@@ -263,7 +268,7 @@
       width: 30px;
       height: 60px;
       position: absolute;
-      top: 170px;
+      top: 268px;
       z-index: 2;
       opacity: 0.5;
   }

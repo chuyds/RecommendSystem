@@ -4,11 +4,11 @@
       <el-col :span="24">
         <div class="grid-content bg-purple-dark">
           <!-- 最外层div -->
-          <div class="outest" @mouseover="mouseEnter = true" @mouseleave="mouseEnter = false" >
+          <div id="slide" class="outest" @mouseover="mouseEnter = true" @mouseleave="mouseEnter = false" >
             <!-- 向左img -->
             <img class="icon _left" src="../img/左箭头.png" alt="向左" v-show="mouseEnter" @click="gotoLast()"/>
             <!-- 主要图片 -->
-            <ul ref="myul">
+            <ul id="imgsList" ref="myul">
               <li v-for="e of pictures" :key="e.index" :ref="e.ref">
                 <img :src="e.src" :alt="e.alt" />
               </li>
@@ -30,12 +30,12 @@
       <el-col :span="12" class="card-box">
         <el-card>
           <div class="el-table el-table--enable-row-hover el-table--medium">
-            <img src="../img/1.jpg" alt="奇瑞汽车">
-            <tr>
-              <td class="el-table__cell is-leaf">
-                奇瑞新能源汽车技术有限公司于2010年4月正式成立，是奇瑞率先布局新能源产业后成立的一家独立子公司。2016年11月，奇瑞新能源拿到了发改委批准的新建纯电动乘用车生产项目资质，正式开启造车之路。
-              </td>
-            </tr>
+              <img src="../img/1.jpg" alt="奇瑞汽车">
+              <tr>
+                <td class="el-table__cell is-leaf">
+                  奇瑞新能源汽车技术有限公司于2010年4月正式成立，是奇瑞率先布局新能源产业后成立的一家独立子公司。2016年11月，奇瑞新能源拿到了发改委批准的新建纯电动乘用车生产项目资质，正式开启造车之路。
+                </td>
+              </tr>
           </div>
         </el-card>
       </el-col>
@@ -128,7 +128,9 @@
 				mouseEnter: false,      //鼠标是否悬浮在整个区域上
 				pictureShowing: 0,      //当前展示的是第几张图片，用来更新底部圆点
 				hasClicked:false,       //函数节流，防止用户快速、频繁点击图片变换导致出错，flase为图片变换操作不可执行
-        speed:20
+        speed:80,               //图片移动速度
+        offsetWidth:600,        //轮播图宽度，将在mounted里面动态获取
+        topNav:this.$store.state.settings.topNav
 			};
 		},
 
@@ -150,6 +152,12 @@
 			// 		}
 			// 	},
 			// },
+
+      topNav(newValue,oldValue){              //用来监测topNav的改变
+        this.$refs.myul.style.left=0+"px";
+        this.pictureShowing = 0;
+      },
+
 			pictureShowing(newval) {                //当改变图片时，更新底部小圆圈
 				for (let i = 0; i < this.pictures.length; i++) {
 					(this.$refs.cicle)[i].style.background = "";
@@ -178,6 +186,12 @@
 	        //     }
 	        // })
 
+          setInterval(() => {           //每0.5秒更新topNav
+              this.topNav = this.$store.state.settings.topNav;
+          },500);
+
+          this.offsetWidth = this.getOffsetWidth();     //动态获取轮播图宽度
+
 	        let li_0 = this.$refs[`picture`][0];
 	        let li_end = li_0.cloneNode(true);
 	        this.$refs.myul.appendChild(li_end);            //克隆第一张图片，加到ul最后展示的位置
@@ -189,14 +203,20 @@
 	    },
 
 	    methods: {
+          getOffsetWidth(){
+            var outestElt = document.getElementById("slide");
+            var offsetWidth = outestElt.offsetWidth;
+            return offsetWidth;
+          },
 	        changeDefault(speed) {                  //切换下一张图片    speed为每毫秒移动的距离
+              this.offsetWidth = this.getOffsetWidth();     //动态获取轮播图宽度
 	            let t = 0;                          //根据每秒移动的位移控制单次位移结束
 	            let timer = setInterval(() => {
 	                t++;
 	                this.$refs.myul.style.left = this.$refs.myul.offsetLeft - Number(speed) + "px";
 
-	                if (t >= (document.body.clientWidth-200)/speed) {
-	                    if(this.$refs.myul.offsetLeft<=-1*(document.body.clientWidth-200)*5){             //当最后一张图片（第一张的克隆）刚好完全展示时回到第一张完全展示时的位置
+	                if (t >= this.offsetWidth/speed) {
+	                    if(this.$refs.myul.offsetLeft<=-1*this.offsetWidth*5){             //当最后一张图片（第一张的克隆）刚好完全展示时回到第一张完全展示时的位置
 	                        this.$refs.myul.style.left=0+"px";
 	                    }
 	                    clearInterval(timer);
@@ -206,25 +226,26 @@
 	            }, 1);
 	        },
 	        quickTurn(count,index,method) {              //count为用户点击的点与当前 被填充点 的距离
+              this.offsetWidth = this.getOffsetWidth();     //动态获取轮播图宽度
+              // alert("width:"+this.offsetWidth+"    left:"+this.$refs.myul.offsetLeft);
 	            let currentX = this.$refs.myul.offsetLeft;
 	            let t = setInterval(() => {
-                // alert("left:"+this.$refs.myul.offsetLeft+"   index:"+index+"   count:"+count)
                 if(method === "next"){
-                  if(this.$refs.myul.offsetLeft >= -1*(document.body.clientWidth-200)*index+count*this.speed){
+                  if(this.$refs.myul.offsetLeft >= -1*this.offsetWidth*index+count*this.speed){
                     this.$refs.myul.style.left = this.$refs.myul.offsetLeft - count * this.speed + "px";
                   }else{
                     this.$refs.myul.style.left = this.$refs.myul.offsetLeft - count * 1 + "px";
                   }
                 }
                 if(method === "last"){
-                  if(this.$refs.myul.offsetLeft <= -1*(document.body.clientWidth-200)*index+count*this.speed){
+                  if(this.$refs.myul.offsetLeft <= -1*this.offsetWidth*index+count*this.speed){
                     this.$refs.myul.style.left = this.$refs.myul.offsetLeft - count * this.speed + "px";
                   }else{
                     this.$refs.myul.style.left = this.$refs.myul.offsetLeft - count * 1 + "px";
                   }
                 }
 
-                if (this.$refs.myul.offsetLeft === currentX - (document.body.clientWidth-200) * count) {
+                if (this.$refs.myul.offsetLeft === currentX - this.offsetWidth * count) {     //刚好到达目的图片
                     if(index===0){
                         this.$refs.myul.style.left=0+"px";
                     }
@@ -244,12 +265,13 @@
 	            }
 	        },
 	        gotoLast(){             //上一张
+              this.offsetWidth = this.getOffsetWidth();     //动态获取轮播图宽度
 	            if(this.hasClicked){
 	                return null;
 	            }
 	            this.hasClicked=true;
 	            if(Number(this.pictureShowing)===0){
-	                this.$refs.myul.style.left=-1*(document.body.clientWidth-200)*5+"px";
+	                this.$refs.myul.style.left=-1*this.offsetWidth*5+"px";
 	                this.pictureShowing=this.pictures.length-1;
 	                this.quickTurn(-1,this.pictureShowing,"last");
 	            }else{
@@ -273,7 +295,12 @@
 	                return null;
 	            }
 	            this.hasClicked=true;
-	            this.gotoPicture(index);
+              if(index>this.pictureShowing){
+                this.gotoPicture(index,"next");
+              }else{
+                this.gotoPicture(index,"last");
+              }
+
 	        }
 	    }
 	};

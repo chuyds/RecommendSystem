@@ -33,7 +33,7 @@
               <img src="../img/1.jpg" alt="奇瑞汽车">
               <tr>
                 <td class="el-table__cell is-leaf">
-                  奇瑞新能源汽车技术有限公司于2010年4月正式成立，是奇瑞率先布局新能源产业后成立的一家独立子公司。2016年11月，奇瑞新能源拿到了发改委批准的新建纯电动乘用车生产项目资质，正式开启造车之路。
+                  奇瑞汽车股份有限公司成立于1997年1月8日，注册资本41亿元。公司以打造"国际品牌"为战略目标，经过十九年的创新发展，现已成为国内最大的集汽车整车、动力总成和关键零部件的研发、试制、生产和销售为一体的自主品牌汽车制造企业，以及中国最大的乘用车出口企业。图中汽车作为瑞虎家族旗舰车型，瑞虎9 C-DM采用了全新一代柔光美学设计语言，整车外观非常饱满、充满质感，64分区ADB矩阵大灯提升了科技感；礼宾灯语、隐藏式电释放门把手等设计元素则增添了时尚感，非常符合当前年轻人喜爱。
                 </td>
               </tr>
           </div>
@@ -46,7 +46,7 @@
                 <img src="../img/2.jpg" alt="图片">
                 <tr>
                   <td class="el-table__cell is-leaf">
-                    致钛7100plush：采用国产长鑫颗粒，最高连续读取速度为3631.48MB/s，连续写入速度达到2520.22MB/s。同时，最大4K随机读取速度达到了929.96MB/s，最大4K随机写入速度为408.52MB/s。
+                    致态是长江存储消费级固态硬盘品牌，2020年9月10日正式发布旗下两款固态硬盘产品，分别为PCIe接口致态PC005 Active和SATA接口的致态SC001 Active。“致态”致力于打造高性能、高品质消费级三维闪存系统产品。“态”是年轻的态度，是服务的温度，也是对做好固态品牌初心的坚守。致钛7100plush：采用国产长鑫颗粒，最高连续读取速度为3631.48MB/s，连续写入速度达到2520.22MB/s。同时，最大4K随机读取速度达到了929.96MB/s，最大4K随机写入速度为408.52MB/s。
                   </td>
                 </tr>
           </div>
@@ -62,7 +62,7 @@
                 <img src="../img/3.jpg" alt="白酒">
                 <tr>
                   <td class="el-table__cell is-leaf">
-                    致钛7100plush：采用国产长鑫颗粒，最高连续读取速度为3631.48MB/s，连续写入速度达到2520.22MB/s。同时，最大4K随机读取速度达到了929.96MB/s，最大4K随机写入速度为408.52MB/s。
+                    百年皖酒是安徽皖酒集团生产，该公司具有五十多年酿造白酒的历史，是中国最大的酒业集团之一，安徽省白酒行业支柱企业，是民营股份制企业。公司生产的系列皖酒有80多个品种，以皖酒王系列、百年系列、皖国系列和精品皖酒系列四大系列产品线为主，深受广大消费者的喜爱。公司多次被省、市级评为“重合同，守信用”单位，皖酒连续多年被安徽省消费者协会评为“省消费者喜爱的白酒”称号。
                   </td>
                 </tr>
           </div>
@@ -75,7 +75,7 @@
                 <img src="../img/4.jpg" alt="茶叶图片">
                 <tr>
                   <td class="el-table__cell is-leaf">
-                    致钛7100plush：采用国产长鑫颗粒，最高连续读取速度为3631.48MB/s，连续写入速度达到2520.22MB/s。同时，最大4K随机读取速度达到了929.96MB/s，最大4K随机写入速度为408.52MB/s。
+                    中国十大名茶之一，徽茶，属于绿茶。产于安徽省黄山。由清代光绪年间谢裕大茶庄所创制。每年清明谷雨，选摘初展肥壮嫩芽，手工炒制，该茶外形微卷，状似雀舌，绿中泛黄，银毫显露，且带有金黄色鱼叶（俗称黄金片）。入杯冲泡雾气结顶，汤色清碧微黄，叶底黄绿有活力，滋味醇甘，香气如兰，韵味深长。由于新制茶叶白毫披身，芽尖峰芒，且鲜叶采自黄山高峰，遂将该茶取名为黄山毛峰。
                   </td>
                 </tr>
           </div>
@@ -88,7 +88,7 @@
                 <img src="../img/5.jpg" alt="黄山图片">
                 <tr>
                   <td class="el-table__cell is-leaf">
-                    致钛7100plush：采用国产长鑫颗粒，最高连续读取速度为3631.48MB/s，连续写入速度达到2520.22MB/s。同时，最大4K随机读取速度达到了929.96MB/s，最大4K随机写入速度为408.52MB/s。
+                    五岳归来不看山，黄山归来不看岳。黄山以其“五绝”的奇景和博大的徽文化蜚声海内外，被誉为“天下第一奇山”。五岳归来不看山，黄山归来不看岳。黄山以其“五绝”的奇景和博大的徽文化蜚声海内外，被誉为“天下第一奇山”。黄山不仅是一座美丽的自然之山，还是一座丰富的艺术宝库。自古以来，人们游览黄山，歌颂黄山，留下了丰厚的文化遗产，概括起来就是遗存、书画、文学、传说、名人“五胜”。
                   </td>
                 </tr>
           </div>
@@ -133,7 +133,7 @@
 					{src: "https://pic1.zhimg.com/v2-c033cec25c1c4d1c0ecfb19e3e2222fe_r.jpg?source=1940ef5c",alt: "风景",index: "1",ref: "picture",},
 					{src: "https://ts1.cn.mm.bing.net/th/id/R-C.b196b408634f2ce5134dcf8ead4b8e59?rik=pdN5KKTNSansVg&riu=http%3a%2f%2fimg.mm4000.com%2ffile%2f0%2f5d%2f9b1a116d73.jpg&ehk=3i5WDN140E3CU1XKf1inmGX3sFKYHUgNUD3VVSBvh44%3d&risl=&pid=ImgRaw&r=0",alt: "黄山",index: "2",ref: "picture",},
 					{src: "https://th.bing.com/th/id/R.07ca4de0567767ee8a941530613e8fb0?rik=7HeC7NE8EAUnTw&riu=http%3a%2f%2faticoc.com%2fuploadfiles%2f2021%2f06%2f20210630182313678.jpg%3fMzMuanBn&ehk=QtjaEYrwyH1h6uQaqe%2bv%2fME6Uz0RT6CA0YIxNWSIecQ%3d&risl=&pid=ImgRaw&r=0",alt: "安徽茶叶",index: "3",ref: "picture",},
-					{src: "https://ts1.cn.mm.bing.net/th/id/R-C.6391c62ea3845c4c2f137a245b9ce48b?rik=lmnP8dnsib4KLw&riu=http%3a%2f%2fwww.sinaimg.cn%2fqc%2fautoimg%2fcar%2f16%2f88%2f129618816_src.JPG&ehk=b5zYL1YweIIiYS847jZ4zL0csJjQJH3s88vJDRHq%2fL4%3d&risl=&pid=ImgRaw&r=0",alt: "汽车",index: "4",ref: "picture",},
+					{src: "http://officialbackmanage.chery.cn/library/hq/image/2023/4/6fc21068-097a-4c81-8aad-129ce60de373.jpg",alt: "汽车",index: "4",ref: "picture",},
 				],
 				mouseEnter: false,      //鼠标是否悬浮在整个区域上
 				pictureShowing: 0,      //当前展示的是第几张图片，用来更新底部圆点

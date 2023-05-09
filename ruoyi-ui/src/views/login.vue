@@ -1,7 +1,7 @@
 <template>
   <div class="login">
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form">
-      <h3 class="title">智联云推荐系统</h3>
+      <h3 class="title">安徽省优势产能云服务推荐系统</h3>
       <el-form-item prop="username">
         <el-input
           v-model="loginForm.username"
@@ -49,14 +49,14 @@
           <span v-if="!loading">登 录</span>
           <span v-else>登 录 中...</span>
         </el-button>
-        <div style="float: right;" v-if="register">
+        <div style="float: right;">
           <router-link class="link-type" :to="'/register'">立即注册</router-link>
         </div>
       </el-form-item>
     </el-form>
     <!--  底部  -->
     <div class="el-login-footer">
-      <span>智联云推荐</span>
+      <span>安徽省优势产能云服务推荐系统</span>
     </div>
   </div>
 </template>

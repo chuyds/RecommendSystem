@@ -59,8 +59,11 @@
       <el-col :span="8" class="card-box">
         <el-card>
           <div class="el-table el-table--enable-row-hover el-table--medium">
+                <img src="../img/3.jpg" alt="白酒">
                 <tr>
-                  <td class="el-table__cell is-leaf">当前空闲率2</td>
+                  <td class="el-table__cell is-leaf">
+                    致钛7100plush：采用国产长鑫颗粒，最高连续读取速度为3631.48MB/s，连续写入速度达到2520.22MB/s。同时，最大4K随机读取速度达到了929.96MB/s，最大4K随机写入速度为408.52MB/s。
+                  </td>
                 </tr>
           </div>
         </el-card>
@@ -69,8 +72,11 @@
       <el-col :span="8" class="card-box">
         <el-card>
           <div class="el-table el-table--enable-row-hover el-table--medium">
+                <img src="../img/4.jpg" alt="茶叶图片">
                 <tr>
-                  <td class="el-table__cell is-leaf">当前空闲率2</td>
+                  <td class="el-table__cell is-leaf">
+                    致钛7100plush：采用国产长鑫颗粒，最高连续读取速度为3631.48MB/s，连续写入速度达到2520.22MB/s。同时，最大4K随机读取速度达到了929.96MB/s，最大4K随机写入速度为408.52MB/s。
+                  </td>
                 </tr>
           </div>
         </el-card>
@@ -79,8 +85,11 @@
       <el-col :span="8" class="card-box">
         <el-card>
           <div class="el-table el-table--enable-row-hover el-table--medium">
+                <img src="../img/5.jpg" alt="黄山图片">
                 <tr>
-                  <td class="el-table__cell is-leaf">当前空闲率2</td>
+                  <td class="el-table__cell is-leaf">
+                    致钛7100plush：采用国产长鑫颗粒，最高连续读取速度为3631.48MB/s，连续写入速度达到2520.22MB/s。同时，最大4K随机读取速度达到了929.96MB/s，最大4K随机写入速度为408.52MB/s。
+                  </td>
                 </tr>
           </div>
         </el-card>
@@ -119,11 +128,12 @@
 		data() {
 			return {
 				pictures: [
-					{src: "https://youimg1.c-ctrip.com/target/100l0z000000mjd5k0B98.jpg",alt: "黄山",index: "0",ref: "picture",},
-					{src: "https://th.bing.com/th/id/R.612ef7b410bb410ab82e4c78f975137e?rik=8G9sX0RznnVGOg&riu=http%3a%2f%2fimg2.bitautoimg.com%2fVideo%2f2013%2f11%2f29%2f2013112917301560.jpg&ehk=HKISZiciki9I61rIJirbU3qQ75Jn3A6YE9gnAtzFvUM%3d&risl=&pid=ImgRaw&r=0",alt: "奇瑞汽车",index: "1",ref: "picture",},
-					{src: "https://th.bing.com/th/id/R.4168404f8598063c9174543108396a0a?rik=XUKheBg2HMi57Q&riu=http%3a%2f%2fy0.ifengimg.com%2f11f4a4e95fb57115%2f2015%2f0528%2frdn_5566b78d33f78.png&ehk=9Nd9N1lTaV%2b%2fGdHoCQepMpemR3rkcRg%2fSgo36HySJCY%3d&risl=&pid=ImgRaw&r=0",alt: "合肥高新区",index: "2",ref: "picture",},
+
+					{src: "https://th.bing.com/th/id/R.b400119f09fb40efd5bb2bf24c5eedfe?rik=yD4slOarNqj5vA&riu=http%3a%2f%2fimg.yipic.cn%2fthumb%2ff0708c1d%2f0bfc4812%2f22e7f44a%2ff4429daf%2fbig_f0708c1d0bfc481222e7f44af4429daf.png%3fx-oss-process%3dimage%2fformat%2cwebp%2fsharpen%2c100&ehk=%2bSWnN54ZKx8LaEmlf0EbyfQKimIHAWR65S3o0%2bUKmRg%3d&risl=&pid=ImgRaw&r=0",alt: "一带一路",index: "0",ref: "picture",},
+					{src: "https://pic1.zhimg.com/v2-c033cec25c1c4d1c0ecfb19e3e2222fe_r.jpg?source=1940ef5c",alt: "风景",index: "1",ref: "picture",},
+					{src: "https://ts1.cn.mm.bing.net/th/id/R-C.b196b408634f2ce5134dcf8ead4b8e59?rik=pdN5KKTNSansVg&riu=http%3a%2f%2fimg.mm4000.com%2ffile%2f0%2f5d%2f9b1a116d73.jpg&ehk=3i5WDN140E3CU1XKf1inmGX3sFKYHUgNUD3VVSBvh44%3d&risl=&pid=ImgRaw&r=0",alt: "黄山",index: "2",ref: "picture",},
 					{src: "https://th.bing.com/th/id/R.07ca4de0567767ee8a941530613e8fb0?rik=7HeC7NE8EAUnTw&riu=http%3a%2f%2faticoc.com%2fuploadfiles%2f2021%2f06%2f20210630182313678.jpg%3fMzMuanBn&ehk=QtjaEYrwyH1h6uQaqe%2bv%2fME6Uz0RT6CA0YIxNWSIecQ%3d&risl=&pid=ImgRaw&r=0",alt: "安徽茶叶",index: "3",ref: "picture",},
-					{src: "https://th.bing.com/th/id/R.b400119f09fb40efd5bb2bf24c5eedfe?rik=yD4slOarNqj5vA&riu=http%3a%2f%2fimg.yipic.cn%2fthumb%2ff0708c1d%2f0bfc4812%2f22e7f44a%2ff4429daf%2fbig_f0708c1d0bfc481222e7f44af4429daf.png%3fx-oss-process%3dimage%2fformat%2cwebp%2fsharpen%2c100&ehk=%2bSWnN54ZKx8LaEmlf0EbyfQKimIHAWR65S3o0%2bUKmRg%3d&risl=&pid=ImgRaw&r=0",alt: "一带一路",index: "4",ref: "picture",},
+					{src: "https://ts1.cn.mm.bing.net/th/id/R-C.6391c62ea3845c4c2f137a245b9ce48b?rik=lmnP8dnsib4KLw&riu=http%3a%2f%2fwww.sinaimg.cn%2fqc%2fautoimg%2fcar%2f16%2f88%2f129618816_src.JPG&ehk=b5zYL1YweIIiYS847jZ4zL0csJjQJH3s88vJDRHq%2fL4%3d&risl=&pid=ImgRaw&r=0",alt: "汽车",index: "4",ref: "picture",},
 				],
 				mouseEnter: false,      //鼠标是否悬浮在整个区域上
 				pictureShowing: 0,      //当前展示的是第几张图片，用来更新底部圆点

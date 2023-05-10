@@ -9,12 +9,12 @@ import java.util.List;
 
 @RestController
 public class GoodsController {
-    @RequestMapping("/goodsOfCategory")
+    @RequestMapping("/goods/list/category")
     public List<SysGood> getGoodListByCategory(@RequestParam String category){
 
         return null;
     }
-    @RequestMapping("/goods")
+    @RequestMapping("/goods/list")
     public List<SysGood> getGoodsList(){            //用于返回产品列表
 
 

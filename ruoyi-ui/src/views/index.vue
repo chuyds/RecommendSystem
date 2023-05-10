@@ -1,7 +1,7 @@
 <template>
   <div id="index">
     <div ref="vantaRef" style="width:100%;height:100vh"></div>
-    <div class="my_title">安徽省优势产能云推荐</div>
+    <div id="title" class="my_title">安徽省优势产能云服务推荐</div>
     <el-row>
       <el-col :span="24">
         <div class="grid-content bg-purple-dark">
@@ -34,9 +34,9 @@
           <div class="el-table el-table--enable-row-hover el-table--medium">
               <img src="../img/1.jpg" alt="奇瑞汽车">
               <tr>
-                <td class="el-table__cell is-leaf"><router-link to="/cs">
+                <td class="el-table__cell is-leaf">
                   奇瑞汽车股份有限公司成立于1997年1月8日，注册资本41亿元。公司以打造"国际品牌"为战略目标，经过十九年的创新发展，现已成为国内最大的集汽车整车、动力总成和关键零部件的研发、试制、生产和销售为一体的自主品牌汽车制造企业，以及中国最大的乘用车出口企业。图中汽车作为瑞虎家族旗舰车型，瑞虎9 C-DM采用了全新一代柔光美学设计语言，整车外观非常饱满、充满质感，64分区ADB矩阵大灯提升了科技感；礼宾灯语、隐藏式电释放门把手等设计元素则增添了时尚感，非常符合当前年轻人喜爱。
-              </router-link></td>
+                </td>
               </tr>
           </div>
         </el-card>
@@ -146,7 +146,8 @@
 				hasClicked:false,       //函数节流，防止用户快速、频繁点击图片变换导致出错，flase为图片变换操作不可执行
         speed:80,               //图片移动速度
         offsetWidth:600,        //轮播图宽度，将在mounted里面动态获取
-        topNav:this.$store.state.settings.topNav
+        topNav:this.$store.state.settings.topNav,
+        height:document.body.offsetHeight
 			};
 		},
 
@@ -209,6 +210,8 @@
 	        //     }
 	        // })
 
+          this.offsetWidth = this.getOffsetWidth();     //动态获取轮播图宽度
+
           this.vantaEffect = Clouds({
             el: this.$refs.vantaRef,
             THREE: THREE
@@ -218,7 +221,9 @@
               this.topNav = this.$store.state.settings.topNav;
           },500);
 
-          this.offsetWidth = this.getOffsetWidth();     //动态获取轮播图宽度
+
+          var titleElt = document.getElementById("title");
+          titleElt.style.left = titleElt.offsetLeft - titleElt.offsetWidth*0.5 + (this.topNav?0:200)+"px";    //让标题字体居中
 
 	        let li_0 = this.$refs[`picture`][0];
 	        let li_end = li_0.cloneNode(true);
@@ -333,17 +338,17 @@
 	    }
 	};
 
-</script>
 
+</script>
 
 <style lang="scss" scoped>
   .my_title{
     z-index: 999;
-    position: fixed;
-    // top: 40%;
-    // left: 10%;
+    position: absolute;
+    top: 100px;
+    left: 50%;
     color: aquamarine;
-    font-size: 100px;
+    font-size: 30px;
     font-weight: bolder;
   }
   .el-row {

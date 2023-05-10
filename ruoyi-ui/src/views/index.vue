@@ -1,7 +1,11 @@
 <template>
   <div id="index">
     <div ref="vantaRef" style="width:100%;height:100vh"></div>
-    <div id="title" class="my_title">安徽省优势产能云服务推荐</div>
+    <div id="title" class="my_title">服务导航<br><font size="40">安徽省优势产能介绍</font>
+    </div>
+
+    <br><br><br><br><br>
+
     <el-row>
       <el-col :span="24">
         <div class="grid-content bg-purple-dark">
@@ -32,12 +36,12 @@
       <el-col :span="12" class="card-box">
         <el-card>
           <div class="el-table el-table--enable-row-hover el-table--medium">
-              <img src="../img/1.jpg" alt="奇瑞汽车">
-              <tr>
-                <td class="el-table__cell is-leaf">
-                  奇瑞汽车股份有限公司成立于1997年1月8日，注册资本41亿元。公司以打造"国际品牌"为战略目标，经过十九年的创新发展，现已成为国内最大的集汽车整车、动力总成和关键零部件的研发、试制、生产和销售为一体的自主品牌汽车制造企业，以及中国最大的乘用车出口企业。图中汽车作为瑞虎家族旗舰车型，瑞虎9 C-DM采用了全新一代柔光美学设计语言，整车外观非常饱满、充满质感，64分区ADB矩阵大灯提升了科技感；礼宾灯语、隐藏式电释放门把手等设计元素则增添了时尚感，非常符合当前年轻人喜爱。
-                </td>
-              </tr>
+            <img src="../img/1.jpg" alt="奇瑞汽车">
+            <tr>
+              <td class="el-table__cell is-leaf">
+                奇瑞汽车股份有限公司成立于1997年1月8日，注册资本41亿元。公司以打造"国际品牌"为战略目标，经过十九年的创新发展，现已成为国内最大的集汽车整车、动力总成和关键零部件的研发、试制、生产和销售为一体的自主品牌汽车制造企业，以及中国最大的乘用车出口企业。图中汽车作为瑞虎家族旗舰车型，瑞虎9 C-DM采用了全新一代柔光美学设计语言，整车外观非常饱满、充满质感，64分区ADB矩阵大灯提升了科技感；礼宾灯语、隐藏式电释放门把手等设计元素则增添了时尚感，非常符合当前年轻人喜爱。
+              </td>
+            </tr>
           </div>
         </el-card>
       </el-col>
@@ -45,12 +49,12 @@
       <el-col :span="12" class="card-box">
         <el-card>
           <div class="el-table el-table--enable-row-hover el-table--medium">
-                <img src="../img/2.jpg" alt="图片">
-                <tr>
-                  <td class="el-table__cell is-leaf">
-                    致态是长江存储消费级固态硬盘品牌，2020年9月10日正式发布旗下两款固态硬盘产品，分别为PCIe接口致态PC005 Active和SATA接口的致态SC001 Active。“致态”致力于打造高性能、高品质消费级三维闪存系统产品。“态”是年轻的态度，是服务的温度，也是对做好固态品牌初心的坚守。致钛7100plush：采用国产长鑫颗粒，最高连续读取速度为3631.48MB/s，连续写入速度达到2520.22MB/s。同时，最大4K随机读取速度达到了929.96MB/s，最大4K随机写入速度为408.52MB/s。
-                  </td>
-                </tr>
+            <img src="../img/2.jpg" alt="图片">
+            <tr>
+              <td class="el-table__cell is-leaf">
+                致态是长江存储消费级固态硬盘品牌，2020年9月10日正式发布旗下两款固态硬盘产品，分别为PCIe接口致态PC005 Active和SATA接口的致态SC001 Active。“致态”致力于打造高性能、高品质消费级三维闪存系统产品。“态”是年轻的态度，是服务的温度，也是对做好固态品牌初心的坚守。致钛7100plush：采用国产长鑫颗粒，最高连续读取速度为3631.48MB/s，连续写入速度达到2520.22MB/s。同时，最大4K随机读取速度达到了929.96MB/s，最大4K随机写入速度为408.52MB/s。
+              </td>
+            </tr>
           </div>
         </el-card>
       </el-col>
@@ -61,12 +65,12 @@
       <el-col :span="8" class="card-box">
         <el-card>
           <div class="el-table el-table--enable-row-hover el-table--medium">
-                <img src="../img/3.jpg" alt="白酒">
-                <tr>
-                  <td class="el-table__cell is-leaf">
-                    百年皖酒是安徽皖酒集团生产，该公司具有五十多年酿造白酒的历史，是中国最大的酒业集团之一，安徽省白酒行业支柱企业，是民营股份制企业。公司生产的系列皖酒有80多个品种，以皖酒王系列、百年系列、皖国系列和精品皖酒系列四大系列产品线为主，深受广大消费者的喜爱。公司多次被省、市级评为“重合同，守信用”单位，皖酒连续多年被安徽省消费者协会评为“省消费者喜爱的白酒”称号。
-                  </td>
-                </tr>
+            <img src="../img/3.jpg" alt="白酒">
+            <tr>
+              <td class="el-table__cell is-leaf">
+                百年皖酒是安徽皖酒集团生产，该公司具有五十多年酿造白酒的历史，是中国最大的酒业集团之一，安徽省白酒行业支柱企业，是民营股份制企业。公司生产的系列皖酒有80多个品种，以皖酒王系列、百年系列、皖国系列和精品皖酒系列四大系列产品线为主，深受广大消费者的喜爱。公司多次被省、市级评为“重合同，守信用”单位，皖酒连续多年被安徽省消费者协会评为“省消费者喜爱的白酒”称号。
+              </td>
+            </tr>
           </div>
         </el-card>
       </el-col>
@@ -74,12 +78,12 @@
       <el-col :span="8" class="card-box">
         <el-card>
           <div class="el-table el-table--enable-row-hover el-table--medium">
-                <img src="../img/4.jpg" alt="茶叶图片">
-                <tr>
-                  <td class="el-table__cell is-leaf">
-                    中国十大名茶之一，徽茶，属于绿茶。产于安徽省黄山。由清代光绪年间谢裕大茶庄所创制。每年清明谷雨，选摘初展肥壮嫩芽，手工炒制，该茶外形微卷，状似雀舌，绿中泛黄，银毫显露，且带有金黄色鱼叶（俗称黄金片）。入杯冲泡雾气结顶，汤色清碧微黄，叶底黄绿有活力，滋味醇甘，香气如兰，韵味深长。由于新制茶叶白毫披身，芽尖峰芒，且鲜叶采自黄山高峰，遂将该茶取名为黄山毛峰。
-                  </td>
-                </tr>
+            <img src="../img/4.jpg" alt="茶叶图片">
+            <tr>
+              <td class="el-table__cell is-leaf">
+                中国十大名茶之一，徽茶，属于绿茶。产于安徽省黄山。由清代光绪年间谢裕大茶庄所创制。每年清明谷雨，选摘初展肥壮嫩芽，手工炒制，该茶外形微卷，状似雀舌，绿中泛黄，银毫显露，且带有金黄色鱼叶（俗称黄金片）。入杯冲泡雾气结顶，汤色清碧微黄，叶底黄绿有活力，滋味醇甘，香气如兰，韵味深长。由于新制茶叶白毫披身，芽尖峰芒，且鲜叶采自黄山高峰，遂将该茶取名为黄山毛峰。
+              </td>
+            </tr>
           </div>
         </el-card>
       </el-col>
@@ -87,12 +91,54 @@
       <el-col :span="8" class="card-box">
         <el-card>
           <div class="el-table el-table--enable-row-hover el-table--medium">
-                <img src="../img/5.jpg" alt="黄山图片">
-                <tr>
-                  <td class="el-table__cell is-leaf">
-                    五岳归来不看山，黄山归来不看岳。黄山以其“五绝”的奇景和博大的徽文化蜚声海内外，被誉为“天下第一奇山”。五岳归来不看山，黄山归来不看岳。黄山以其“五绝”的奇景和博大的徽文化蜚声海内外，被誉为“天下第一奇山”。黄山不仅是一座美丽的自然之山，还是一座丰富的艺术宝库。自古以来，人们游览黄山，歌颂黄山，留下了丰厚的文化遗产，概括起来就是遗存、书画、文学、传说、名人“五胜”。
-                  </td>
-                </tr>
+            <img src="../img/5.jpg" alt="黄山图片">
+            <tr>
+              <td class="el-table__cell is-leaf">
+                五岳归来不看山，黄山归来不看岳。黄山以其“五绝”的奇景和博大的徽文化蜚声海内外，被誉为“天下第一奇山”。五岳归来不看山，黄山归来不看岳。黄山以其“五绝”的奇景和博大的徽文化蜚声海内外，被誉为“天下第一奇山”。黄山不仅是一座美丽的自然之山，还是一座丰富的艺术宝库。自古以来，人们游览黄山，歌颂黄山，留下了丰厚的文化遗产，概括起来就是遗存、书画、文学、传说、名人“五胜”。
+              </td>
+            </tr>
+          </div>
+        </el-card>
+      </el-col>
+    </el-row>
+
+<el-col :span="8" class="card-box">
+        <el-card>
+          <div class="el-table el-table--enable-row-hover el-table--medium">
+            <img src="../img/6.jpg" alt="祁山红茶">
+            <tr>
+              <td class="el-table__cell is-leaf">
+                祁门红茶简称祁红，茶叶原料选用当地的中叶、中生种茶树“槠叶种”（又名祁门种）制作，是中国历史名茶，著名红茶精品。由安徽茶农创制于光绪年间，但史籍记载最早可追溯至唐朝陆羽的茶经。“祁红特绝群芳最，清誉高香不二门。”祁门红茶是红茶中的极品，享有盛誉，是英国女王和王室的至爱饮品，高香美誉，香名远播，美称“群芳最”、“红茶皇后”。
+              </td>
+            </tr>
+          </div>
+        </el-card>
+      </el-col>
+    </el-row>
+
+    <el-col :span="8" class="card-box">
+        <el-card>
+          <div class="el-table el-table--enable-row-hover el-table--medium">
+            <img src="../img/7.jpg" alt="宣酒图片">
+            <tr>
+              <td class="el-table__cell is-leaf">
+                宣酒，源于唐代纪叟老春酒，具有“绵柔净爽、窖香浓郁、香味谐调”之风格。先后荣获“首届安徽省十大强省品牌”、“中国十大最具增长潜力的白酒品牌”、“中国小窖酿造白酒领袖品牌”等称号。宣酒的核心技术江南小窖古法酿造技艺已入选非物质文化遗产保护名录，被中国著名白酒专家沈怡方、高月明、高景炎、曾祖训等誉之为“宣酒特贡，小窖绵柔，巧夺天工，江南一绝”。
+              </td>
+            </tr>
+          </div>
+        </el-card>
+      </el-col>
+    </el-row>
+
+    <el-col :span="8" class="card-box">
+        <el-card>
+          <div class="el-table el-table--enable-row-hover el-table--medium">
+            <img src="../img/8.jpg" alt="江淮汽车">
+            <tr>
+              <td class="el-table__cell is-leaf">
+                安徽江淮汽车集团股份有限公司（下称“江汽集团”）始建于1964年 ，是一家集全系列商用车、乘用车及动力总成研产销于一体、以“先进节能汽车、新能源汽车、智能网联汽车”并举，涵盖汽车出行、金融服务等众多领域的综合型汽车企业集团。先后荣获国家火炬计划重点高新技术企业、中国企业500强、中国汽车品牌前5强，是全国首家荣获我国工业领域最高奖项——中国工业大奖的综合型汽车集团。
+              </td>
+            </tr>
           </div>
         </el-card>
       </el-col>
@@ -127,316 +173,316 @@
 
 <script>
 
-  import * as THREE from 'three'
-  import Clouds from 'vanta/src/vanta.clouds'
+import * as THREE from 'three'
+import Rings from 'vanta/src/vanta.rings'
 
-	export default {
-		data() {
-			return {
-				pictures: [             //轮播图
-					{src: "https://th.bing.com/th/id/R.b400119f09fb40efd5bb2bf24c5eedfe?rik=yD4slOarNqj5vA&riu=http%3a%2f%2fimg.yipic.cn%2fthumb%2ff0708c1d%2f0bfc4812%2f22e7f44a%2ff4429daf%2fbig_f0708c1d0bfc481222e7f44af4429daf.png%3fx-oss-process%3dimage%2fformat%2cwebp%2fsharpen%2c100&ehk=%2bSWnN54ZKx8LaEmlf0EbyfQKimIHAWR65S3o0%2bUKmRg%3d&risl=&pid=ImgRaw&r=0",alt: "一带一路",index: "0",ref: "picture",},
-					{src: "https://pic1.zhimg.com/v2-c033cec25c1c4d1c0ecfb19e3e2222fe_r.jpg?source=1940ef5c",alt: "风景",index: "1",ref: "picture",},
-					{src: "https://ts1.cn.mm.bing.net/th/id/R-C.b196b408634f2ce5134dcf8ead4b8e59?rik=pdN5KKTNSansVg&riu=http%3a%2f%2fimg.mm4000.com%2ffile%2f0%2f5d%2f9b1a116d73.jpg&ehk=3i5WDN140E3CU1XKf1inmGX3sFKYHUgNUD3VVSBvh44%3d&risl=&pid=ImgRaw&r=0",alt: "黄山",index: "2",ref: "picture",},
-					{src: "https://th.bing.com/th/id/R.07ca4de0567767ee8a941530613e8fb0?rik=7HeC7NE8EAUnTw&riu=http%3a%2f%2faticoc.com%2fuploadfiles%2f2021%2f06%2f20210630182313678.jpg%3fMzMuanBn&ehk=QtjaEYrwyH1h6uQaqe%2bv%2fME6Uz0RT6CA0YIxNWSIecQ%3d&risl=&pid=ImgRaw&r=0",alt: "安徽茶叶",index: "3",ref: "picture",},
-					{src: "http://officialbackmanage.chery.cn/library/hq/image/2023/4/6fc21068-097a-4c81-8aad-129ce60de373.jpg",alt: "汽车",index: "4",ref: "picture",},
-				],
-        goods: [],              //产品列表
-				mouseEnter: false,      //鼠标是否悬浮在整个区域上
-				pictureShowing: 0,      //当前展示的是第几张图片，用来更新底部圆点
-				hasClicked:false,       //函数节流，防止用户快速、频繁点击图片变换导致出错，flase为图片变换操作不可执行
-        speed:80,               //图片移动速度
-        offsetWidth:600,        //轮播图宽度，将在mounted里面动态获取
-        topNav:this.$store.state.settings.topNav,
-        height:document.body.offsetHeight
-			};
-		},
+export default {
+  data() {
+    return {
+      pictures: [             //轮播图
+        {src: "https://img.zcool.cn/community/01ffe45a6735fda80120a123ff277a.png@1280w_1l_2o_100sh.png",alt: "一带一路",index: "0",ref: "picture",},
+        {src: "https://pic1.zhimg.com/v2-c033cec25c1c4d1c0ecfb19e3e2222fe_r.jpg?source=1940ef5c",alt: "风景",index: "1",ref: "picture",},
+        {src: "https://ts1.cn.mm.bing.net/th/id/R-C.b196b408634f2ce5134dcf8ead4b8e59?rik=pdN5KKTNSansVg&riu=http%3a%2f%2fimg.mm4000.com%2ffile%2f0%2f5d%2f9b1a116d73.jpg&ehk=3i5WDN140E3CU1XKf1inmGX3sFKYHUgNUD3VVSBvh44%3d&risl=&pid=ImgRaw&r=0",alt: "黄山",index: "2",ref: "picture",},
+        {src: "https://th.bing.com/th/id/R.07ca4de0567767ee8a941530613e8fb0?rik=7HeC7NE8EAUnTw&riu=http%3a%2f%2faticoc.com%2fuploadfiles%2f2021%2f06%2f20210630182313678.jpg%3fMzMuanBn&ehk=QtjaEYrwyH1h6uQaqe%2bv%2fME6Uz0RT6CA0YIxNWSIecQ%3d&risl=&pid=ImgRaw&r=0",alt: "安徽茶叶",index: "3",ref: "picture",},
+        {src: "http://officialbackmanage.chery.cn/library/hq/image/2023/4/6fc21068-097a-4c81-8aad-129ce60de373.jpg",alt: "汽车",index: "4",ref: "picture",},
+      ],
+      goods: [],              //产品列表
+      mouseEnter: false,      //鼠标是否悬浮在整个区域上
+      pictureShowing: 0,      //当前展示的是第几张图片，用来更新底部圆点
+      hasClicked:false,       //函数节流，防止用户快速、频繁点击图片变换导致出错，flase为图片变换操作不可执行
+      speed:80,               //图片移动速度
+      offsetWidth:600,        //轮播图宽度，将在mounted里面动态获取
+      topNav:this.$store.state.settings.topNav,
+      height:document.body.offsetHeight
+    };
+  },
 
 
-		watch: {
-			// mouseEnter: {                           //鼠标移入区域，图片切换停止，离开则继续
-			// 	immediate: true,
-			// 	handler(newval, oldval) {           //使其在页面一上来就能执行
-			// 		if (!newval) {
-			// 			this.$mytimer = setInterval(() => {
-			// 				if (this.pictureShowing < this.pictures.length-1) {
-			// 					this.pictureShowing++;
-			// 				} else {
-			// 					this.pictureShowing = 0;
-			// 				}
-			// 				this.changeDefault(this.speed);
-			// 			}, 1000);
-			// 		} else {
-			// 			clearInterval(this.$mytimer);
-			// 		}
-			// 	},
-			// },
+  watch: {
+    // mouseEnter: {                           //鼠标移入区域，图片切换停止，离开则继续
+    // 	immediate: true,
+    // 	handler(newval, oldval) {           //使其在页面一上来就能执行
+    // 		if (!newval) {
+    // 			this.$mytimer = setInterval(() => {
+    // 				if (this.pictureShowing < this.pictures.length-1) {
+    // 					this.pictureShowing++;
+    // 				} else {
+    // 					this.pictureShowing = 0;
+    // 				}
+    // 				this.changeDefault(this.speed);
+    // 			}, 1000);
+    // 		} else {
+    // 			clearInterval(this.$mytimer);
+    // 		}
+    // 	},
+    // },
 
-      topNav(newValue,oldValue){              //用来监测topNav的改变
-        this.$refs.myul.style.left=0+"px";
-        this.pictureShowing = 0;
-      },
-
-			pictureShowing(newval) {                //当改变图片时，更新底部小圆圈
-				for (let i = 0; i < this.pictures.length; i++) {
-					(this.$refs.cicle)[i].style.background = "";
-				}
-				(this.$refs.cicle)[newval].style.background = "black";
-			}
-		},
-
-    beforeDestroy() {
-      if (this.vantaEffect) {
-        this.vantaEffect.destroy()
-      }
+    topNav(newValue,oldValue){              //用来监测topNav的改变
+      this.$refs.myul.style.left=0+"px";
+      this.pictureShowing = 0;
     },
 
-	    mounted() {
-	        // console.log(this.$refs[`picture`])          //是一个 Array 包含 5 个 li 元素
+    pictureShowing(newval) {                //当改变图片时，更新底部小圆圈
+      for (let i = 0; i < this.pictures.length; i++) {
+        (this.$refs.cicle)[i].style.background = "";
+      }
+      (this.$refs.cicle)[newval].style.background = "black";
+    }
+  },
 
-	        // 解决当前页面被最小化后，用户再打开时，轮播图播放情况出现异常的情况
-	        // 监视浏览器窗口的改变，当浏览器窗口最小化时，将默认定时器停掉，当浏览器可视时，再开启
-	        // document.addEventListener('visibilitychange',()=>{
-	        //     if(document.visibilityState === 'hidden'){
-	        //         clearInterval(this.$mytimer);
-	        //     }else if(document.visibilityState === 'visible'){
-	        //         this.$mytimer= setInterval(() => {
-	        //                 if (this.pictureShowing < this.pictures.length-1) {
-	        //                     this.pictureShowing++;
-	        //                 } else {
-	        //                     this.pictureShowing = 0;
-	        //                 }
-	        //                 this.changeDefault(this.speed);
-	        //             }, 1000);
-	        //     }
-	        // })
+  beforeDestroy() {
+    if (this.vantaEffect) {
+      this.vantaEffect.destroy()
+    }
+  },
 
-          this.offsetWidth = this.getOffsetWidth();     //动态获取轮播图宽度
+  mounted() {
+    // console.log(this.$refs[`picture`])          //是一个 Array 包含 5 个 li 元素
 
-          this.vantaEffect = Clouds({
-            el: this.$refs.vantaRef,
-            THREE: THREE
-          })
+    // 解决当前页面被最小化后，用户再打开时，轮播图播放情况出现异常的情况
+    // 监视浏览器窗口的改变，当浏览器窗口最小化时，将默认定时器停掉，当浏览器可视时，再开启
+    // document.addEventListener('visibilitychange',()=>{
+    //     if(document.visibilityState === 'hidden'){
+    //         clearInterval(this.$mytimer);
+    //     }else if(document.visibilityState === 'visible'){
+    //         this.$mytimer= setInterval(() => {
+    //                 if (this.pictureShowing < this.pictures.length-1) {
+    //                     this.pictureShowing++;
+    //                 } else {
+    //                     this.pictureShowing = 0;
+    //                 }
+    //                 this.changeDefault(this.speed);
+    //             }, 1000);
+    //     }
+    // })
 
-          setInterval(() => {           //每0.5秒更新topNav
-              this.topNav = this.$store.state.settings.topNav;
-          },500);
+    this.offsetWidth = this.getOffsetWidth();     //动态获取轮播图宽度
+
+    this.vantaEffect = Rings({
+      el: this.$refs.vantaRef,
+      THREE: THREE
+    })
+
+    setInterval(() => {           //每0.5秒更新topNav
+      this.topNav = this.$store.state.settings.topNav;
+    },500);
 
 
-          var titleElt = document.getElementById("title");
-          titleElt.style.left = titleElt.offsetLeft - titleElt.offsetWidth*0.5 + (this.topNav?0:200)+"px";    //让标题字体居中
+    var titleElt = document.getElementById("title");
+    titleElt.style.left = titleElt.offsetLeft - titleElt.offsetWidth*0.5 + (this.topNav?0:200)+"px";    //让标题字体居中
 
-	        let li_0 = this.$refs[`picture`][0];
-	        let li_end = li_0.cloneNode(true);
-	        this.$refs.myul.appendChild(li_end);            //克隆第一张图片，加到ul最后展示的位置
+    let li_0 = this.$refs[`picture`][0];
+    let li_end = li_0.cloneNode(true);
+    this.$refs.myul.appendChild(li_end);            //克隆第一张图片，加到ul最后展示的位置
 
-	        this.$refs.myul.style.position = "absolute";
-	        this.$refs.myul.style.left = 0 + "px";
+    this.$refs.myul.style.position = "absolute";
+    this.$refs.myul.style.left = 0 + "px";
 
-	        this.$refs.cicle[0].style.background = "black";    //挂载时展示第一张图片，默认第一个圆圈被填充
-	    },
+    this.$refs.cicle[0].style.background = "black";    //挂载时展示第一张图片，默认第一个圆圈被填充
+  },
 
-	    methods: {
-          getOffsetWidth(){
-            var outestElt = document.getElementById("slide");
-            var offsetWidth = outestElt.offsetWidth;
-            return offsetWidth;
-          },
-	        changeDefault(speed) {                  //切换下一张图片    speed为每毫秒移动的距离
-              this.offsetWidth = this.getOffsetWidth();     //动态获取轮播图宽度
-	            let t = 0;                          //根据每秒移动的位移控制单次位移结束
-	            let timer = setInterval(() => {
-	                t++;
-	                this.$refs.myul.style.left = this.$refs.myul.offsetLeft - Number(speed) + "px";
+  methods: {
+    getOffsetWidth(){
+      var outestElt = document.getElementById("slide");
+      var offsetWidth = outestElt.offsetWidth;
+      return offsetWidth;
+    },
+    changeDefault(speed) {                  //切换下一张图片    speed为每毫秒移动的距离
+      this.offsetWidth = this.getOffsetWidth();     //动态获取轮播图宽度
+      let t = 0;                          //根据每秒移动的位移控制单次位移结束
+      let timer = setInterval(() => {
+        t++;
+        this.$refs.myul.style.left = this.$refs.myul.offsetLeft - Number(speed) + "px";
 
-	                if (t >= this.offsetWidth/speed) {
-	                    if(this.$refs.myul.offsetLeft<=-1*this.offsetWidth*5){             //当最后一张图片（第一张的克隆）刚好完全展示时回到第一张完全展示时的位置
-	                        this.$refs.myul.style.left=0+"px";
-	                    }
-	                    clearInterval(timer);
-	                    this.hasClicked=false;
-                      t = 0;
-	                }
-	            }, 1);
-	        },
-	        quickTurn(count,index,method) {              //count为用户点击的点与当前 被填充点 的距离
-              this.offsetWidth = this.getOffsetWidth();     //动态获取轮播图宽度
-              // alert("width:"+this.offsetWidth+"    left:"+this.$refs.myul.offsetLeft);
-	            let currentX = this.$refs.myul.offsetLeft;
-	            let t = setInterval(() => {
-                if(method === "next"){
-                  if(this.$refs.myul.offsetLeft >= -1*this.offsetWidth*index+count*this.speed){
-                    this.$refs.myul.style.left = this.$refs.myul.offsetLeft - count * this.speed + "px";
-                  }else{
-                    this.$refs.myul.style.left = this.$refs.myul.offsetLeft - count * 1 + "px";
-                  }
-                }
-                if(method === "last"){
-                  if(this.$refs.myul.offsetLeft <= -1*this.offsetWidth*index+count*this.speed){
-                    this.$refs.myul.style.left = this.$refs.myul.offsetLeft - count * this.speed + "px";
-                  }else{
-                    this.$refs.myul.style.left = this.$refs.myul.offsetLeft - count * 1 + "px";
-                  }
-                }
+        if (t >= this.offsetWidth/speed) {
+          if(this.$refs.myul.offsetLeft<=-1*this.offsetWidth*5){             //当最后一张图片（第一张的克隆）刚好完全展示时回到第一张完全展示时的位置
+            this.$refs.myul.style.left=0+"px";
+          }
+          clearInterval(timer);
+          this.hasClicked=false;
+          t = 0;
+        }
+      }, 1);
+    },
+    quickTurn(count,index,method) {              //count为用户点击的点与当前 被填充点 的距离
+      this.offsetWidth = this.getOffsetWidth();     //动态获取轮播图宽度
+      // alert("width:"+this.offsetWidth+"    left:"+this.$refs.myul.offsetLeft);
+      let currentX = this.$refs.myul.offsetLeft;
+      let t = setInterval(() => {
+        if(method === "next"){
+          if(this.$refs.myul.offsetLeft >= -1*this.offsetWidth*index+count*this.speed){
+            this.$refs.myul.style.left = this.$refs.myul.offsetLeft - count * this.speed + "px";
+          }else{
+            this.$refs.myul.style.left = this.$refs.myul.offsetLeft - count * 1 + "px";
+          }
+        }
+        if(method === "last"){
+          if(this.$refs.myul.offsetLeft <= -1*this.offsetWidth*index+count*this.speed){
+            this.$refs.myul.style.left = this.$refs.myul.offsetLeft - count * this.speed + "px";
+          }else{
+            this.$refs.myul.style.left = this.$refs.myul.offsetLeft - count * 1 + "px";
+          }
+        }
 
-                if (this.$refs.myul.offsetLeft === currentX - this.offsetWidth * count) {     //刚好到达目的图片
-                    if(index===0){
-                        this.$refs.myul.style.left=0+"px";
-                    }
-                    clearInterval(t);
-                    this.hasClicked=false;
-                }
-	            }, 1);
-	        },
-	        gotoPicture(index,method) {
-	            let id = Number(index);
-	            let showing = this.pictureShowing;
-	            if (id === showing) {
-	                return null;
-	            } else {
-	                this.quickTurn(index - showing,index,method);
-	                this.pictureShowing = index;
-	            }
-	        },
-	        gotoLast(){             //上一张
-              this.offsetWidth = this.getOffsetWidth();     //动态获取轮播图宽度
-	            if(this.hasClicked){
-	                return null;
-	            }
-	            this.hasClicked=true;
-	            if(Number(this.pictureShowing)===0){
-	                this.$refs.myul.style.left=-1*this.offsetWidth*5+"px";
-	                this.pictureShowing=this.pictures.length-1;
-	                this.quickTurn(-1,this.pictureShowing,"last");
-	            }else{
-	                this.gotoPicture(this.pictureShowing-1,"last");
-	            }
-	        },
-	        gotoNext(){             //下一张
-	            if(this.hasClicked){
-	                return null;
-	            }
-	            this.hasClicked=true;
-	            if(Number(this.pictureShowing)===this.pictures.length-1){
-	                this.changeDefault(this.speed);
-	                this.pictureShowing=0;
-	            }else{
-	                this.gotoPicture(this.pictureShowing+1,"next")
-	            }
-	        },
-	        gotoDirectly(index){    //跳到某一张
-	            if(this.hasClicked){
-	                return null;
-	            }
-	            this.hasClicked=true;
-              if(index>this.pictureShowing){
-                this.gotoPicture(index,"next");
-              }else{
-                this.gotoPicture(index,"last");
-              }
+        if (this.$refs.myul.offsetLeft === currentX - this.offsetWidth * count) {     //刚好到达目的图片
+          if(index===0){
+            this.$refs.myul.style.left=0+"px";
+          }
+          clearInterval(t);
+          this.hasClicked=false;
+        }
+      }, 1);
+    },
+    gotoPicture(index,method) {
+      let id = Number(index);
+      let showing = this.pictureShowing;
+      if (id === showing) {
+        return null;
+      } else {
+        this.quickTurn(index - showing,index,method);
+        this.pictureShowing = index;
+      }
+    },
+    gotoLast(){             //上一张
+      this.offsetWidth = this.getOffsetWidth();     //动态获取轮播图宽度
+      if(this.hasClicked){
+        return null;
+      }
+      this.hasClicked=true;
+      if(Number(this.pictureShowing)===0){
+        this.$refs.myul.style.left=-1*this.offsetWidth*5+"px";
+        this.pictureShowing=this.pictures.length-1;
+        this.quickTurn(-1,this.pictureShowing,"last");
+      }else{
+        this.gotoPicture(this.pictureShowing-1,"last");
+      }
+    },
+    gotoNext(){             //下一张
+      if(this.hasClicked){
+        return null;
+      }
+      this.hasClicked=true;
+      if(Number(this.pictureShowing)===this.pictures.length-1){
+        this.changeDefault(this.speed);
+        this.pictureShowing=0;
+      }else{
+        this.gotoPicture(this.pictureShowing+1,"next")
+      }
+    },
+    gotoDirectly(index){    //跳到某一张
+      if(this.hasClicked){
+        return null;
+      }
+      this.hasClicked=true;
+      if(index>this.pictureShowing){
+        this.gotoPicture(index,"next");
+      }else{
+        this.gotoPicture(index,"last");
+      }
 
-	        }
-	    }
-	};
+    }
+  }
+};
 
 
 </script>
 
 <style lang="scss" scoped>
-  .my_title{
-    z-index: 999;
-    position: absolute;
-    top: 100px;
-    left: 50%;
-    color: aquamarine;
-    font-size: 30px;
-    font-weight: bolder;
+.my_title{
+  z-index: 999;
+  position: absolute;
+  top: 200px;
+  left: 10%;
+  color: white;
+  font-size: 60px;
+  font-weight: bolder;
+}
+.el-row {
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0;
   }
-  .el-row {
-    margin-bottom: 20px;
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-  .el-col {
-    border-radius: 4px;
-  }
-  .bg-purple-dark {
-    height: 600px;
-  }
-  .bg-purple {
-    background: #d3dce6;
-  }
-  .bg-purple-light {
-    background: #e5e9f2;
-  }
-  .grid-content {
-    border-radius: 4px;
-    min-height: 200px;
-  }
-  .row-bg {
-    padding: 10px 0;
-    background-color: #f9fafc;
-  }
+}
+.el-col {
+  border-radius: 4px;
+}
+.bg-purple-dark {
+  height: 600px;
+}
+.bg-purple {
+  background: #d3dce6;
+}
+.bg-purple-light {
+  background: #e5e9f2;
+}
+.grid-content {
+  border-radius: 4px;
+  min-height: 200px;
+}
+.row-bg {
+  padding: 10px 0;
+  background-color: #f9fafc;
+}
 
-  .outest {
-        width: 100%;
-        height: 600px;
-        padding: 0px;
-        position: absolute;
-        overflow: hidden;
-        cursor: pointer;
-        background-color: bisque;
-    }
-  /** 轮播图片设置 */
-  ul {
-      margin: 0px;
-      padding: 0px;
-      width: calc(6 * 100%);
-      height: 100%;
-  }
-  ul > li {
-      width: calc(1 / 6 * 100%);
-      height: 100%;
-      list-style: none;
-      float: left;
-  }
-  li > img {
-      width: 100%;
-      height: 100%;
-  }
-  /* 左右图标设置 */
-  .icon {
-      width: 60px;
-      height: 60px;
-      position: absolute;
-      top: 270px;
-      z-index: 2;
-      opacity: 0.5;
-  }
-  ._left {
-      left: 0px;
-  }
-  ._right {
-      right: 0px;
-  }
-  /* 底部小圆圈的设置 */
-  .mydiv {
-      width: auto;
-      height: 30px;
-      display: inline-block;
-      position: absolute;
-      bottom: 0px;
-      left: 45%;
-      z-index: 5;
-      opacity: 0.5;
-  }
-  .empty-cicle {
-      display: inline-block;
-      width: 10px;
-      height: 10px;
-      border: 2px solid black;
-      border-radius: 90px;
-      z-index: 5;
-      margin-right: 5px;
-  }
+.outest {
+  width: 100%;
+  height: 600px;
+  padding: 0px;
+  position: absolute;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: bisque;
+}
+/** 轮播图片设置 */
+ul {
+  margin: 0px;
+  padding: 0px;
+  width: calc(6 * 100%);
+  height: 100%;
+}
+ul > li {
+  width: calc(1 / 6 * 100%);
+  height: 100%;
+  list-style: none;
+  float: left;
+}
+li > img {
+  width: 100%;
+  height: 100%;
+}
+/* 左右图标设置 */
+.icon {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 270px;
+  z-index: 2;
+  opacity: 0.5;
+}
+._left {
+  left: 0px;
+}
+._right {
+  right: 0px;
+}
+/* 底部小圆圈的设置 */
+.mydiv {
+  width: auto;
+  height: 30px;
+  display: inline-block;
+  position: absolute;
+  bottom: 0px;
+  left: 45%;
+  z-index: 5;
+  opacity: 0.5;
+}
+.empty-cicle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid black;
+  border-radius: 90px;
+  z-index: 5;
+  margin-right: 5px;
+}
 </style>

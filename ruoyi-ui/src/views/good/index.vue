@@ -3,7 +3,7 @@
     <!-- 查询表单 -->
     <el-form ref="findForm" :model="formData" :rules="rules" :inline="true" size="mini" label-width="100px">
       <el-form-item label="产品类别" prop="field">
-        <el-select v-model="formData.field" placeholder="如果需要查看某一类产品请在此处选择" clearable :style="{width: '300px'}">
+        <el-select id="select" v-model="formData.field" placeholder="如果需要查看某一类产品请在此处选择" clearable :style="{width: '300px'}">
           <el-option v-for="(item, index) in fieldOptions" :key="index" :label="item.label"
             :value="item.value" :disabled="item.disabled"></el-option>
         </el-select>
@@ -17,10 +17,18 @@
     </el-form>
 
     <el-row>
+     <el-col :span="6" v-for="(good,index) in goods" class="card-box">
+        <div id="imag">
+          <img src="" alt="">
+        </div>
+        <div id="text-describe">
+          <span style="color: red;">{{good.name+":"}}</span>
+          <span>{{good.describe}}</span>
+        </div>
+      </el-col>
+<!--      <el-col :span="6" class="card-box"><div class="grid-content bg-purple-light"></div></el-col>
       <el-col :span="6" class="card-box"><div class="grid-content bg-purple"></div></el-col>
-      <el-col :span="6" class="card-box"><div class="grid-content bg-purple-light"></div></el-col>
-      <el-col :span="6" class="card-box"><div class="grid-content bg-purple"></div></el-col>
-      <el-col :span="6" class="card-box"><div class="grid-content bg-purple-light"></div></el-col>
+      <el-col :span="6" class="card-box"><div class="grid-content bg-purple-light"></div></el-col> -->
     </el-row>
   </div>
 
@@ -66,18 +74,35 @@ export default {
   computed: {},
   watch: {},
   created() {},
-  mounted() {},
+  mounted() {
+    this.getList();
+  },
   methods: {
     getList() {     //获取全部商品列表
       listGood().then(response => {
-        this.goods = response.data.data;
+        this.goods = response;
+      });
+    },
+    getListByCategory(category) {     //获取category类别商品列表
+      listGoodByCategory(category).then(response => {
+        this.goods = response;
       });
     },
     submitForm() {
-      this.listGood();
+      var category;
+      var categoryElt = document.getElementById("select");
+      for (var i = 0; i < this.fieldOptions.length; i++) {      //获取当前类别id
+        if(this.fieldOptions[i].label===categoryElt.value){
+          category = this.fieldOptions[i].value;
+        }
+      }
+      alert(category);
+
+      this.getListByCategory(category);
     },
     resetForm() {
-      this.$refs['findForm'].resetFields()
+      this.$refs['findForm'].resetFields();
+      this.getList();
     },
   }
 }

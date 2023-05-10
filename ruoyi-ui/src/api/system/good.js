@@ -13,7 +13,9 @@ export function listGoodByCategory(category) {
   return request({
     url: '/goods/list/category',
     method: 'get',
-    params: category
+    params: {
+      'category':category
+    }
   })
 }
 
@@ -22,6 +24,8 @@ export function getGood(id) {
   return request({
     url: '/goods/list/id/',
     method: 'get',
-    params: id   
+    params: {
+      'id':id
+    }
   })
 }

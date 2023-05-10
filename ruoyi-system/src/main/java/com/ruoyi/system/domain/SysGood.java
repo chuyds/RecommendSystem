@@ -2,7 +2,7 @@ package com.ruoyi.system.domain;
 
 public class SysGood {
     //产品id
-    private int id;
+    private Integer id;
     //产品名
     private String name;
     //产品描述
@@ -10,7 +10,7 @@ public class SysGood {
     //产品图片
     private byte[] image;
     //产品类别
-    private int category;
+    private Integer category;
 
     public SysGood() {
     }

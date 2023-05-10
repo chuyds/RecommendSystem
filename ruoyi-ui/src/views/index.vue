@@ -1,8 +1,8 @@
 <template>
   <div id="index">
-    <div ref="vantaRef" style="width:100%;height:100vh"></div>
+    <div id="vant" ref="vantaRef" style="width:100%;height:100vh"></div>
     <div id="title" class="my_title">安徽省优势产能云服务推荐</div>
-    <el-row>
+    <el-row style="height: 720px;">
       <el-col :span="24">
         <div class="grid-content bg-purple-dark">
           <!-- 最外层div -->
@@ -128,7 +128,7 @@
 <script>
 
   import * as THREE from 'three'
-  import Clouds from 'vanta/src/vanta.clouds'
+  import Rings from 'vanta/src/vanta.rings'
 
 	export default {
 		data() {
@@ -147,7 +147,6 @@
         speed:80,               //图片移动速度
         offsetWidth:600,        //轮播图宽度，将在mounted里面动态获取
         topNav:this.$store.state.settings.topNav,
-        height:document.body.offsetHeight
 			};
 		},
 
@@ -171,7 +170,12 @@
 			// 	},
 			// },
 
-      topNav(newValue,oldValue){              //用来监测topNav的改变
+      offsetWidth(){        //当轮播图宽度改变时
+        this.$refs.myul.style.left=0+"px";      //回到第一张图片
+        this.pictureShowing = 0;
+      },
+
+      topNav(){              //用来监测topNav的改变
         this.$refs.myul.style.left=0+"px";
         this.pictureShowing = 0;
       },
@@ -210,15 +214,15 @@
 	        //     }
 	        // })
 
-          this.offsetWidth = this.getOffsetWidth();     //动态获取轮播图宽度
 
-          this.vantaEffect = Clouds({
+          this.vantaEffect = Rings({
             el: this.$refs.vantaRef,
             THREE: THREE
           })
 
-          setInterval(() => {           //每0.5秒更新topNav
+          setInterval(() => {           //每0.5秒更新topNav和offsetWidth
               this.topNav = this.$store.state.settings.topNav;
+              this.offsetWidth = this.getOffsetWidth();     //动态获取轮播图宽度
           },500);
 
 
@@ -380,7 +384,7 @@
 
   .outest {
         width: 100%;
-        height: 600px;
+        height: 720px;
         padding: 0px;
         position: absolute;
         overflow: hidden;

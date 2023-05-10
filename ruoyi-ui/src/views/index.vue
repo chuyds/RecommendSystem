@@ -1,5 +1,7 @@
 <template>
   <div id="index">
+    <div ref="vantaRef" style="width:100%;height:100vh"></div>
+    <div class="my_title">安徽省优势产能云推荐</div>
     <el-row>
       <el-col :span="24">
         <div class="grid-content bg-purple-dark">
@@ -32,9 +34,9 @@
           <div class="el-table el-table--enable-row-hover el-table--medium">
               <img src="../img/1.jpg" alt="奇瑞汽车">
               <tr>
-                <td class="el-table__cell is-leaf">
+                <td class="el-table__cell is-leaf"><router-link to="/cs">
                   奇瑞汽车股份有限公司成立于1997年1月8日，注册资本41亿元。公司以打造"国际品牌"为战略目标，经过十九年的创新发展，现已成为国内最大的集汽车整车、动力总成和关键零部件的研发、试制、生产和销售为一体的自主品牌汽车制造企业，以及中国最大的乘用车出口企业。图中汽车作为瑞虎家族旗舰车型，瑞虎9 C-DM采用了全新一代柔光美学设计语言，整车外观非常饱满、充满质感，64分区ADB矩阵大灯提升了科技感；礼宾灯语、隐藏式电释放门把手等设计元素则增添了时尚感，非常符合当前年轻人喜爱。
-                </td>
+              </router-link></td>
               </tr>
           </div>
         </el-card>
@@ -124,6 +126,10 @@
 </template>
 
 <script>
+
+  import * as THREE from 'three'
+  import Clouds from 'vanta/src/vanta.clouds'
+
 	export default {
 		data() {
 			return {
@@ -143,6 +149,7 @@
         topNav:this.$store.state.settings.topNav
 			};
 		},
+
 
 		watch: {
 			// mouseEnter: {                           //鼠标移入区域，图片切换停止，离开则继续
@@ -176,6 +183,12 @@
 			}
 		},
 
+    beforeDestroy() {
+      if (this.vantaEffect) {
+        this.vantaEffect.destroy()
+      }
+    },
+
 	    mounted() {
 	        // console.log(this.$refs[`picture`])          //是一个 Array 包含 5 个 li 元素
 
@@ -195,6 +208,11 @@
 	        //             }, 1000);
 	        //     }
 	        // })
+
+          this.vantaEffect = Clouds({
+            el: this.$refs.vantaRef,
+            THREE: THREE
+          })
 
           setInterval(() => {           //每0.5秒更新topNav
               this.topNav = this.$store.state.settings.topNav;
@@ -319,6 +337,15 @@
 
 
 <style lang="scss" scoped>
+  .my_title{
+    z-index: 999;
+    position: fixed;
+    // top: 40%;
+    // left: 10%;
+    color: aquamarine;
+    font-size: 100px;
+    font-weight: bolder;
+  }
   .el-row {
     margin-bottom: 20px;
     &:last-child {

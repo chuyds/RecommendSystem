@@ -1,0 +1,108 @@
+<template>
+  <div id="index">
+    <!-- 查询表单 -->
+    <el-form ref="findForm" :model="formData" :rules="rules" :inline="true" size="mini" label-width="100px">
+      <el-form-item label="产品类别" prop="field">
+        <el-select v-model="formData.field" placeholder="如果需要查看某一类产品请在此处选择" clearable :style="{width: '300px'}">
+          <el-option v-for="(item, index) in fieldOptions" :key="index" :label="item.label"
+            :value="item.value" :disabled="item.disabled"></el-option>
+        </el-select>
+      </el-form-item>
+
+      <el-form-item size="mini">
+        <el-button type="primary" icon="el-icon-search" @click="submitForm">搜索</el-button>
+        <el-button icon="el-icon-refresh" size="mini" @click="resetForm">重置</el-button>
+      </el-form-item>
+
+    </el-form>
+
+    <el-row>
+      <el-col :span="6" class="card-box"><div class="grid-content bg-purple"></div></el-col>
+      <el-col :span="6" class="card-box"><div class="grid-content bg-purple-light"></div></el-col>
+      <el-col :span="6" class="card-box"><div class="grid-content bg-purple"></div></el-col>
+      <el-col :span="6" class="card-box"><div class="grid-content bg-purple-light"></div></el-col>
+    </el-row>
+  </div>
+
+</template>
+
+<script>
+import { listGood, listGoodByCategory, getGood } from "@/api/system/good";
+
+export default {
+  components: {},
+  props: [],
+  data() {
+    return {
+      formData: {
+        field: undefined,
+      },
+      rules: {
+        field: [{
+          required: true,
+          message: '如果需要查看某一类产品请在此处选择',
+          trigger: 'change'
+        }],
+      },
+      fieldOptions: [{
+        "label": "汽车",
+        "value": 1
+      }, {
+        "label": "电子产品",
+        "value": 2
+      },{
+        "label": "酒",
+        "value": 3
+      },{
+        "label": "茶叶",
+        "value": 4
+      },{
+        "label": "全部",
+        "value": 5
+      }],
+      goods:[],
+    }
+  },
+  computed: {},
+  watch: {},
+  created() {},
+  mounted() {},
+  methods: {
+    getList() {     //获取全部商品列表
+      listGood().then(response => {
+        this.goods = response.data.data;
+      });
+    },
+    submitForm() {
+      this.listGood();
+    },
+    resetForm() {
+      this.$refs['findForm'].resetFields()
+    },
+  }
+}
+
+</script>
+
+<style>
+    .el-row {
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .el-col {
+      border-radius: 4px;
+    }
+    .bg-purple {
+      background: #d3dce6;
+    }
+    .bg-purple-light {
+      background: #e5e9f2;
+    }
+    .grid-content {
+      border-radius: 4px;
+      min-height: 36px;
+    }
+
+</style>

@@ -87,6 +87,11 @@ export const constantRoutes = [
         meta: { title: '个人中心', icon: 'user' }
       }
     ]
+  },
+  {
+    path: '/goods',
+    component: () => import('@/views/good/index'),
+    hidden: true
   }
 ]
 

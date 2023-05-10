@@ -64,9 +64,6 @@ export default {
       },{
         "label": "茶叶",
         "value": 4
-      },{
-        "label": "全部",
-        "value": 5
       }],
       goods:[],
     }

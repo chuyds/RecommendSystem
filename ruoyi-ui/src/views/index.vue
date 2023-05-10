@@ -1,7 +1,8 @@
 <template>
   <div id="index">
     <div id="vant" ref="vantaRef" style="width:100%;height:100vh"></div>
-    <div id="title" class="my_title">安徽省优势产能云服务推荐</div>
+    <div id="title" class="my_title">服务导航<br><font size="40">安徽省优势产能介绍</font></div>
+
     <el-row style="height: 720px;">
       <el-col :span="24">
         <div class="grid-content bg-purple-dark">
@@ -28,99 +29,139 @@
     </el-row>
 
     <el-row>
-
-      <el-col :span="12" class="card-box">
-        <el-card>
-          <div class="el-table el-table--enable-row-hover el-table--medium">
+        <el-col :span="12" class="card-box">
+          <el-card>
+            <div class="el-table el-table--enable-row-hover el-table--medium">
               <img src="../img/1.jpg" alt="奇瑞汽车">
               <tr>
                 <td class="el-table__cell is-leaf">
                   奇瑞汽车股份有限公司成立于1997年1月8日，注册资本41亿元。公司以打造"国际品牌"为战略目标，经过十九年的创新发展，现已成为国内最大的集汽车整车、动力总成和关键零部件的研发、试制、生产和销售为一体的自主品牌汽车制造企业，以及中国最大的乘用车出口企业。图中汽车作为瑞虎家族旗舰车型，瑞虎9 C-DM采用了全新一代柔光美学设计语言，整车外观非常饱满、充满质感，64分区ADB矩阵大灯提升了科技感；礼宾灯语、隐藏式电释放门把手等设计元素则增添了时尚感，非常符合当前年轻人喜爱。
                 </td>
               </tr>
-          </div>
-        </el-card>
-      </el-col>
+            </div>
+          </el-card>
+        </el-col>
 
-      <el-col :span="12" class="card-box">
-        <el-card>
-          <div class="el-table el-table--enable-row-hover el-table--medium">
-                <img src="../img/2.jpg" alt="图片">
+        <el-col :span="12" class="card-box">
+          <el-card>
+            <div class="el-table el-table--enable-row-hover el-table--medium">
+              <img src="../img/2.jpg" alt="图片">
+              <tr>
+                <td class="el-table__cell is-leaf">
+                  致态是长江存储消费级固态硬盘品牌，2020年9月10日正式发布旗下两款固态硬盘产品，分别为PCIe接口致态PC005 Active和SATA接口的致态SC001 Active。“致态”致力于打造高性能、高品质消费级三维闪存系统产品。“态”是年轻的态度，是服务的温度，也是对做好固态品牌初心的坚守。致钛7100plush：采用国产长鑫颗粒，最高连续读取速度为3631.48MB/s，连续写入速度达到2520.22MB/s。同时，最大4K随机读取速度达到了929.96MB/s，最大4K随机写入速度为408.52MB/s。
+                </td>
+              </tr>
+            </div>
+          </el-card>
+        </el-col>
+      </el-row>
+
+
+      <el-row>
+        <el-col :span="8" class="card-box">
+          <el-card>
+            <div class="el-table el-table--enable-row-hover el-table--medium">
+              <img src="../img/3.jpg" alt="白酒">
+              <tr>
+                <td class="el-table__cell is-leaf">
+                  百年皖酒是安徽皖酒集团生产，该公司具有五十多年酿造白酒的历史，是中国最大的酒业集团之一，安徽省白酒行业支柱企业，是民营股份制企业。公司生产的系列皖酒有80多个品种，以皖酒王系列、百年系列、皖国系列和精品皖酒系列四大系列产品线为主，深受广大消费者的喜爱。公司多次被省、市级评为“重合同，守信用”单位，皖酒连续多年被安徽省消费者协会评为“省消费者喜爱的白酒”称号。
+                </td>
+              </tr>
+            </div>
+          </el-card>
+        </el-col>
+
+        <el-col :span="8" class="card-box">
+          <el-card>
+            <div class="el-table el-table--enable-row-hover el-table--medium">
+              <img src="../img/4.jpg" alt="茶叶图片">
+              <tr>
+                <td class="el-table__cell is-leaf">
+                  中国十大名茶之一，徽茶，属于绿茶。产于安徽省黄山。由清代光绪年间谢裕大茶庄所创制。每年清明谷雨，选摘初展肥壮嫩芽，手工炒制，该茶外形微卷，状似雀舌，绿中泛黄，银毫显露，且带有金黄色鱼叶（俗称黄金片）。入杯冲泡雾气结顶，汤色清碧微黄，叶底黄绿有活力，滋味醇甘，香气如兰，韵味深长。由于新制茶叶白毫披身，芽尖峰芒，且鲜叶采自黄山高峰，遂将该茶取名为黄山毛峰。
+                </td>
+              </tr>
+            </div>
+          </el-card>
+        </el-col>
+
+        <el-col :span="8" class="card-box">
+          <el-card>
+            <div class="el-table el-table--enable-row-hover el-table--medium">
+              <img src="../img/5.jpg" alt="黄山图片">
+              <tr>
+                <td class="el-table__cell is-leaf">
+                  五岳归来不看山，黄山归来不看岳。黄山以其“五绝”的奇景和博大的徽文化蜚声海内外，被誉为“天下第一奇山”。五岳归来不看山，黄山归来不看岳。黄山以其“五绝”的奇景和博大的徽文化蜚声海内外，被誉为“天下第一奇山”。黄山不仅是一座美丽的自然之山，还是一座丰富的艺术宝库。自古以来，人们游览黄山，歌颂黄山，留下了丰厚的文化遗产，概括起来就是遗存、书画、文学、传说、名人“五胜”。
+                </td>
+              </tr>
+            </div>
+          </el-card>
+        </el-col>
+      </el-row>
+
+      <el-row>
+        <el-col :span="8" class="card-box">
+          <el-card>
+            <div class="el-table el-table--enable-row-hover el-table--medium">
+              <img src="../img/6.jpg" alt="祁山红茶">
+              <tr>
+                <td class="el-table__cell is-leaf">
+                  祁门红茶简称祁红，茶叶原料选用当地的中叶、中生种茶树“槠叶种”（又名祁门种）制作，是中国历史名茶，著名红茶精品。由安徽茶农创制于光绪年间，但史籍记载最早可追溯至唐朝陆羽的茶经。“祁红特绝群芳最，清誉高香不二门。”祁门红茶是红茶中的极品，享有盛誉，是英国女王和王室的至爱饮品，高香美誉，香名远播，美称“群芳最”、“红茶皇后”。
+                </td>
+              </tr>
+            </div>
+          </el-card>
+        </el-col>
+
+        <el-col :span="8" class="card-box">
+            <el-card>
+              <div class="el-table el-table--enable-row-hover el-table--medium">
+                <img src="../img/7.jpg" alt="宣酒图片">
                 <tr>
                   <td class="el-table__cell is-leaf">
-                    致态是长江存储消费级固态硬盘品牌，2020年9月10日正式发布旗下两款固态硬盘产品，分别为PCIe接口致态PC005 Active和SATA接口的致态SC001 Active。“致态”致力于打造高性能、高品质消费级三维闪存系统产品。“态”是年轻的态度，是服务的温度，也是对做好固态品牌初心的坚守。致钛7100plush：采用国产长鑫颗粒，最高连续读取速度为3631.48MB/s，连续写入速度达到2520.22MB/s。同时，最大4K随机读取速度达到了929.96MB/s，最大4K随机写入速度为408.52MB/s。
+                    宣酒，源于唐代纪叟老春酒，具有“绵柔净爽、窖香浓郁、香味谐调”之风格。先后荣获“首届安徽省十大强省品牌”、“中国十大最具增长潜力的白酒品牌”、“中国小窖酿造白酒领袖品牌”等称号。宣酒的核心技术江南小窖古法酿造技艺已入选非物质文化遗产保护名录，被中国著名白酒专家沈怡方、高月明、高景炎、曾祖训等誉之为“宣酒特贡，小窖绵柔，巧夺天工，江南一绝”。
                   </td>
                 </tr>
-          </div>
-        </el-card>
-      </el-col>
-    </el-row>
+              </div>
+            </el-card>
+          </el-col>
 
+          <el-col :span="8" class="card-box">
+              <el-card>
+                <div class="el-table el-table--enable-row-hover el-table--medium">
+                  <img src="../img/8.jpg" alt="江淮汽车">
+                  <tr>
+                    <td class="el-table__cell is-leaf">
+                      安徽江淮汽车集团股份有限公司（下称“江汽集团”）始建于1964年 ，是一家集全系列商用车、乘用车及动力总成研产销于一体、以“先进节能汽车、新能源汽车、智能网联汽车”并举，涵盖汽车出行、金融服务等众多领域的综合型汽车企业集团。先后荣获国家火炬计划重点高新技术企业、中国企业500强、中国汽车品牌前5强，是全国首家荣获我国工业领域最高奖项——中国工业大奖的综合型汽车集团。
+                    </td>
+                  </tr>
+                </div>
+              </el-card>
+            </el-col>
+      </el-row>
 
-    <el-row>
-      <el-col :span="8" class="card-box">
-        <el-card>
-          <div class="el-table el-table--enable-row-hover el-table--medium">
-                <img src="../img/3.jpg" alt="白酒">
-                <tr>
-                  <td class="el-table__cell is-leaf">
-                    百年皖酒是安徽皖酒集团生产，该公司具有五十多年酿造白酒的历史，是中国最大的酒业集团之一，安徽省白酒行业支柱企业，是民营股份制企业。公司生产的系列皖酒有80多个品种，以皖酒王系列、百年系列、皖国系列和精品皖酒系列四大系列产品线为主，深受广大消费者的喜爱。公司多次被省、市级评为“重合同，守信用”单位，皖酒连续多年被安徽省消费者协会评为“省消费者喜爱的白酒”称号。
-                  </td>
-                </tr>
-          </div>
-        </el-card>
-      </el-col>
-
-      <el-col :span="8" class="card-box">
-        <el-card>
-          <div class="el-table el-table--enable-row-hover el-table--medium">
-                <img src="../img/4.jpg" alt="茶叶图片">
-                <tr>
-                  <td class="el-table__cell is-leaf">
-                    中国十大名茶之一，徽茶，属于绿茶。产于安徽省黄山。由清代光绪年间谢裕大茶庄所创制。每年清明谷雨，选摘初展肥壮嫩芽，手工炒制，该茶外形微卷，状似雀舌，绿中泛黄，银毫显露，且带有金黄色鱼叶（俗称黄金片）。入杯冲泡雾气结顶，汤色清碧微黄，叶底黄绿有活力，滋味醇甘，香气如兰，韵味深长。由于新制茶叶白毫披身，芽尖峰芒，且鲜叶采自黄山高峰，遂将该茶取名为黄山毛峰。
-                  </td>
-                </tr>
-          </div>
-        </el-card>
-      </el-col>
-
-      <el-col :span="8" class="card-box">
-        <el-card>
-          <div class="el-table el-table--enable-row-hover el-table--medium">
-                <img src="../img/5.jpg" alt="黄山图片">
-                <tr>
-                  <td class="el-table__cell is-leaf">
-                    五岳归来不看山，黄山归来不看岳。黄山以其“五绝”的奇景和博大的徽文化蜚声海内外，被誉为“天下第一奇山”。五岳归来不看山，黄山归来不看岳。黄山以其“五绝”的奇景和博大的徽文化蜚声海内外，被誉为“天下第一奇山”。黄山不仅是一座美丽的自然之山，还是一座丰富的艺术宝库。自古以来，人们游览黄山，歌颂黄山，留下了丰厚的文化遗产，概括起来就是遗存、书画、文学、传说、名人“五胜”。
-                  </td>
-                </tr>
-          </div>
-        </el-card>
-      </el-col>
-    </el-row>
-
-    <el-row>
-      <el-col :span="12" class="card-box"><div class="grid-content bg-purple">hhh</div></el-col>
-      <el-col :span="12"><div class="grid-content bg-purple-light">hhh</div></el-col>
-    </el-row>
-    <el-row>
-      <el-col :span="8"><div class="grid-content bg-purple">hh</div></el-col>
-      <el-col :span="8"><div class="grid-content bg-purple-light">hh</div></el-col>
-      <el-col :span="8"><div class="grid-content bg-purple"></div>12</el-col>
-    </el-row>
-    <el-row>
-      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
-      <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
-      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
-      <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
-    </el-row>
-    <el-row>
-      <el-col :span="4"><div class="grid-content bg-purple"></div></el-col>
-      <el-col :span="4"><div class="grid-content bg-purple-light"></div></el-col>
-      <el-col :span="4"><div class="grid-content bg-purple"></div></el-col>
-      <el-col :span="4"><div class="grid-content bg-purple-light"></div></el-col>
-      <el-col :span="4"><div class="grid-content bg-purple"></div></el-col>
-      <el-col :span="4"><div class="grid-content bg-purple-light"></div></el-col>
-    </el-row>
+      <el-row>
+        <el-col :span="12" class="card-box"><div class="grid-content bg-purple">hhh</div></el-col>
+        <el-col :span="12"><div class="grid-content bg-purple-light">hhh</div></el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="8"><div class="grid-content bg-purple">hh</div></el-col>
+        <el-col :span="8"><div class="grid-content bg-purple-light">hh</div></el-col>
+        <el-col :span="8"><div class="grid-content bg-purple"></div>12</el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+        <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
+        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+        <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="4"><div class="grid-content bg-purple"></div></el-col>
+        <el-col :span="4"><div class="grid-content bg-purple-light"></div></el-col>
+        <el-col :span="4"><div class="grid-content bg-purple"></div></el-col>
+        <el-col :span="4"><div class="grid-content bg-purple-light"></div></el-col>
+        <el-col :span="4"><div class="grid-content bg-purple"></div></el-col>
+        <el-col :span="4"><div class="grid-content bg-purple-light"></div></el-col>
+      </el-row>
   </div>
 
 </template>
@@ -134,7 +175,7 @@
 		data() {
 			return {
 				pictures: [             //轮播图
-					{src: "https://th.bing.com/th/id/R.b400119f09fb40efd5bb2bf24c5eedfe?rik=yD4slOarNqj5vA&riu=http%3a%2f%2fimg.yipic.cn%2fthumb%2ff0708c1d%2f0bfc4812%2f22e7f44a%2ff4429daf%2fbig_f0708c1d0bfc481222e7f44af4429daf.png%3fx-oss-process%3dimage%2fformat%2cwebp%2fsharpen%2c100&ehk=%2bSWnN54ZKx8LaEmlf0EbyfQKimIHAWR65S3o0%2bUKmRg%3d&risl=&pid=ImgRaw&r=0",alt: "一带一路",index: "0",ref: "picture",},
+					{src: "https://img.zcool.cn/community/01ffe45a6735fda80120a123ff277a.png@1280w_1l_2o_100sh.png",alt: "一带一路",index: "0",ref: "picture",},
 					{src: "https://pic1.zhimg.com/v2-c033cec25c1c4d1c0ecfb19e3e2222fe_r.jpg?source=1940ef5c",alt: "风景",index: "1",ref: "picture",},
 					{src: "https://ts1.cn.mm.bing.net/th/id/R-C.b196b408634f2ce5134dcf8ead4b8e59?rik=pdN5KKTNSansVg&riu=http%3a%2f%2fimg.mm4000.com%2ffile%2f0%2f5d%2f9b1a116d73.jpg&ehk=3i5WDN140E3CU1XKf1inmGX3sFKYHUgNUD3VVSBvh44%3d&risl=&pid=ImgRaw&r=0",alt: "黄山",index: "2",ref: "picture",},
 					{src: "https://th.bing.com/th/id/R.07ca4de0567767ee8a941530613e8fb0?rik=7HeC7NE8EAUnTw&riu=http%3a%2f%2faticoc.com%2fuploadfiles%2f2021%2f06%2f20210630182313678.jpg%3fMzMuanBn&ehk=QtjaEYrwyH1h6uQaqe%2bv%2fME6Uz0RT6CA0YIxNWSIecQ%3d&risl=&pid=ImgRaw&r=0",alt: "安徽茶叶",index: "3",ref: "picture",},
@@ -220,10 +261,14 @@
             THREE: THREE
           })
 
-          setInterval(() => {           //每0.5秒更新topNav和offsetWidth
+          let timer = setInterval(() => {           //每0.5秒更新topNav和offsetWidth
               this.topNav = this.$store.state.settings.topNav;
               this.offsetWidth = this.getOffsetWidth();     //动态获取轮播图宽度
           },500);
+
+          // if(this.$route.path != "index"){
+          //   clearInterval(timer);
+          // }
 
 
           var titleElt = document.getElementById("title");
@@ -349,10 +394,10 @@
   .my_title{
     z-index: 999;
     position: absolute;
-    top: 100px;
-    left: 50%;
-    color: aquamarine;
-    font-size: 30px;
+    top: 200px;
+    left: 10%;
+    color: white;
+    font-size: 60px;
     font-weight: bolder;
   }
   .el-row {

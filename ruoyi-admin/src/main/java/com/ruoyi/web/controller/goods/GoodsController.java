@@ -9,6 +9,11 @@ import java.util.List;
 
 @RestController
 public class GoodsController {
+    @RequestMapping("/goods/list/id")
+    public List<SysGood> getGoodById(@RequestParam int id){
+
+        return null;
+    }
     @RequestMapping("/goods/list/category")
     public List<SysGood> getGoodListByCategory(@RequestParam String category){
 

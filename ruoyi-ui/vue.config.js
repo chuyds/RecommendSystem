@@ -1,15 +1,19 @@
 'use strict'
 const path = require('path')
 
+// jQuery
+var webpack = require('webpack')
+
 function resolve(dir) {
   return path.join(__dirname, dir)
 }
 
 const CompressionPlugin = require('compression-webpack-plugin')
 
-const name = process.env.VUE_APP_TITLE || '安徽省优势产能云服务推荐' // 网页标题
+const name = process.env.VUE_APP_TITLE || '安徽省优势产能云服务推荐系统' // 网页标题
 
 const port = process.env.port || process.env.npm_config_port || 8000 // 端口
+
 
 // vue.config.js 配置说明
 //官方vue.config.js 参考文档 https://cli.vuejs.org/zh/config/#css-loaderoptions
@@ -66,6 +70,14 @@ module.exports = {
         filename: '[path].gz[query]',   // 压缩后的文件名
         algorithm: 'gzip',              // 使用gzip压缩
         minRatio: 0.8                   // 压缩率小于1才会压缩
+      }),
+
+      // jquery
+      // new webpack.optimize.CommonsChunkPlugin('common.js'),
+      new webpack.ProvidePlugin({
+        jQuery: "jquery",
+        jquery: "jquery",
+        $: "jquery",
       })
     ],
   },

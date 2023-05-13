@@ -1,185 +1,947 @@
 <template>
   <div id="index">
-    <div id="vant" ref="vantaRef" style="width:100%;height:100vh"></div>
-    <div id="title" class="my_title">服务导航<br><font size="40">安徽省优势产能介绍</font></div>
 
-    <el-row style="height: 720px;">
-      <el-col :span="24">
-        <div class="grid-content bg-purple-dark">
-          <!-- 最外层div -->
-          <div id="slide" class="outest" @mouseover="mouseEnter = true" @mouseleave="mouseEnter = false" >
-            <!-- 向左img -->
-            <img class="icon _left" src="../img/左箭头.png" alt="向左" v-show="mouseEnter" @click="gotoLast()"/>
-            <!-- 主要图片 -->
-            <ul id="imgsList" ref="myul">
-              <li v-for="e of pictures" :key="e.index" :ref="e.ref">
-                <img :src="e.src" :alt="e.alt" />
-              </li>
-            </ul>
-            <!-- 底部小圆圈的设置 -->
-            <div class="mydiv" v-show="mouseEnter">
-              <div class="empty-cicle" v-for="e of pictures" :key="e.index" ref="cicle" @click="gotoDirectly(e.index)" ></div>
-            </div>
-            <!-- 向右div -->
-            <img class="icon _right" src="../img/右箭头.png" alt="向右" v-show="mouseEnter" @click="gotoNext()"/>
-          </div>
+    <div class="grid-content bg-purple-dark">
+      <!-- 最外层div -->
+      <div id="slide" class="outest" @mouseover="mouseEnter = true" @mouseleave="mouseEnter = false" >
+        <div class="slider-text slider-child">
+            <h5>服务导航</h5>
+            <h2>安徽省优势产能云服务<br>推荐系统 & </h2>
+            <p>欢迎使用安徽省云服务推荐系统，希望对您有所帮助！</p>
+<!--            <div>
+                <a href="contact.html" class="more-link">Contact Us</a>
+            </div> -->
         </div>
+        <!-- 向左img -->
+        <img class="icon _left" src="../img/左箭头.png" alt="向左" v-show="mouseEnter" @click="gotoLast()"/>
+        <!-- 主要图片 -->
+        <ul id="imgsList" ref="myul">
+          <li v-for="e of pictures" :key="e.index" :ref="e.ref">
+            <img :src="e.src" :alt="e.alt" />
+          </li>
+        </ul>
+        <!-- 底部小圆圈的设置 -->
+        <div class="mydiv" v-show="mouseEnter">
+          <div class="empty-cicle" v-for="e of pictures" :key="e.index" ref="cicle" @click="gotoDirectly(e.index)" ></div>
+        </div>
+        <!-- 向右div -->
+        <img class="icon _right" src="../img/右箭头.png" alt="向右" v-show="mouseEnter" @click="gotoNext()"/>
+      </div>
+    </div>
 
-      </el-col>
-    </el-row>
-
-    <el-row>
-        <el-col :span="12" class="card-box">
-          <el-card>
-            <div class="el-table el-table--enable-row-hover el-table--medium">
-              <img src="../img/1.jpg" alt="奇瑞汽车">
-              <tr>
-                <td class="el-table__cell is-leaf">
-                  奇瑞汽车股份有限公司成立于1997年1月8日，注册资本41亿元。公司以打造"国际品牌"为战略目标，经过十九年的创新发展，现已成为国内最大的集汽车整车、动力总成和关键零部件的研发、试制、生产和销售为一体的自主品牌汽车制造企业，以及中国最大的乘用车出口企业。图中汽车作为瑞虎家族旗舰车型，瑞虎9 C-DM采用了全新一代柔光美学设计语言，整车外观非常饱满、充满质感，64分区ADB矩阵大灯提升了科技感；礼宾灯语、隐藏式电释放门把手等设计元素则增添了时尚感，非常符合当前年轻人喜爱。
-                </td>
-              </tr>
-            </div>
-          </el-card>
-        </el-col>
-
-        <el-col :span="12" class="card-box">
-          <el-card>
-            <div class="el-table el-table--enable-row-hover el-table--medium">
-              <img src="../img/2.jpg" alt="图片">
-              <tr>
-                <td class="el-table__cell is-leaf">
-                  致态是长江存储消费级固态硬盘品牌，2020年9月10日正式发布旗下两款固态硬盘产品，分别为PCIe接口致态PC005 Active和SATA接口的致态SC001 Active。“致态”致力于打造高性能、高品质消费级三维闪存系统产品。“态”是年轻的态度，是服务的温度，也是对做好固态品牌初心的坚守。致钛7100plush：采用国产长鑫颗粒，最高连续读取速度为3631.48MB/s，连续写入速度达到2520.22MB/s。同时，最大4K随机读取速度达到了929.96MB/s，最大4K随机写入速度为408.52MB/s。
-                </td>
-              </tr>
-            </div>
-          </el-card>
-        </el-col>
-      </el-row>
-
-
-      <el-row>
-        <el-col :span="8" class="card-box">
-          <el-card>
-            <div class="el-table el-table--enable-row-hover el-table--medium">
-              <img src="../img/3.jpg" alt="白酒">
-              <tr>
-                <td class="el-table__cell is-leaf">
-                  百年皖酒是安徽皖酒集团生产，该公司具有五十多年酿造白酒的历史，是中国最大的酒业集团之一，安徽省白酒行业支柱企业，是民营股份制企业。公司生产的系列皖酒有80多个品种，以皖酒王系列、百年系列、皖国系列和精品皖酒系列四大系列产品线为主，深受广大消费者的喜爱。公司多次被省、市级评为“重合同，守信用”单位，皖酒连续多年被安徽省消费者协会评为“省消费者喜爱的白酒”称号。
-                </td>
-              </tr>
-            </div>
-          </el-card>
-        </el-col>
-
-        <el-col :span="8" class="card-box">
-          <el-card>
-            <div class="el-table el-table--enable-row-hover el-table--medium">
-              <img src="../img/4.jpg" alt="茶叶图片">
-              <tr>
-                <td class="el-table__cell is-leaf">
-                  中国十大名茶之一，徽茶，属于绿茶。产于安徽省黄山。由清代光绪年间谢裕大茶庄所创制。每年清明谷雨，选摘初展肥壮嫩芽，手工炒制，该茶外形微卷，状似雀舌，绿中泛黄，银毫显露，且带有金黄色鱼叶（俗称黄金片）。入杯冲泡雾气结顶，汤色清碧微黄，叶底黄绿有活力，滋味醇甘，香气如兰，韵味深长。由于新制茶叶白毫披身，芽尖峰芒，且鲜叶采自黄山高峰，遂将该茶取名为黄山毛峰。
-                </td>
-              </tr>
-            </div>
-          </el-card>
-        </el-col>
-
-        <el-col :span="8" class="card-box">
-          <el-card>
-            <div class="el-table el-table--enable-row-hover el-table--medium">
-              <img src="../img/5.jpg" alt="黄山图片">
-              <tr>
-                <td class="el-table__cell is-leaf">
-                  五岳归来不看山，黄山归来不看岳。黄山以其“五绝”的奇景和博大的徽文化蜚声海内外，被誉为“天下第一奇山”。五岳归来不看山，黄山归来不看岳。黄山以其“五绝”的奇景和博大的徽文化蜚声海内外，被誉为“天下第一奇山”。黄山不仅是一座美丽的自然之山，还是一座丰富的艺术宝库。自古以来，人们游览黄山，歌颂黄山，留下了丰厚的文化遗产，概括起来就是遗存、书画、文学、传说、名人“五胜”。
-                </td>
-              </tr>
-            </div>
-          </el-card>
-        </el-col>
-      </el-row>
-
-      <el-row>
-        <el-col :span="8" class="card-box">
-          <el-card>
-            <div class="el-table el-table--enable-row-hover el-table--medium">
-              <img src="../img/6.jpg" alt="祁山红茶">
-              <tr>
-                <td class="el-table__cell is-leaf">
-                  祁门红茶简称祁红，茶叶原料选用当地的中叶、中生种茶树“槠叶种”（又名祁门种）制作，是中国历史名茶，著名红茶精品。由安徽茶农创制于光绪年间，但史籍记载最早可追溯至唐朝陆羽的茶经。“祁红特绝群芳最，清誉高香不二门。”祁门红茶是红茶中的极品，享有盛誉，是英国女王和王室的至爱饮品，高香美誉，香名远播，美称“群芳最”、“红茶皇后”。
-                </td>
-              </tr>
-            </div>
-          </el-card>
-        </el-col>
-
-        <el-col :span="8" class="card-box">
-            <el-card>
-              <div class="el-table el-table--enable-row-hover el-table--medium">
-                <img src="../img/7.jpg" alt="宣酒图片">
-                <tr>
-                  <td class="el-table__cell is-leaf">
-                    宣酒，源于唐代纪叟老春酒，具有“绵柔净爽、窖香浓郁、香味谐调”之风格。先后荣获“首届安徽省十大强省品牌”、“中国十大最具增长潜力的白酒品牌”、“中国小窖酿造白酒领袖品牌”等称号。宣酒的核心技术江南小窖古法酿造技艺已入选非物质文化遗产保护名录，被中国著名白酒专家沈怡方、高月明、高景炎、曾祖训等誉之为“宣酒特贡，小窖绵柔，巧夺天工，江南一绝”。
-                  </td>
-                </tr>
-              </div>
-            </el-card>
-          </el-col>
-
-          <el-col :span="8" class="card-box">
-              <el-card>
-                <div class="el-table el-table--enable-row-hover el-table--medium">
-                  <img src="../img/8.jpg" alt="江淮汽车">
-                  <tr>
-                    <td class="el-table__cell is-leaf">
-                      安徽江淮汽车集团股份有限公司（下称“江汽集团”）始建于1964年 ，是一家集全系列商用车、乘用车及动力总成研产销于一体、以“先进节能汽车、新能源汽车、智能网联汽车”并举，涵盖汽车出行、金融服务等众多领域的综合型汽车企业集团。先后荣获国家火炬计划重点高新技术企业、中国企业500强、中国汽车品牌前5强，是全国首家荣获我国工业领域最高奖项——中国工业大奖的综合型汽车集团。
-                    </td>
-                  </tr>
+    <main>
+          <!-- organic food section -->
+        <section class="about-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-md-12 ">
+                        <div class="organic-food">
+                            <img src="static/picture/oragnic-food.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-12 ">
+                        <div class=" base_header_left">
+                            <small>Welcome To Our Nutrify Farms</small>
+                            <h3>Organic Food - Farm Fresh<br> Produce Right To Your Door</h3>
+                        </div>
+                        <div class="about_item">
+                            <h4>Natural Products</h4>
+                            <p>Organically grown crops tend to use natural fertilizers like manure to improve plant
+                                growth. Animals raised organically are also not given antibiotic organic hormones most
+                                commonly purchased organic .</p>
+                        </div>
+                        <div class="about_item">
+                            <h4>Wheat Cultivation</h4>
+                            <p>Organically grown crops tend to use natural fertilizers like manure to improve plant
+                                growth. Animals raised organically are also not given antibiotic organic hormones most
+                                commonly purchased organic .</p>
+                        </div>
+                    </div>
                 </div>
-              </el-card>
-            </el-col>
-      </el-row>
+            </div>
+        </section>
+        <!-- end food section -->
 
-      <el-row>
-        <el-col :span="12" class="card-box"><div class="grid-content bg-purple">hhh</div></el-col>
-        <el-col :span="12"><div class="grid-content bg-purple-light">hhh</div></el-col>
-      </el-row>
-      <el-row>
-        <el-col :span="8"><div class="grid-content bg-purple">hh</div></el-col>
-        <el-col :span="8"><div class="grid-content bg-purple-light">hh</div></el-col>
-        <el-col :span="8"><div class="grid-content bg-purple"></div>12</el-col>
-      </el-row>
-      <el-row>
-        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
-        <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
-        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
-        <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
-      </el-row>
-      <el-row>
-        <el-col :span="4"><div class="grid-content bg-purple"></div></el-col>
-        <el-col :span="4"><div class="grid-content bg-purple-light"></div></el-col>
-        <el-col :span="4"><div class="grid-content bg-purple"></div></el-col>
-        <el-col :span="4"><div class="grid-content bg-purple-light"></div></el-col>
-        <el-col :span="4"><div class="grid-content bg-purple"></div></el-col>
-        <el-col :span="4"><div class="grid-content bg-purple-light"></div></el-col>
-      </el-row>
+        <!-- service section -->
+        <section class="service-section">
+            <div class="animate_icon">
+                <div class="animate_item animate_item1">
+                    <img src="static/picture/animate_icon1.png" alt="">
+                </div>
+                <div class="animate_item animate_item2">
+                    <img src="static/picture/animate_icon2.png" alt="">
+                </div>
+                <div class="animate_item animate_item3">
+                    <img src="static/picture/animate_icon3.png" alt="">
+                </div>
+                <div class="animate_item animate_item4">
+                    <img src="static/picture/animate_icon4.png" alt="">
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="base-header">
+                            <small>What We Offer</small>
+                            <h3>Service we offer</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="service-item">
+                            <div class="img_serv">
+                                <a href="service-page.html">
+                                    <img src="static/picture/service_1.jpg" alt="service">
+                                </a>
+                            </div>
+                            <div class="service_text">
+                                <a href="service-page.html">
+                                    <h4>Fresh Fruits</h4>
+                                </a>
+                                <p>Organically grown crops tend use natural fertilizers like manure to improve growth to
+                                    plant . Animals raised organically are</p>
+                            </div>
+                            <a class="serv_link" href="service-page.html"><i class="icon-glyph-40"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="service-item">
+                            <div class="img_serv">
+                                <a href="service-page.html">
+                                    <img src="static/picture/service_2.jpg" alt="service">
+                                </a>
+                            </div>
+                            <div class="service_text">
+                                <a href="service-page.html">
+                                    <h4>Fresh Vegetable</h4>
+                                </a>
+                                <p>Organically grown crops tend use natural fertilizers like manure to improve growth to
+                                    plant . Animals raised organically are</p>
+                            </div>
+                            <a class="serv_link" href="service-page.html"><i class="icon-glyph-40"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="service-item">
+                            <div class="img_serv">
+                                <a href="service-page.html">
+                                    <img src="static/picture/service_3.jpg" alt="service">
+                                </a>
+                            </div>
+                            <div class="service_text">
+                                <a href="service-page.html">
+                                    <h4>Natural Wheats</h4>
+                                </a>
+                                <p>Organically grown crops tend use natural fertilizers like manure to improve growth to
+                                    plant . Animals raised organically are</p>
+                            </div>
+                            <a class="serv_link" href="service-page.html"><i class="icon-glyph-40"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end service section -->
+
+        <!-- video section -->
+        <section class="video-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="video_wrp">
+                            <div class="play_video"><a class="play_btn" href="javascript:;"><i class="bi bi-play-fill"></i></a>
+                            </div>
+                            <p>Watch Our organic food Video</p>
+                            <h2>Everyone's body is different, it will take<br> to see changes in your body .</h2>
+                        </div>
+                        <div class="funfact_wapr row">
+                            <div class="col-md-4 col-sm-12">
+                                <div class="facts_wrapper">
+                                    <div class="icon-lay"><i class="icon-glyph-142"></i></div>
+                                    <h3 class="stat-count count">175</h3>
+                                    <h5>Award Winner</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="facts_wrapper">
+                                    <div class="icon-lay"><i class="icon-glyph-226"></i></div>
+                                    <h3 class="stat-count count">275</h3>
+                                    <h5>Visited Farms </h5>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="facts_wrapper">
+                                    <div class="icon-lay"><i class="icon-glyph-2"></i></div>
+                                    <h3 class="stat-count count">324</h3>
+                                    <h5>Happy Customers </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end video section -->
+
+        <!-- process section -->
+        <section class="process-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="base-header">
+                            <small>Working Process</small>
+                            <h3>How Does We Work</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-12">
+                        <div class="process-item">
+                            <div class="img_process"><img src="static/picture/process_1.png" alt=""><span>01</span>
+                                <div class="angle_icon"><img src="static/picture/shape1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="process_text">
+                                <h4>Step 01</h4>
+                                <p>Organically grown crops tend use natural fertilizers like manure to improve growth to
+                                    plant . </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="process-item">
+                            <div class="img_process"><img src="static/picture/process_2.png" alt=""><span>02</span>
+                                <div class="angle_icon"><img src="static/picture/shape2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="process_text">
+                                <h4>Step 02</h4>
+                                <p>Organically grown crops tend use natural fertilizers like manure to improve growth to
+                                    plant . </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="process-item">
+                            <div class="img_process"><img src="static/picture/process_3.png" alt=""><span>03</span>
+                                <div class="angle_icon"><img src="static/picture/shape1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="process_text">
+                                <h4>Step 03</h4>
+                                <p>Organically grown crops tend use natural fertilizers like manure to improve growth to
+                                    plant . </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="process-item">
+                            <div class="img_process"><img src="static/picture/process_4.png" alt=""><span>04</span>
+                                <div class="angle_icon"><img src="static/picture/shape2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="process_text">
+                                <h4>Step 04</h4>
+                                <p>Organically grown crops tend use natural fertilizers like manure to improve growth to
+                                    plant . </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end process section -->
+
+        <!-- whychose section -->
+        <section class="whychose-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-12">
+                        <div class="whychose_bg"></div>
+                    </div>
+                    <div class="col-lg-7 col-sm-12">
+                        <div class="whychose_wrapper">
+                            <div class=" white_header_left">
+                                <small>What We Do</small>
+                                <h3>Why Choose Us</h3>
+                            </div>
+                            <div class="special_ser_item">
+                                <div class="special_ser_icon"><i class="icon-glyph-11"></i></div>
+                                <h4>Quick Response </h4>
+                                <p>Emergency response time is one hour or less guaranteed at live<br> person will answer
+                                    your call or you can enter service</p>
+                            </div>
+                            <div class="special_ser_item">
+                                <div class="special_ser_icon"><i class="icon-glyph-30"></i></div>
+                                <h4>Very Fast Services</h4>
+                                <p>Emergency response time is one hour or less guaranteed at live <br>person will answer
+                                    your call or you can enter service</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end whychose section -->
+
+        <!-- product section -->
+        <section class="product-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="base-header">
+                            <small>Our Featured Products</small>
+                            <h3>Organic Products</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-12">
+                        <div class="testimonial-item">
+                            <div class="inner-item">
+                                <a href="javascript:void(0)" class="product-img">
+                                    <img src="static/picture/product_1.png" alt="">
+                                </a>
+                                <div class="product_info">
+                                    <h4> Juicy Grapes </h4>
+                                    <ul class="product_rating">
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                    </ul><span class="product_price">$46.00</span>
+                                </div>
+                                <div class="product-action">
+                                    <div class="product-action-inner">
+                                        <div class="product-action-item">
+                                            <a href="shopping-cart.html"><i class="icon-glyph-13"></i></a>
+                                        </div>
+                                        <div class="product-action-item">
+                                            <a href="404-notfound.html"><i class="icon-glyph-52"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="testimonial-item">
+                            <div class="inner-item">
+                                <a href="javascript:void(0)" class="product-img">
+                                    <img src="static/picture/product_2.png" alt="">
+                                </a>
+                                <div class="product_info">
+                                    <h4> Red Watermelon </h4>
+                                    <ul class="product_rating">
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                    </ul><span class="product_price">$56.00</span>
+                                </div>
+                                <div class="product-action">
+                                    <div class="product-action-inner">
+                                        <div class="product-action-item">
+                                            <a href="shopping-cart.html"><i class="icon-glyph-13"></i></a>
+                                        </div>
+                                        <div class="product-action-item">
+                                            <a href="404-notfound.html"><i class="icon-glyph-52"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="testimonial-item">
+                            <div class="inner-item">
+                                <a href="javascript:void(0)" class="product-img">
+                                    <img src="static/picture/product_3.png" alt="">
+                                </a>
+                                <div class="product_info">
+                                    <h4> Juicy Orange </h4>
+                                    <ul class="product_rating">
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                    </ul><span class="product_price">$46.00</span>
+                                </div>
+                                <div class="product-action">
+                                    <div class="product-action-inner">
+                                        <div class="product-action-item">
+                                            <a href="shopping-cart.html"><i class="icon-glyph-13"></i></a>
+                                        </div>
+                                        <div class="product-action-item">
+                                            <a href="404-notfound.html"><i class="icon-glyph-52"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="testimonial-item">
+                            <div class="inner-item">
+                                <a href="javascript:void(0)" class="product-img">
+                                    <img src="static/picture/product_4.png" alt="">
+                                </a>
+                                <div class="product_info">
+                                    <h4> Fresh Banana </h4>
+                                    <ul class="product_rating">
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                    </ul><span class="product_price">$46.00</span>
+                                </div>
+                                <div class="product-action">
+                                    <div class="product-action-inner">
+                                        <div class="product-action-item">
+                                            <a href="shopping-cart.html"><i class="icon-glyph-13"></i></a>
+                                        </div>
+                                        <div class="product-action-item">
+                                            <a href="404-notfound.html"><i class="icon-glyph-52"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end product section -->
+
+        <!-- pricing section -->
+        <section class="pricing-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="base-header">
+                            <small>Our Special Plan</small>
+                            <h3>Our Pricing</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="pricing-box">
+                            <h4>Basic Plan</h4>
+                            <h2>$27<span>/month</span></h2>
+                            <ul>
+                                <li>3 Bedrooms cleaning</li>
+                                <li>Vacuuming</li>
+                                <li>2 Bathroom cleaning</li>
+                                <li>Mirror Cleaning</li>
+                                <li>1 Livingroom cleaning</li>
+                                <li>Window Sills</li>
+                            </ul>
+                            <a class="more-link" href="contact.html"> Order Now </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="pricing-box active">
+                            <h4>Premium Plan</h4>
+                            <h2>$29<span>/month</span></h2>
+                            <ul>
+                                <li>3 Bedrooms cleaning</li>
+                                <li>Vacuuming</li>
+                                <li>2 Bathroom cleaning</li>
+                                <li>Mirror Cleaning</li>
+                                <li>1 Livingroom cleaning</li>
+                                <li>Window Sills</li>
+                            </ul>
+                            <a class="more-link" href="contact.html"> Order Now </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="pricing-box">
+                            <h4>Standard Plan</h4>
+                            <h2>$68<span>/month</span></h2>
+                            <ul>
+                                <li>3 Bedrooms cleaning</li>
+                                <li>Vacuuming</li>
+                                <li>2 Bathroom cleaning</li>
+                                <li>Mirror Cleaning</li>
+                                <li>1 Livingroom cleaning</li>
+                                <li>Window Sills</li>
+                            </ul>
+                            <a class="more-link" href="contact.html"> Order Now </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end pricing section -->
+
+        <!-- project section -->
+        <section class="project-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="base-header">
+                            <small>Our Latest Product</small>
+                            <h3>Special Gallery</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects">
+                <div class="container-fluid">
+                    <div class="slides-3 swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide event-item d-flex flex-column justify-content-end">
+                                <div class="slider-img">
+                                    <img src="static/picture/work-1.jpg" alt="" class="project-img">
+                                    <div class="project_text">
+                                        <h4><a href="shop-detail.html">Juicy Grapes</a></h4><a class="project_link" href="shop-detail.html">View
+                                            details >></a>
+                                    </div>
+                                    <div class="project-data">
+                                        <div class="project-action-inner">
+                                            <div class="project-action-item">
+                                                <a href="404-notfound.html"><i class="icon-glyph-26"></i></a>
+                                            </div>
+                                            <div class="project-action-item">
+                                                <a href="404-notfound.html"><i class="icon-glyph-52"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide event-item d-flex flex-column justify-content-end">
+                                <div class="slider-img">
+                                    <img src="static/picture/work-2.jpg" alt="">
+                                    <div class="project_text">
+                                        <h4><a href="shop-detail.html">Juicy Grapes</a></h4><a class="project_link" href="shop-detail.html">View
+                                            details >></a>
+                                    </div>
+                                    <div class="project-data">
+                                        <div class="project-action-inner">
+                                            <div class="project-action-item">
+                                                <a href="404-notfound.html"><i class="icon-glyph-26"></i></a>
+                                            </div>
+                                            <div class="project-action-item">
+                                                <a href="404-notfound.html"><i class="icon-glyph-52"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide event-item d-flex flex-column justify-content-end">
+                                <div class="slider-img">
+                                    <img src="static/picture/work-3.jpg" alt="">
+                                    <div class="project_text">
+                                        <h4><a href="shop-detail.html">Juicy Grapes</a></h4><a class="project_link" href="shop-detail.html">View
+                                            details >></a>
+                                    </div>
+                                    <div class="project-data">
+                                        <div class="project-action-inner">
+                                            <div class="project-action-item">
+                                                <a href="404-notfound.html"><i class="icon-glyph-26"></i></a>
+                                            </div>
+                                            <div class="project-action-item">
+                                                <a href="404-notfound.html"><i class="icon-glyph-52"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="gallery-page.html" class="more-link">View More</a>
+            </div>
+        </section>
+        <!--end project section -->
+
+        <!-- team section -->
+        <section class="team-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="base-header">
+                            <small>Our Team Mamber</small>
+                            <h3>Meet Our Farmers</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="team-box">
+                            <div class="team_img">
+                                <img src="static/picture/team1.jpg" alt="">
+                            </div>
+                            <div class="team_info">
+                                <h4>Ben Stcoks</h4>
+                                <p>Food Farmer</p>
+                                <ul class="team_social">
+                                    <li><a href="javascript:void(0)"><i class="bi bi-facebook"></i></a>
+                                    </li>
+                                    <li><a href="javascript:void(0)"><i class="bi bi-twitter"></i></a>
+                                    </li>
+                                    <li><a href="javascript:void(0)"><i class="bi bi-linkedin"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="team-box">
+                            <div class="team_img">
+                                <img src="static/picture/team2.jpg" alt="">
+                            </div>
+                            <div class="team_info">
+                                <h4>Ben Stcoks</h4>
+                                <p>Food Farmer</p>
+                                <ul class="team_social">
+                                    <li><a href="javascript:void(0)"><i class="bi bi-facebook"></i></a>
+                                    </li>
+                                    <li><a href="javascript:void(0)"><i class="bi bi-twitter"></i></a>
+                                    </li>
+                                    <li><a href="javascript:void(0)"><i class="bi bi-linkedin"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="team-box">
+                            <div class="team_img">
+                                <img src="static/picture/team3.jpg" alt="">
+                            </div>
+                            <div class="team_info">
+                                <h4>Ben Stcoks</h4>
+                                <p>Food Farmer</p>
+                                <ul class="team_social">
+                                    <li><a href="javascript:void(0)"><i class="bi bi-facebook"></i></a>
+                                    </li>
+                                    <li><a href="javascript:void(0)"><i class="bi bi-twitter"></i></a>
+                                    </li>
+                                    <li><a href="javascript:void(0)"><i class="bi bi-linkedin"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end team section -->
+
+        <!-- testimonial section -->
+        <section class="testimonial-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="base-header">
+                            <small>Client Satisfait</small>
+                            <h3>What Client's Say</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 testimonial_img">
+                        <div class="testimonial_img">
+                            <img src="static/picture/testimonial1.jpg" alt="">
+                            <img src="static/picture/testimonial2.jpg" alt="">
+                            <img src="static/picture/testimonial3.jpg" alt="">
+                            <img src="static/picture/testimonial4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <section id="testimonials" class="testimonials section-bg">
+                            <div class="slides-1 swiper" data-aos="fade-up" data-aos-delay="100">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-items">
+                                            <div class="testimonial-content">
+                                                <div class="testi_info">
+                                                    <p>Organically grown crops tend use natural fertilizer like manure
+                                                        to improve growth to plant as amet cons adip scing elited id
+                                                        lectus quis dui euismod con after.</p>
+                                                </div>
+                                                <div class="testi_img"><img src="static/picture/testimonial3.jpg" alt="">
+                                                    <h4>Adam Crew<span>Manager</span></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- End testimonial item -->
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-items">
+                                            <div class="testimonial-content">
+                                                <div class="testi_info">
+                                                    <p>Organically grown crops tend use natural fertilizer like manure
+                                                        to improve growth to plant as amet cons adip scing elited id
+                                                        lectus quis dui euismod con after.</p>
+                                                </div>
+                                                <div class="testi_img"><img src="static/picture/testimonial1.jpg" alt="">
+                                                    <h4>Adam Crew<span>Manager</span></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- End testimonial item -->
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-items">
+                                            <div class="testimonial-content">
+                                                <div class="testi_info">
+                                                    <p>Organically grown crops tend use natural fertilizer like manure
+                                                        to improve growth to plant as amet cons adip scing elited id
+                                                        lectus quis dui euismod con after.</p>
+                                                </div>
+                                                <div class="testi_img"><img src="static/picture/testimonial2.jpg" alt="">
+                                                    <h4>Adam Crew<span>Manager</span></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- End testimonial item -->
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end testimonial section -->
+
+        <!-- blog section -->
+        <section class="blog-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <div class="blog-header-title">
+                            <small>Articles & Tips</small>
+                            <h3>Latest News</h3>
+                        </div>
+                        <div class="blog_info">
+                            <a href="blog-detail.html">
+                                <h4>How To Eat Organic Foods</h4>
+                            </a>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="blog_date"><span> <i class="bi bi-calendar"></i>6 Nov 2023</span></div>
+                                <span class="blog_read"><a href="blog-detail.html">Read more</a><i class="icon-right-open"></i></span>
+                            </div>
+                        </div>
+                        <div class="blog_info">
+                            <a href="blog-detail.html">
+                                <h4>How To Eat Organic Foods</h4>
+                            </a>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="blog_date"><span> <i class="bi bi-calendar"></i>6 Nov 2023</span></div>
+                                <span class="blog_read"><a href="blog-detail.html">Read more</a><i class="icon-right-open"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="post-box">
+                                    <div class="post-img"><img src="static/picture/blog1.jpg" class="img-fluid" alt=""></div>
+                                    <div class="post_info">
+                                        <a href="blog-detail.html">
+                                            <h4>How To Find And Afford<br> Organic Food In Your Area</h4>
+                                        </a>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="blog_date"><span> <i class="bi bi-calendar"></i>6 Nov 2023</span>
+                                        </div>
+                                        <span class="blog_read"><a href="blog-detail.html">Read more</a><i class="icon-right-open"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="post-box">
+                                    <div class="post-img"><img src="static/picture/blog2.jpg" class="img-fluid" alt=""></div>
+                                    <div class="post_info">
+                                        <a href="blog-detail.html">
+                                            <h4>How To Find And Afford<br> Organic Food In Your Area</h4>
+                                        </a>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="blog_date"><span> <i class="bi bi-calendar"></i>6 Nov 2023</span>
+                                        </div>
+                                        <span class="blog_read"><a href="blog-detail.html">Read more</a><i class="icon-right-open"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end blog section -->
+
+        <!-- clients section -->
+        <section class="client-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="clients-slider swiper">
+                            <div class="swiper-wrapper align-items-center">
+                                <div class="swiper-slide"><img src="static/picture/client-1.png" class="img-fluid" alt=""></div>
+                                <div class="swiper-slide"><img src="static/picture/client-2.png" class="img-fluid" alt=""></div>
+                                <div class="swiper-slide"><img src="static/picture/client-3.png" class="img-fluid" alt=""></div>
+                                <div class="swiper-slide"><img src="static/picture/client-4.png" class="img-fluid" alt=""></div>
+                                <div class="swiper-slide"><img src="static/picture/client-1.png" class="img-fluid" alt=""></div>
+                                <div class="swiper-slide"><img src="static/picture/client-2.png" class="img-fluid" alt=""></div>
+                                <div class="swiper-slide"><img src="static/picture/client-3.png" class="img-fluid" alt=""></div>
+                                <div class="swiper-slide"><img src="static/picture/client-4.png" class="img-fluid" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end clients section -->
+
+        <!-- contact section -->
+        <section class="contact-section">
+            <div class="contact_bg"></div>
+            <div class="container">
+                <div class="contact_wrp">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="contact_header_title">
+                                <small>Get In Touch</small>
+                                <h3>Send Us Message</h3>
+                            </div>
+                            <div class="contact-form">
+                                <form method="post">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-sm-12">
+                                            <input type="text" class="con-field " placeholder="Enter Your Name" value="">
+                                        </div>
+                                        <div class="col-lg-6 col-sm-12">
+                                            <input type="text" class="con-field " placeholder="Enter Your Email" value="">
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12">
+                                            <input type="text" class=" con-field" placeholder="Enter Your Subject" value="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12 col-sm-12">
+                                            <!-- <textarea rows="5" class="con-field" placeholder="your message">
+                                            </textarea> -->
+                                            <textarea rows="5" class="con-field" placeholder="Describe yourself here..."></textarea>
+                                        </div>
+                                        <div class="submit-area">
+                                            <a href="javascript:void(0)" class="more-link">Send Message</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end contact section -->
+
+        <!-- footer section -->
+        <footer class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-12">
+                        <div class="footer-col-1">
+                            <div>
+                                <a href="javascript:void(0)"><img src="static/picture/footer_logo.png" alt="" class="footer-logo"></a>
+                            </div>
+                            <p>
+                                Loren ipsum dolor conse ctetur at adipis cing elit sed do eiu smod of tempor inci didunt
+                                know youlab a et dolore magna aliqua
+                            </p>
+                            <div>
+                                <ul class="footer-li">
+                                    <li><a href="javascript:void(0)"><i class="bi bi-facebook"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="bi bi-twitter"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="bi bi-instagram"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="bi bi-pinterest"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="bi bi-behance"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-12">
+                        <div class="footer-col-2">
+                            <h5 class="widget-title">Quick Link</h5>
+                            <ul>
+                                <li><a href="javascript:void(0)">Help and
+                                        Ordering</a></li>
+                                <li><a href="javascript:void(0)">Return &
+                                        Cancellation</a></li>
+                                <li><a href="javascript:void(0)">Online Organic
+                                        Service</a></li>
+                                <li><a href="javascript:void(0)">Delevery
+                                        Schedule</a></li>
+                                <li><a href="javascript:void(0)">Online Organic
+                                        Service</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-12">
+                        <div class="footer-col-3">
+                            <h5 class="widget-title">Latest Articles</h5>
+                            <div class="footer_recent_blog">
+                                <img src="static/picture/blog1.jpg" alt="">
+                                <div>
+                                    <span> <i class="bi bi-calendar"></i>6 Nov 2023</span>
+                                    <p>How to Eat Organic<br> Foods</p>
+                                </div>
+                            </div>
+                            <div class="footer_recent_blog">
+                                <img src="static/picture/blog1.jpg" alt="">
+                                <div>
+                                    <span> <i class="bi bi-calendar"></i>6 Nov 2023</span>
+                                    <p>How to Eat Organic<br> Foods</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-12">
+                        <div class="footer-col-4">
+                            <h5 class="widget-title">Newsletter</h5>
+                            <p class="col-4-p">
+                                Subscribe our newsletter to get more update & join to Nutrify</p>
+                            <form action="javascript:void(0)" method="post">
+                                <input class="email_field" type="text" placeholder="Enter Your Email Address">
+                                <a href="javascript:void(0)" class="more-link">Subscribe</a>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="scrollup"><span class="icon-glyph-203"></span></div>
+                </div>
+            </div>
+            <div class="subfooter">
+                <p>Copyright &copy; 2023.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+            </div>
+        </footer>
+        <!--end footer section -->
+
+    </main>
+
   </div>
 
 </template>
 
 <script>
 
-  import * as THREE from 'three'
-  import Rings from 'vanta/src/vanta.rings'
-
 	export default {
 		data() {
 			return {
 				pictures: [             //轮播图
-					{src: "https://img.zcool.cn/community/01ffe45a6735fda80120a123ff277a.png@1280w_1l_2o_100sh.png",alt: "一带一路",index: "0",ref: "picture",},
-					{src: "https://pic1.zhimg.com/v2-c033cec25c1c4d1c0ecfb19e3e2222fe_r.jpg?source=1940ef5c",alt: "风景",index: "1",ref: "picture",},
-					{src: "https://ts1.cn.mm.bing.net/th/id/R-C.b196b408634f2ce5134dcf8ead4b8e59?rik=pdN5KKTNSansVg&riu=http%3a%2f%2fimg.mm4000.com%2ffile%2f0%2f5d%2f9b1a116d73.jpg&ehk=3i5WDN140E3CU1XKf1inmGX3sFKYHUgNUD3VVSBvh44%3d&risl=&pid=ImgRaw&r=0",alt: "黄山",index: "2",ref: "picture",},
-					{src: "https://th.bing.com/th/id/R.07ca4de0567767ee8a941530613e8fb0?rik=7HeC7NE8EAUnTw&riu=http%3a%2f%2faticoc.com%2fuploadfiles%2f2021%2f06%2f20210630182313678.jpg%3fMzMuanBn&ehk=QtjaEYrwyH1h6uQaqe%2bv%2fME6Uz0RT6CA0YIxNWSIecQ%3d&risl=&pid=ImgRaw&r=0",alt: "安徽茶叶",index: "3",ref: "picture",},
-					{src: "http://officialbackmanage.chery.cn/library/hq/image/2023/4/6fc21068-097a-4c81-8aad-129ce60de373.jpg",alt: "汽车",index: "4",ref: "picture",},
+					{src: "https://imgguancha.gmw.cn/attachement/png/site2/20210204/f44d305ea4db218627381d.png",alt: "一带一路",index: "0",ref: "picture"},
+					{src: "https://n.sinaimg.cn/sinakd20110/600/w1920h1080/20210917/2302-bea3254e6fdb329865a16d294495c0ed.jpg",alt: "汽车",index: "1",ref: "picture"},
+					{src: "https://ts1.cn.mm.bing.net/th/id/R-C.b196b408634f2ce5134dcf8ead4b8e59?rik=pdN5KKTNSansVg&riu=http%3a%2f%2fimg.mm4000.com%2ffile%2f0%2f5d%2f9b1a116d73.jpg&ehk=3i5WDN140E3CU1XKf1inmGX3sFKYHUgNUD3VVSBvh44%3d&risl=&pid=ImgRaw&r=0",alt: "黄山",index: "2",ref: "picture"},
+					{src: "https://th.bing.com/th/id/R.07ca4de0567767ee8a941530613e8fb0?rik=7HeC7NE8EAUnTw&riu=http%3a%2f%2faticoc.com%2fuploadfiles%2f2021%2f06%2f20210630182313678.jpg%3fMzMuanBn&ehk=QtjaEYrwyH1h6uQaqe%2bv%2fME6Uz0RT6CA0YIxNWSIecQ%3d&risl=&pid=ImgRaw&r=0",alt: "茶叶",index: "3",ref: "picture"},
+					{src: "https://www.gpbctv.com/uploads/20211028/1635434179YB7xkJ.jpg",alt: "电子",index: "4",ref: "picture"},
 				],
         goods: [],              //产品列表
 				mouseEnter: false,      //鼠标是否悬浮在整个区域上
@@ -236,30 +998,6 @@
     },
 
 	    mounted() {
-	        // console.log(this.$refs[`picture`])          //是一个 Array 包含 5 个 li 元素
-
-	        // 解决当前页面被最小化后，用户再打开时，轮播图播放情况出现异常的情况
-	        // 监视浏览器窗口的改变，当浏览器窗口最小化时，将默认定时器停掉，当浏览器可视时，再开启
-	        // document.addEventListener('visibilitychange',()=>{
-	        //     if(document.visibilityState === 'hidden'){
-	        //         clearInterval(this.$mytimer);
-	        //     }else if(document.visibilityState === 'visible'){
-	        //         this.$mytimer= setInterval(() => {
-	        //                 if (this.pictureShowing < this.pictures.length-1) {
-	        //                     this.pictureShowing++;
-	        //                 } else {
-	        //                     this.pictureShowing = 0;
-	        //                 }
-	        //                 this.changeDefault(this.speed);
-	        //             }, 1000);
-	        //     }
-	        // })
-
-
-          this.vantaEffect = Rings({
-            el: this.$refs.vantaRef,
-            THREE: THREE
-          })
 
           let timer = setInterval(() => {           //每0.5秒更新topNav和offsetWidth
               this.topNav = this.$store.state.settings.topNav;
@@ -270,9 +1008,6 @@
           //   clearInterval(timer);
           // }
 
-
-          var titleElt = document.getElementById("title");
-          titleElt.style.left = titleElt.offsetLeft - titleElt.offsetWidth*0.5 + (this.topNav?0:200)+"px";    //让标题字体居中
 
 	        let li_0 = this.$refs[`picture`][0];
 	        let li_end = li_0.cloneNode(true);
@@ -390,16 +1125,41 @@
 
 </script>
 
+<!-- script linked  -->
+<!-- <script src="../../public/static/js/swiper-bundle.min.js"></script>
+<script src="../../public/static/js/bootstrap-icons.json"></script>
+<script src="../../public/static/js/jquery-3.6.0.min.js"></script>
+<script src="../../public/static/js/bootstrap.min.js"></script>
+<script src="../../public/static/js/custom.js"></script>
+<script src="../../public/static/js/jquery.magnific-popup.js"></script> -->
+<!-- <script>
+  // import '../../public/static/js/jquery.magnific-popup.js'
+
+    $(function() {
+        $('.play_btn').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+            fixedContentPos: false
+        });
+    });
+</script> -->
+
+
 <style lang="scss" scoped>
-  .my_title{
-    z-index: 999;
-    position: absolute;
-    top: 200px;
-    left: 10%;
-    color: white;
-    font-size: 60px;
-    font-weight: bolder;
-  }
+  @import '../../public/static/css/magnific-popup.css';
+  @import '../../public/static/css/custom-icons.css';
+  @import '../../public/static/css/swiper-bundle.min.css';
+  @import '../../public/static/css/boxicons.min.css';
+  @import '../../public/static/css/bootstrap-icons.css';
+  @import '../../public/static/css/bootstrap.min.css';
+  @import '../../public/static/css/style.css';
+  // .slider-text{
+  //   opacity: 1;
+  // }
+
   .el-row {
     margin-bottom: 20px;
     &:last-child {
@@ -410,13 +1170,13 @@
     border-radius: 4px;
   }
   .bg-purple-dark {
-    height: 600px;
+    height: 650px;
   }
   .bg-purple {
-    background: #d3dce6;
+    // background: #d3dce6;
   }
   .bg-purple-light {
-    background: #e5e9f2;
+    // background: #e5e9f2;
   }
   .grid-content {
     border-radius: 4px;
@@ -424,18 +1184,26 @@
   }
   .row-bg {
     padding: 10px 0;
-    background-color: #f9fafc;
+    // background-color: #f9fafc;
   }
 
   .outest {
         width: 100%;
-        height: 720px;
+        height: 650px;
         padding: 0px;
         position: absolute;
         overflow: hidden;
         cursor: pointer;
-        background-color: bisque;
+        // background-color: bisque;
     }
+
+  // 轮播图文字设置
+  .slider-child{
+    position: absolute;
+    z-index: 999;
+    left: 100px;
+  }
+
   /** 轮播图片设置 */
   ul {
       margin: 0px;

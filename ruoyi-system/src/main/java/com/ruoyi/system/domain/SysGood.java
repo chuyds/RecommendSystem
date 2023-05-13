@@ -6,7 +6,7 @@ public class SysGood {
     //产品名
     private String name;
     //产品描述
-    private String describe;
+    private String description;
     //产品图片
     private byte[] image;
     //产品类别
@@ -15,10 +15,10 @@ public class SysGood {
     public SysGood() {
     }
 
-    public SysGood(int id, String name, String describe, byte[] image, int category) {
+    public SysGood(int id, String name, String description, byte[] image, int category) {
         this.id = id;
         this.name = name;
-        this.describe = describe;
+        this.description = description;
         this.image = image;
         this.category = category;
     }
@@ -39,12 +39,12 @@ public class SysGood {
         this.name = name;
     }
 
-    public String getDescribe() {
-        return describe;
+    public String getDescription() {
+        return description;
     }
 
-    public void setDescribe(String describe) {
-        this.describe = describe;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public byte[] getImage() {

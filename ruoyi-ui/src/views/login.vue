@@ -56,7 +56,7 @@
     </el-form>
     <!--  底部  -->
     <div class="el-login-footer">
-      <span>安徽省优势产能云服务推荐系统</span>
+      <span>安徽省优势产能云服务推荐系统v1.0</span>
     </div>
   </div>
 </template>

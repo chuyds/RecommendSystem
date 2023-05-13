@@ -17,19 +17,22 @@
     </el-form>
 
     <el-row>
-     <el-col :span="6" v-for="(good,index) in goods" class="card-box">
-        <div id="imag">
-          <img src="" alt="">
-        </div>
-        <div id="text-describe">
-          <span style="color: red;">{{good.name+":"}}</span>
-          <span>{{good.describe}}</span>
-        </div>
+      <el-col :span="6" v-for="(good,index) in goods" class="card-box">
+        <el-card>
+          <div id="image">
+            <img src="" alt="">
+          </div>
+          <div id="text-description">
+            <span style="color: red;">{{good.name+":"}}</span>
+            <span>{{good.description}}</span>
+          </div>
+        </el-card>
       </el-col>
 <!--      <el-col :span="6" class="card-box"><div class="grid-content bg-purple-light"></div></el-col>
       <el-col :span="6" class="card-box"><div class="grid-content bg-purple"></div></el-col>
       <el-col :span="6" class="card-box"><div class="grid-content bg-purple-light"></div></el-col> -->
     </el-row>
+    
   </div>
 
 </template>

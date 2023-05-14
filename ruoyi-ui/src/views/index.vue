@@ -4,14 +4,14 @@
     <div class="grid-content bg-purple-dark">
       <!-- 最外层div -->
       <div id="slide" class="outest" @mouseover="mouseEnter = true" @mouseleave="mouseEnter = false" >
-        <div class="slider-text slider-child">
+<!--       <div class="slider-text slider-child">
             <h5>服务导航</h5>
             <h2>安徽省优势产能云服务<br>推荐系统 & </h2>
             <p>欢迎使用安徽省云服务推荐系统，希望对您有所帮助！</p>
-<!--            <div>
+           <div>
                 <a href="contact.html" class="more-link">Contact Us</a>
-            </div> -->
-        </div>
+            </div>
+        </div> -->
         <!-- 向左img -->
         <img class="icon _left" src="../img/左箭头.png" alt="向左" v-show="mouseEnter" @click="gotoLast()"/>
         <!-- 主要图片 -->
@@ -82,8 +82,8 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="base-header">
-                            <small>What We Offer</small>
-                            <h3>Service we offer</h3>
+                            <small>安徽省高新产业</small>
+                            <h3>AI + 产业</h3>
                         </div>
                     </div>
                 </div>
@@ -92,15 +92,14 @@
                         <div class="service-item">
                             <div class="img_serv">
                                 <a href="service-page.html">
-                                    <img src="static/picture/service_1.jpg" alt="service">
+                                    <img src="https://x0.ifengimg.com/res/2023/50E43DE0647FE98F8788D840C0F433E21719180B_size51_w744_h558.jpg" alt="service">
                                 </a>
                             </div>
                             <div class="service_text">
                                 <a href="service-page.html">
-                                    <h4>Fresh Fruits</h4>
+                                    <h4>AI + 汽车</h4>
                                 </a>
-                                <p>Organically grown crops tend use natural fertilizers like manure to improve growth to
-                                    plant . Animals raised organically are</p>
+                                <p>汽车自动驾驶</p>
                             </div>
                             <a class="serv_link" href="service-page.html"><i class="icon-glyph-40"></i></a>
                         </div>
@@ -109,15 +108,14 @@
                         <div class="service-item">
                             <div class="img_serv">
                                 <a href="service-page.html">
-                                    <img src="static/picture/service_2.jpg" alt="service">
+                                    <img src="https://t12.baidu.com/it/u=2684164636,201624218&fm=30&app=106&f=JPEG?w=640&h=366&s=F30386AC92A3CEE74E027109030070DA" alt="service">
                                 </a>
                             </div>
                             <div class="service_text">
                                 <a href="service-page.html">
-                                    <h4>Fresh Vegetable</h4>
+                                    <h4>AI + 半导体</h4>
                                 </a>
-                                <p>Organically grown crops tend use natural fertilizers like manure to improve growth to
-                                    plant . Animals raised organically are</p>
+                                <p>长鑫存储</p>
                             </div>
                             <a class="serv_link" href="service-page.html"><i class="icon-glyph-40"></i></a>
                         </div>
@@ -126,15 +124,86 @@
                         <div class="service-item">
                             <div class="img_serv">
                                 <a href="service-page.html">
-                                    <img src="static/picture/service_3.jpg" alt="service">
+                                    <img src="https://www.iflytek.com/static/img/tab3-5.99dd029.png" alt="service">
                                 </a>
                             </div>
                             <div class="service_text">
                                 <a href="service-page.html">
-                                    <h4>Natural Wheats</h4>
+                                    <h4>AI + 工业</h4>
                                 </a>
-                                <p>Organically grown crops tend use natural fertilizers like manure to improve growth to
-                                    plant . Animals raised organically are</p>
+                                <p>讯飞工业AI一体机</p>
+                            </div>
+                            <a class="serv_link" href="service-page.html"><i class="icon-glyph-40"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br><br><br>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="base-header">
+                            <small>安徽省文化产业</small>
+                            <h3>徽 + 产业</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="service-item">
+                            <div class="img_serv">
+                                <a href="service-page.html">
+                                    <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.alicdn.com%2Fbao%2Fuploaded%2Fi1%2F2890305967%2FTB2CBBBb6gy_uJjSZKbXXXXkXXa_%21%210-paimai.jpg&refer=http%3A%2F%2Fimg.alicdn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1686638364&t=30f032bc55c771fc142b2ea3ff9def05" alt="service">
+                                </a>
+                            </div>
+                            <div class="service_text">
+                                <a href="service-page.html">
+                                    <h4>徽 + 酒</h4>
+                                </a>
+                                <p>古井贡酒产自安徽省亳州市，属于大曲浓香型白酒，有“酒中牡丹”之称、被称为中国八大名酒之一。其渊源
+                                始于建安元年（196年）曹操将家乡亳州产的“九酝春酒”和酿造方法进献给汉献帝刘协。具有“色清如水晶，
+                                香醇如幽兰，入口甘美醇和，回昧经久不息”的特点。以安徽淮北平原优质小麦、古井镇优质地下水以及颗粒饱满、
+                                糯性强的优质高梁为原料，利用其自然微生物环境，按古井贡酒传统工艺生产而成。</p>
+                            </div>
+                            <a class="serv_link" href="service-page.html"><i class="icon-glyph-40"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="service-item">
+                            <div class="img_serv">
+                                <a href="service-page.html">
+                                    <img src="https://dili.chazidian.com/uploadfile/dili/baike/2017/05/24/4055690084.jpg" alt="service">
+                                </a>
+                            </div>
+                            <div class="service_text">
+                                <a href="service-page.html">
+                                    <h4>徽 + 山</h4>
+                                </a>
+                                <p>黄山，古称黟山，位于安徽省黄山市境内，是中华十大名山之一、世界文化与自然遗产。东起黄狮岭，西至小岭脚，
+                                北始二龙桥，南达汤口镇，山境南北长约40千米，东西宽约30千米，总占地面积约1200平方千米，属亚热带季风气候；
+                                以奇松、怪石、云海、温泉、冬雪“五绝”及历史遗存、书画、文学、传说、名人“五胜”著称于世，有“天下第一奇山”、
+                                “天开图画”、“松海云川”之称。</p>
+                            </div>
+                            <a class="serv_link" href="service-page.html"><i class="icon-glyph-40"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="service-item">
+                            <div class="img_serv">
+                                <a href="service-page.html">
+                                    <img src="https://img1.baidu.com/it/u=64830204,4271128327&fm=253&fmt=auto&app=138&f=JPEG?w=400&h=400" alt="service">
+                                </a>
+                            </div>
+                            <div class="service_text">
+                                <a href="service-page.html">
+                                    <h4>徽 + 茶</h4>
+                                </a>
+                                <p>安徽盛产茶叶，中国十大名茶之中，安徽茶叶占三成。其中的黄山毛峰产于安徽省黄山（徽州）一带，所以又称徽茶，
+                                由清代光绪年间谢裕大茶庄所创制。每年清明谷雨，选摘良种茶树“黄山种”、“黄山大叶种”等的初展肥壮嫩芽，手工炒制，
+                                该茶外形微卷，状似雀舌，绿中泛黄，银毫显露，且带有金黄色鱼叶（俗称黄金片）。入杯冲泡雾气结顶，汤色清碧微黄，
+                                叶底黄绿有活力，滋味醇甘，香气如兰，韵味深长。</p>
                             </div>
                             <a class="serv_link" href="service-page.html"><i class="icon-glyph-40"></i></a>
                         </div>

@@ -64,7 +64,7 @@
 
         <!-- service section -->
         <section class="service-section">
-            <div class="animate_icon">
+<!--            <div class="animate_icon">
                 <div class="animate_item animate_item1">
                     <img src="static/picture/animate_icon1.png" alt="">
                 </div>
@@ -77,7 +77,7 @@
                 <div class="animate_item animate_item4">
                     <img src="static/picture/animate_icon4.png" alt="">
                 </div>
-            </div>
+            </div> -->
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -99,7 +99,8 @@
                                 <a href="service-page.html">
                                     <h4>AI + 汽车</h4>
                                 </a>
-                                <p>汽车自动驾驶</p>
+                                <p>NIO Assisted and Intelligent Driving蔚来自动驾驶，从地图定位到感知算法，从底层系统到控制策略，拥有全栈自动驾驶技术能力；
+                                逐步实现高速、城区、泊车和换电场景的全覆盖，解放时间，减少事故，带来安全放松的点到点自动驾驶体验。</p>
                             </div>
                             <a class="serv_link" href="service-page.html"><i class="icon-glyph-40"></i></a>
                         </div>
@@ -115,7 +116,8 @@
                                 <a href="service-page.html">
                                     <h4>AI + 半导体</h4>
                                 </a>
-                                <p>长鑫存储</p>
+                                <p>半导体产业是战略新兴产业，是安徽省产业制造转型升级的得力抓手，是以智能制造、数字制造提升传统产业的突破口。
+                                其中典型的代表有长鑫存储，打破国外存储半导体领域的封锁，用自身硬实力征服了众多用户，成为中国新时代发展中又一耀眼的名片。</p>
                             </div>
                             <a class="serv_link" href="service-page.html"><i class="icon-glyph-40"></i></a>
                         </div>
@@ -131,7 +133,9 @@
                                 <a href="service-page.html">
                                     <h4>AI + 工业</h4>
                                 </a>
-                                <p>讯飞工业AI一体机</p>
+                                <p>科大讯飞，以“让AI赋能工业场景”为研发理念，研发出了讯飞工业AI一体机，
+                                其基于讯飞智能语音技术打造的能为应用系统开发提供语音转写、语音合成、语义理解、
+                                声纹识别能力的软硬一体设备，通过对AI一体机的二次开发，可以满足用户在应用系统开发过程中集成语音AI能力的需求。</p>
                             </div>
                             <a class="serv_link" href="service-page.html"><i class="icon-glyph-40"></i></a>
                         </div>
@@ -219,31 +223,33 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="video_wrp">
+<!--
                             <div class="play_video"><a class="play_btn" href="javascript:;"><i class="bi bi-play-fill"></i></a>
                             </div>
-                            <p>Watch Our organic food Video</p>
-                            <h2>Everyone's body is different, it will take<br> to see changes in your body .</h2>
+                           -->
+                            <p>芜湖奇瑞</p>
+                            <h2>2022年奇瑞汽车销售情况喜人<br> 成为25年来最佳</h2>
                         </div>
                         <div class="funfact_wapr row">
                             <div class="col-md-4 col-sm-12">
                                 <div class="facts_wrapper">
                                     <div class="icon-lay"><i class="icon-glyph-142"></i></div>
-                                    <h3 class="stat-count count">175</h3>
-                                    <h5>Award Winner</h5>
+                                    <h3 class="stat-count count">80+</h3>
+                                    <h5>出口国家数</h5>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-12">
                                 <div class="facts_wrapper">
                                     <div class="icon-lay"><i class="icon-glyph-226"></i></div>
-                                    <h3 class="stat-count count">275</h3>
-                                    <h5>Visited Farms </h5>
+                                    <h3 class="stat-count count">45+</h3>
+                                    <h5>出口量（单位：万） </h5>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-12">
                                 <div class="facts_wrapper">
                                     <div class="icon-lay"><i class="icon-glyph-2"></i></div>
-                                    <h3 class="stat-count count">324</h3>
-                                    <h5>Happy Customers </h5>
+                                    <h3 class="stat-count count">123+</h3>
+                                    <h5>总销售量（单位：万） </h5>
                                 </div>
                             </div>
                         </div>

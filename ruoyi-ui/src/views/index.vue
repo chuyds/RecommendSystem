@@ -227,7 +227,7 @@
                             <div class="play_video"><a class="play_btn" href="javascript:;"><i class="bi bi-play-fill"></i></a>
                             </div>
                            -->
-                            <p>芜湖奇瑞</p>
+                            <p>芜湖奇瑞2022</p>
                             <h2>2022年奇瑞汽车销售情况喜人<br> 成为25年来最佳</h2>
                         </div>
                         <div class="funfact_wapr row">
@@ -644,8 +644,8 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="base-header">
-                            <small>Our Team Mamber</small>
-                            <h3>Meet Our Farmers</h3>
+                            <small>企业云集</small>
+                            <h3>知名企业家</h3>
                         </div>
                     </div>
                 </div>
@@ -653,57 +653,57 @@
                     <div class="col-md-4 col-sm-12">
                         <div class="team-box">
                             <div class="team_img">
-                                <img src="static/picture/team1.jpg" alt="">
+                                <img src="../../public/static/picture/head_logo1.png" alt="">
                             </div>
                             <div class="team_info">
-                                <h4>Ben Stcoks</h4>
-                                <p>Food Farmer</p>
-                                <ul class="team_social">
+                                <h4>刘庆峰</h4>
+                                <p>科大讯飞董事长</p>
+<!--                                <ul class="team_social">
                                     <li><a href="javascript:void(0)"><i class="bi bi-facebook"></i></a>
                                     </li>
                                     <li><a href="javascript:void(0)"><i class="bi bi-twitter"></i></a>
                                     </li>
                                     <li><a href="javascript:void(0)"><i class="bi bi-linkedin"></i></a>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12">
                         <div class="team-box">
                             <div class="team_img">
-                                <img src="static/picture/team2.jpg" alt="">
+                                <img src="../../public/static/picture/head_logo2.png" alt="">
                             </div>
                             <div class="team_info">
-                                <h4>Ben Stcoks</h4>
-                                <p>Food Farmer</p>
-                                <ul class="team_social">
+                                <h4>章燎原</h4>
+                                <p>三只松鼠电子商务有限公司创始人兼CEO</p>
+<!--                                <ul class="team_social">
                                     <li><a href="javascript:void(0)"><i class="bi bi-facebook"></i></a>
                                     </li>
                                     <li><a href="javascript:void(0)"><i class="bi bi-twitter"></i></a>
                                     </li>
                                     <li><a href="javascript:void(0)"><i class="bi bi-linkedin"></i></a>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12">
                         <div class="team-box">
                             <div class="team_img">
-                                <img src="static/picture/team3.jpg" alt="">
+                                <img src="../../public/static/picture/head_logo3.png" alt="">
                             </div>
                             <div class="team_info">
-                                <h4>Ben Stcoks</h4>
-                                <p>Food Farmer</p>
-                                <ul class="team_social">
+                                <h4>田明</h4>
+                                <p>合肥美亚光电技术股份有限公司董事长</p>
+<!--                                <ul class="team_social">
                                     <li><a href="javascript:void(0)"><i class="bi bi-facebook"></i></a>
                                     </li>
                                     <li><a href="javascript:void(0)"><i class="bi bi-twitter"></i></a>
                                     </li>
                                     <li><a href="javascript:void(0)"><i class="bi bi-linkedin"></i></a>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </div>
                         </div>
                     </div>
@@ -995,7 +995,7 @@
                 </div>
             </div>
             <div class="subfooter">
-                <p>Copyright &copy; 2023.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+                <p>Copyright &copy; 安徽省优势产能云服务推荐系统开发团队版权所有</p>
             </div>
         </footer>
         <!--end footer section -->

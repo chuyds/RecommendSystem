@@ -265,61 +265,57 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="base-header">
-                            <small>Working Process</small>
-                            <h3>How Does We Work</h3>
+                            <small>产业优势</small>
+                            <h3>为什么要选择我们</h3>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-3 col-sm-12">
                         <div class="process-item">
-                            <div class="img_process"><img src="static/picture/process_1.png" alt=""><span>01</span>
+                            <div class="img_process"><img src="../../public/static/picture/process_1.png" alt=""><span>01</span>
                                 <div class="angle_icon"><img src="static/picture/shape1.png" alt="">
                                 </div>
                             </div>
                             <div class="process_text">
-                                <h4>Step 01</h4>
-                                <p>Organically grown crops tend use natural fertilizers like manure to improve growth to
-                                    plant . </p>
+                                <h4>服务</h4>
+                                <p>我们有着更优质的服务</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-12">
                         <div class="process-item">
-                            <div class="img_process"><img src="static/picture/process_2.png" alt=""><span>02</span>
+                            <div class="img_process"><img src="../../public/static/picture/process_2.png" alt=""><span>02</span>
                                 <div class="angle_icon"><img src="static/picture/shape2.png" alt="">
                                 </div>
                             </div>
                             <div class="process_text">
-                                <h4>Step 02</h4>
-                                <p>Organically grown crops tend use natural fertilizers like manure to improve growth to
-                                    plant . </p>
+                                <h4>价格</h4>
+                                <p>我们有着更优惠的价格</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-12">
                         <div class="process-item">
-                            <div class="img_process"><img src="static/picture/process_3.png" alt=""><span>03</span>
+                            <div class="img_process"><img src="../../public/static/picture/process_3.png" alt=""><span>03</span>
                                 <div class="angle_icon"><img src="static/picture/shape1.png" alt="">
                                 </div>
                             </div>
                             <div class="process_text">
-                                <h4>Step 03</h4>
-                                <p>Organically grown crops tend use natural fertilizers like manure to improve growth to
-                                    plant . </p>
+                                <h4>质量</h4>
+                                <p>我们产品的质量经过了市场的检验</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-12">
                         <div class="process-item">
-                            <div class="img_process"><img src="static/picture/process_4.png" alt=""><span>04</span>
+                            <div class="img_process"><img src="../../public/static/picture/process_4.png" alt=""><span>04</span>
                                 <div class="angle_icon"><img src="static/picture/shape2.png" alt="">
                                 </div>
                             </div>
                             <div class="process_text">
-                                <h4>Step 04</h4>
-                                <p>Organically grown crops tend use natural fertilizers like manure to improve growth to
-                                    plant . </p>
+                                <h4>体验</h4>
+                                <p>我们的产品可以给您带来舒适的体验</p>
                             </div>
                         </div>
                     </div>
@@ -854,143 +850,53 @@
         </section>
         <!-- end blog section -->
 
-        <!-- clients section -->
-        <section class="client-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="clients-slider swiper">
-                            <div class="swiper-wrapper align-items-center">
-                                <div class="swiper-slide"><img src="static/picture/client-1.png" class="img-fluid" alt=""></div>
-                                <div class="swiper-slide"><img src="static/picture/client-2.png" class="img-fluid" alt=""></div>
-                                <div class="swiper-slide"><img src="static/picture/client-3.png" class="img-fluid" alt=""></div>
-                                <div class="swiper-slide"><img src="static/picture/client-4.png" class="img-fluid" alt=""></div>
-                                <div class="swiper-slide"><img src="static/picture/client-1.png" class="img-fluid" alt=""></div>
-                                <div class="swiper-slide"><img src="static/picture/client-2.png" class="img-fluid" alt=""></div>
-                                <div class="swiper-slide"><img src="static/picture/client-3.png" class="img-fluid" alt=""></div>
-                                <div class="swiper-slide"><img src="static/picture/client-4.png" class="img-fluid" alt=""></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end clients section -->
-
-        <!-- contact section -->
-        <section class="contact-section">
-            <div class="contact_bg"></div>
-            <div class="container">
-                <div class="contact_wrp">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="contact_header_title">
-                                <small>Get In Touch</small>
-                                <h3>Send Us Message</h3>
-                            </div>
-                            <div class="contact-form">
-                                <form method="post">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-sm-12">
-                                            <input type="text" class="con-field " placeholder="Enter Your Name" value="">
-                                        </div>
-                                        <div class="col-lg-6 col-sm-12">
-                                            <input type="text" class="con-field " placeholder="Enter Your Email" value="">
-                                        </div>
-                                        <div class="col-lg-12 col-sm-12">
-                                            <input type="text" class=" con-field" placeholder="Enter Your Subject" value="">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-12 col-sm-12">
-                                            <!-- <textarea rows="5" class="con-field" placeholder="your message">
-                                            </textarea> -->
-                                            <textarea rows="5" class="con-field" placeholder="Describe yourself here..."></textarea>
-                                        </div>
-                                        <div class="submit-area">
-                                            <a href="javascript:void(0)" class="more-link">Send Message</a>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--end contact section -->
-
         <!-- footer section -->
         <footer class="footer-section">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-sm-12">
                         <div class="footer-col-1">
-                            <div>
+<!--                            <div>
                                 <a href="javascript:void(0)"><img src="static/picture/footer_logo.png" alt="" class="footer-logo"></a>
-                            </div>
-                            <p>
-                                Loren ipsum dolor conse ctetur at adipis cing elit sed do eiu smod of tempor inci didunt
-                                know youlab a et dolore magna aliqua
+                            </div> -->
+                            <p style="font-size: 25px;margin-left: 20px;">
+                                安徽省优势产能云服务<br><br>推荐系统
                             </p>
-                            <div>
-                                <ul class="footer-li">
-                                    <li><a href="javascript:void(0)"><i class="bi bi-facebook"></i></a></li>
-                                    <li><a href="javascript:void(0)"><i class="bi bi-twitter"></i></a></li>
-                                    <li><a href="javascript:void(0)"><i class="bi bi-instagram"></i></a></li>
-                                    <li><a href="javascript:void(0)"><i class="bi bi-pinterest"></i></a></li>
-                                    <li><a href="javascript:void(0)"><i class="bi bi-behance"></i></a></li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-12">
                         <div class="footer-col-2">
-                            <h5 class="widget-title">Quick Link</h5>
-                            <ul>
-                                <li><a href="javascript:void(0)">Help and
-                                        Ordering</a></li>
-                                <li><a href="javascript:void(0)">Return &
-                                        Cancellation</a></li>
-                                <li><a href="javascript:void(0)">Online Organic
-                                        Service</a></li>
-                                <li><a href="javascript:void(0)">Delevery
-                                        Schedule</a></li>
-                                <li><a href="javascript:void(0)">Online Organic
-                                        Service</a></li>
-                            </ul>
+                            <h5 class="widget-title">关于我们</h5>
+                            <a href="javascript:void(0)">系统简介</a>
+                            <br><br>
+                            <a href="javascript:void(0)">发展历程</a>
+                            <br><br>
+                            <a href="javascript:void(0)">关注我们</a>
                         </div>
                     </div>
+
                     <div class="col-lg-3 col-sm-12">
-                        <div class="footer-col-3">
-                            <h5 class="widget-title">Latest Articles</h5>
-                            <div class="footer_recent_blog">
-                                <img src="static/picture/blog1.jpg" alt="">
-                                <div>
-                                    <span> <i class="bi bi-calendar"></i>6 Nov 2023</span>
-                                    <p>How to Eat Organic<br> Foods</p>
-                                </div>
-                            </div>
-                            <div class="footer_recent_blog">
-                                <img src="static/picture/blog1.jpg" alt="">
-                                <div>
-                                    <span> <i class="bi bi-calendar"></i>6 Nov 2023</span>
-                                    <p>How to Eat Organic<br> Foods</p>
-                                </div>
-                            </div>
+                        <div class="footer-col-2">
+                            <h5 class="widget-title">联系我们</h5>
+                            <a href="javascript:void(0)">客户服务</a>
+                            <br><br>
+                            <a href="javascript:void(0)">合作洽谈</a>
+                            <br><br>
+                            <a href="javascript:void(0)">监督举报</a>
                         </div>
                     </div>
+
                     <div class="col-lg-3 col-sm-12">
-                        <div class="footer-col-4">
-                            <h5 class="widget-title">Newsletter</h5>
-                            <p class="col-4-p">
-                                Subscribe our newsletter to get more update & join to Nutrify</p>
-                            <form action="javascript:void(0)" method="post">
-                                <input class="email_field" type="text" placeholder="Enter Your Email Address">
-                                <a href="javascript:void(0)" class="more-link">Subscribe</a>
-                            </form>
+                        <div class="footer-col-2">
+                            <h5 class="widget-title">法律信息</h5>
+                            <a href="javascript:void(0)">服务协议</a>
+                            <br><br>
+                            <a href="javascript:void(0)">隐私政策</a>
+                            <br><br>
+                            <a href="javascript:void(0)">知识产权</a>
                         </div>
                     </div>
+
                     <div class="scrollup"><span class="icon-glyph-203"></span></div>
                 </div>
             </div>

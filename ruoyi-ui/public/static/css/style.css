@@ -17,7 +17,7 @@ body {
 }
 
 a {
-  color: #000000;
+  color: white;
   transition: all 0.3s;
   text-decoration: none;
 }
@@ -115,6 +115,12 @@ ol {
 .social-links a i:hover {
   color: #43ae38;
 }
+
+/* .footer-col-2 a{
+  color: white;
+  transition: all 0.3s;
+  text-decoration: none;
+} */
 
 .email {
   border-right: 1px solid #645454;

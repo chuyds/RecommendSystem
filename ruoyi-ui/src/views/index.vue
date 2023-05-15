@@ -356,8 +356,8 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="base-header">
-                            <small>Our Featured Products</small>
-                            <h3>Organic Products</h3>
+                            <small>AI + 工业</small>
+                            <h3>科大讯飞为工业化产业实现智能化升级</h3>
                         </div>
                     </div>
                 </div>
@@ -366,17 +366,17 @@
                         <div class="testimonial-item">
                             <div class="inner-item">
                                 <a href="javascript:void(0)" class="product-img">
-                                    <img src="static/picture/product_1.png" alt="">
+                                    <img src="	https://www.iflytek.com/static/img/tab3-9.6adcab5.png" alt="">
                                 </a>
                                 <div class="product_info">
-                                    <h4> Juicy Grapes </h4>
+                                    <h4> 智慧矿山 </h4>
                                     <ul class="product_rating">
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
-                                    </ul><span class="product_price">$46.00</span>
+                                    </ul><span class="product_price">人工智能助力矿山智能化建设</span>
                                 </div>
                                 <div class="product-action">
                                     <div class="product-action-inner">
@@ -395,17 +395,17 @@
                         <div class="testimonial-item">
                             <div class="inner-item">
                                 <a href="javascript:void(0)" class="product-img">
-                                    <img src="static/picture/product_2.png" alt="">
+                                    <img src="	https://www.iflytek.com/static/img/tab3-8.0c43cbb.png" alt="">
                                 </a>
                                 <div class="product_info">
-                                    <h4> Red Watermelon </h4>
+                                    <h4> 智慧电力 </h4>
                                     <ul class="product_rating">
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
-                                    </ul><span class="product_price">$56.00</span>
+                                    </ul><span class="product_price">人工智能助力电力智能化建设</span>
                                 </div>
                                 <div class="product-action">
                                     <div class="product-action-inner">
@@ -424,17 +424,17 @@
                         <div class="testimonial-item">
                             <div class="inner-item">
                                 <a href="javascript:void(0)" class="product-img">
-                                    <img src="static/picture/product_3.png" alt="">
+                                    <img src="https://www.iflytek.com/static/img/tab3-6.fbb249d.png" alt="">
                                 </a>
                                 <div class="product_info">
-                                    <h4> Juicy Orange </h4>
+                                    <h4> 区域工业互联网平台 </h4>
                                     <ul class="product_rating">
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
-                                    </ul><span class="product_price">$46.00</span>
+                                    </ul><span class="product_price">AI助力区域产业降本增效</span>
                                 </div>
                                 <div class="product-action">
                                     <div class="product-action-inner">
@@ -453,17 +453,17 @@
                         <div class="testimonial-item">
                             <div class="inner-item">
                                 <a href="javascript:void(0)" class="product-img">
-                                    <img src="static/picture/product_4.png" alt="">
+                                    <img src="https://www.iflytek.com/static/img/tab3-4.dee210b.png" alt="">
                                 </a>
                                 <div class="product_info">
-                                    <h4> Fresh Banana </h4>
+                                    <h4> 讯飞设备保障 </h4>
                                     <ul class="product_rating">
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
-                                    </ul><span class="product_price">$46.00</span>
+                                    </ul><span class="product_price">降低产能损失提高设备检修效率</span>
                                 </div>
                                 <div class="product-action">
                                     <div class="product-action-inner">

@@ -19,20 +19,15 @@
     <el-row>
       <el-col :span="6" v-for="(good,index) in goods" class="card-box">
         <el-card>
-          <div id="image">
-            <img src="" alt="">
-          </div>
+          <img id="image" :src="good.imageUrl" alt="">
           <div id="text-description">
             <span style="color: red;">{{good.name+":"}}</span>
             <span>{{good.description}}</span>
           </div>
         </el-card>
       </el-col>
-<!--      <el-col :span="6" class="card-box"><div class="grid-content bg-purple-light"></div></el-col>
-      <el-col :span="6" class="card-box"><div class="grid-content bg-purple"></div></el-col>
-      <el-col :span="6" class="card-box"><div class="grid-content bg-purple-light"></div></el-col> -->
     </el-row>
-    
+
   </div>
 
 </template>
@@ -67,8 +62,24 @@ export default {
       },{
         "label": "茶叶",
         "value": 4
+      },{
+        "label": "旅游景点",
+        "value": 5
       }],
-      goods:[],
+      goods:[{
+        "id": "101",
+        "name": "奇瑞瑞虎",
+        "description": "好开",
+        "url": "",
+        "category": 1
+      },{
+        "id": "101",
+        "name": "奇瑞瑞虎",
+        "description": "好开",
+        "url": "",
+        "category": 1
+      }],
+      goodsOfCategory:[],
     }
   },
   computed: {},
@@ -82,11 +93,20 @@ export default {
       listGood().then(response => {
         this.goods = response;
       });
+
+      // this.goodsOfCategory = this.goods;
     },
     getListByCategory(category) {     //获取category类别商品列表
       listGoodByCategory(category).then(response => {
         this.goods = response;
       });
+
+      // this.goodsOfCategory = null;
+      // for (var i = 0; i < this.goods.length; i++) {
+      //   if(this.goods[i].category===category){
+      //     this.goodsOfCategory.push(this.goods[i]);
+      //   }
+      // }
     },
     submitForm() {
       var category;
@@ -128,6 +148,11 @@ export default {
     .grid-content {
       border-radius: 4px;
       min-height: 36px;
+    }
+
+    #image{
+      width: 250px;
+      height: 200px;
     }
 
 </style>

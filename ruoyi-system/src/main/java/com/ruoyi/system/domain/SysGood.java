@@ -2,32 +2,32 @@ package com.ruoyi.system.domain;
 
 public class SysGood {
     //产品id
-    private Integer id;
+    private String id;
     //产品名
     private String name;
     //产品描述
     private String description;
     //产品图片
-    private byte[] image;
+    private String imageUrl;
     //产品类别
     private Integer category;
 
     public SysGood() {
     }
 
-    public SysGood(int id, String name, String description, byte[] image, int category) {
+    public SysGood(String id, String name, String description, String imageUrl, Integer category) {
         this.id = id;
         this.name = name;
         this.description = description;
-        this.image = image;
+        this.imageUrl = imageUrl;
         this.category = category;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -47,19 +47,19 @@ public class SysGood {
         this.description = description;
     }
 
-    public byte[] getImage() {
-        return image;
+    public String getImageUrl() {
+        return imageUrl;
     }
 
-    public void setImage(byte[] image) {
-        this.image = image;
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 
-    public int getCategory() {
+    public Integer getCategory() {
         return category;
     }
 
-    public void setCategory(int category) {
+    public void setCategory(Integer category) {
         this.category = category;
     }
 

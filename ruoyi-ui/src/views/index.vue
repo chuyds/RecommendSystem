@@ -253,110 +253,13 @@
         </section>
         <!-- end video section -->
 
-        <!-- process section -->
-<!--        <section class="process-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="base-header">
-                            <small>产业优势</small>
-                            <h3>为什么要选择我们</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3 col-sm-12">
-                        <div class="process-item">
-                            <div class="img_process"><img src="../../public/static/picture/process_1.png" alt=""><span>01</span>
-                                <div class="angle_icon"><img src="static/picture/shape1.png" alt="">
-                                </div>
-                            </div>
-                            <div class="process_text">
-                                <h4>服务</h4>
-                                <p>我们有着更优质的服务</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-12">
-                        <div class="process-item">
-                            <div class="img_process"><img src="../../public/static/picture/process_2.png" alt=""><span>02</span>
-                                <div class="angle_icon"><img src="static/picture/shape2.png" alt="">
-                                </div>
-                            </div>
-                            <div class="process_text">
-                                <h4>价格</h4>
-                                <p>我们有着更优惠的价格</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-12">
-                        <div class="process-item">
-                            <div class="img_process"><img src="../../public/static/picture/process_3.png" alt=""><span>03</span>
-                                <div class="angle_icon"><img src="static/picture/shape1.png" alt="">
-                                </div>
-                            </div>
-                            <div class="process_text">
-                                <h4>质量</h4>
-                                <p>我们产品的质量经过了市场的检验</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-12">
-                        <div class="process-item">
-                            <div class="img_process"><img src="../../public/static/picture/process_4.png" alt=""><span>04</span>
-                                <div class="angle_icon"><img src="static/picture/shape2.png" alt="">
-                                </div>
-                            </div>
-                            <div class="process_text">
-                                <h4>体验</h4>
-                                <p>我们的产品可以给您带来舒适的体验</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!-- end process section -->
-
-        <br><br><br>
-        <!-- whychose section -->
-        <section class="whychose-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-sm-12">
-                        <div class="whychose_bg"></div>
-                    </div>
-                    <div class="col-lg-7 col-sm-12">
-                        <div class="whychose_wrapper">
-                            <div class=" white_header_left">
-                                <small>What We Do</small>
-                                <h3>Why Choose Us</h3>
-                            </div>
-                            <div class="special_ser_item">
-                                <div class="special_ser_icon"><i class="icon-glyph-11"></i></div>
-                                <h4>高品质</h4>
-                                <p>我们深知只有不断提高产品质量和技术含量，才能提升企业的核心竞争优势，才能发展建立更多高素质、
-                                高要求的优质客户群体。登高才能望远，质量是维护顾客忠诚的最好保证。</p>
-                            </div>
-                            <div class="special_ser_item">
-                                <div class="special_ser_icon"><i class="icon-glyph-30"></i></div>
-                                <h4>低价格</h4>
-                                <p>一样的物品，一半的价钱！</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end whychose section -->
-
         <!-- product section -->
         <section class="product-section">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="base-header">
-                            <small>AI + 工业</small>
+                            <small>智能化工业</small>
                             <h3>科大讯飞为工业化产业实现智能化升级</h3>
                         </div>
                     </div>
@@ -495,6 +398,104 @@
             </div>
         </section>
         <!-- end product section -->
+
+
+        <!-- process section -->
+<!--        <section class="process-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="base-header">
+                            <small>产业优势</small>
+                            <h3>为什么要选择我们</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-12">
+                        <div class="process-item">
+                            <div class="img_process"><img src="../../public/static/picture/process_1.png" alt=""><span>01</span>
+                                <div class="angle_icon"><img src="static/picture/shape1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="process_text">
+                                <h4>服务</h4>
+                                <p>我们有着更优质的服务</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="process-item">
+                            <div class="img_process"><img src="../../public/static/picture/process_2.png" alt=""><span>02</span>
+                                <div class="angle_icon"><img src="static/picture/shape2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="process_text">
+                                <h4>价格</h4>
+                                <p>我们有着更优惠的价格</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="process-item">
+                            <div class="img_process"><img src="../../public/static/picture/process_3.png" alt=""><span>03</span>
+                                <div class="angle_icon"><img src="static/picture/shape1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="process_text">
+                                <h4>质量</h4>
+                                <p>我们产品的质量经过了市场的检验</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="process-item">
+                            <div class="img_process"><img src="../../public/static/picture/process_4.png" alt=""><span>04</span>
+                                <div class="angle_icon"><img src="static/picture/shape2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="process_text">
+                                <h4>体验</h4>
+                                <p>我们的产品可以给您带来舒适的体验</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- end process section -->
+
+        <br><br><br>
+        <!-- whychose section -->
+        <section class="whychose-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-12">
+                        <div class="whychose_bg"></div>
+                    </div>
+                    <div class="col-lg-7 col-sm-12">
+                        <div class="whychose_wrapper">
+                            <div class=" white_header_left">
+                                <small>What We Do</small>
+                                <h3>Why Choose Us</h3>
+                            </div>
+                            <div class="special_ser_item">
+                                <div class="special_ser_icon"><i class="icon-glyph-20"></i></div>
+                                <h4>高品质</h4>
+                                <p>我们深知只有不断提高产品质量和技术含量，才能提升企业的核心竞争优势，才能发展建立更多高素质、
+                                高要求的优质客户群体。登高才能望远，质量是维护顾客忠诚的最好保证。</p>
+                            </div>
+                            <div class="special_ser_item">
+                                <div class="special_ser_icon"><i class="icon-glyph-13"></i></div>
+                                <h4>低价格</h4>
+                                <p>一样的物品，一半的价钱！</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end whychose section -->
 
         <!-- project section -->
  <!--       <section class="project-section">

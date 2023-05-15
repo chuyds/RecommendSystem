@@ -1207,7 +1207,7 @@ p {
 }
 
 .whychose_bg {
-  background-image: url(../image/why_chose.jpg);
+  background-image: url(../image/whychoose_bg1.jpg);
   background-repeat: no-repeat;
   background-position: 0;
   height: 557px;
@@ -1217,7 +1217,7 @@ p {
 
 .whychose_wrapper {
   top: 0;
-  background-image: url(../image/why_choose_bg.jpg);
+  background-image: url(../image/whychoose_bg2.jpg);
   background-position: 100%;
   margin-right: 80px;
   position: relative;

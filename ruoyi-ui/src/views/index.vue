@@ -254,7 +254,7 @@
         <!-- end video section -->
 
         <!-- process section -->
-        <section class="process-section">
+<!--        <section class="process-section">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -315,9 +315,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- end process section -->
 
+        <br><br><br>
         <!-- whychose section -->
         <section class="whychose-section">
             <div class="container">
@@ -333,15 +334,14 @@
                             </div>
                             <div class="special_ser_item">
                                 <div class="special_ser_icon"><i class="icon-glyph-11"></i></div>
-                                <h4>Quick Response </h4>
-                                <p>Emergency response time is one hour or less guaranteed at live<br> person will answer
-                                    your call or you can enter service</p>
+                                <h4>高品质</h4>
+                                <p>我们深知只有不断提高产品质量和技术含量，才能提升企业的核心竞争优势，才能发展建立更多高素质、
+                                高要求的优质客户群体。登高才能望远，质量是维护顾客忠诚的最好保证。</p>
                             </div>
                             <div class="special_ser_item">
                                 <div class="special_ser_icon"><i class="icon-glyph-30"></i></div>
-                                <h4>Very Fast Services</h4>
-                                <p>Emergency response time is one hour or less guaranteed at live <br>person will answer
-                                    your call or you can enter service</p>
+                                <h4>低价格</h4>
+                                <p>一样的物品，一半的价钱！</p>
                             </div>
                         </div>
                     </div>
@@ -497,7 +497,7 @@
         <!-- end product section -->
 
         <!-- project section -->
-        <section class="project-section">
+ <!--       <section class="project-section">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -576,7 +576,7 @@
             <div class="text-center mt-5">
                 <a href="gallery-page.html" class="more-link">View More</a>
             </div>
-        </section>
+        </section> -->
         <!--end project section -->
 
         <!-- team section -->

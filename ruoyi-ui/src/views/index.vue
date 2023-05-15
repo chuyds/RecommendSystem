@@ -120,7 +120,7 @@
                         <div class="service-item">
                             <div class="img_serv">
                                 <a href="service-page.html">
-                                    <img src="https://www.iflytek.com/static/img/tab3-5.99dd029.png" alt="service">
+                                    <img src="https://x0.ifengimg.com/res/2021/64DF5645307DCDAA7D48C5899A11E65D575997B5_size74_w800_h530.jpeg" alt="service">
                                 </a>
                             </div>
                             <div class="service_text">
@@ -379,7 +379,7 @@
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
                                     </ul> -->
-                                    <span class="product_price">人工智能助力矿山智能化建设</span>
+                                    <span class="product_price">AI助力矿山智能化建设</span>
                                 </div>
                                 <!-- 弹出购物车小图标 -->
 <!--                                <div class="product-action">
@@ -412,7 +412,7 @@
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
                                     </ul> -->
-                                    <span class="product_price">人工智能助力电力智能化建设</span>
+                                    <span class="product_price">AI助力电力智能化建设</span>
                                 </div>
 <!--                                <div class="product-action">
                                     <div class="product-action-inner">

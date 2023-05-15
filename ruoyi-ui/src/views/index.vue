@@ -36,26 +36,20 @@
                 <div class="row">
                     <div class="col-xl-6 col-md-12 ">
                         <div class="organic-food">
-                            <img src="static/picture/oragnic-food.jpg" alt="">
+                            <img src="https://ts1.cn.mm.bing.net/th/id/R-C.a59e279aaaa5220a995ef601c9b965d8?rik=61Whez3BUEfHfw&riu=http%3a%2f%2fn.sinaimg.cn%2fsinakd20210109ac%2f172%2fw1653h919%2f20210109%2f11e8-khmyntz8981549.jpg&ehk=g%2bk%2fE7ntPbG2NGweE7dw3K2dYrYwY0DU1dMLx2r4T%2fI%3d&risl=&pid=ImgRaw&r=0" alt="">
                         </div>
                     </div>
                     <div class="col-xl-6 col-md-12 ">
                         <div class=" base_header_left">
-                            <small>Welcome To Our Nutrify Farms</small>
-                            <h3>Organic Food - Farm Fresh<br> Produce Right To Your Door</h3>
+                            <small>Welcome To NIO ET7</small>
+                            <h3>LEAD THE CHANGE</h3>
                         </div>
                         <div class="about_item">
-                            <h4>Natural Products</h4>
-                            <p>Organically grown crops tend to use natural fertilizers like manure to improve plant
-                                growth. Animals raised organically are also not given antibiotic organic hormones most
-                                commonly purchased organic .</p>
+                            <h4>智能电动旗舰轿车</h4>
+                            <p>蔚来ET7是蔚来汽车的旗舰电动轿车型号，ET7是一款豪华电动轿车，注重舒适性、性能和智能化技术。在动力方面，ET7搭载了一种电动驱动系统，提供强大的性能。ET7还引入了一系列先进的智能技术。
+                            它配备了蔚来的第二代车载超级计算机，具备高级驾驶辅助功能，如自动驾驶、智能语音控制和自动泊车等。</p>
                         </div>
-                        <div class="about_item">
-                            <h4>Wheat Cultivation</h4>
-                            <p>Organically grown crops tend to use natural fertilizers like manure to improve plant
-                                growth. Animals raised organically are also not given antibiotic organic hormones most
-                                commonly purchased organic .</p>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -135,7 +129,7 @@
                                 </a>
                                 <p>科大讯飞，以“让AI赋能工业场景”为研发理念，研发出了讯飞工业AI一体机，
                                 其基于讯飞智能语音技术打造的能为应用系统开发提供语音转写、语音合成、语义理解、
-                                声纹识别能力的软硬一体设备，通过对AI一体机的二次开发，可以满足用户在应用系统开发过程中集成语音AI能力的需求。</p>
+                                声纹识别能力的软硬一体设备，可以满足用户在应用系统开发过程中集成语音AI能力的需求。</p>
                             </div>
                             <a class="serv_link" href="service-page.html"><i class="icon-glyph-40"></i></a>
                         </div>
@@ -186,7 +180,7 @@
                                     <h4>徽 + 山</h4>
                                 </a>
                                 <p>黄山，古称黟山，位于安徽省黄山市境内，是中华十大名山之一、世界文化与自然遗产。东起黄狮岭，西至小岭脚，
-                                北始二龙桥，南达汤口镇，山境南北长约40千米，东西宽约30千米，总占地面积约1200平方千米，属亚热带季风气候；
+                                北始二龙桥，南达汤口镇，山境南北长约40千米，东西宽约30千米，总占地面积约1200平方千米，属亚热带季风气候，由于山高谷深，气候呈垂直变化；
                                 以奇松、怪石、云海、温泉、冬雪“五绝”及历史遗存、书画、文学、传说、名人“五胜”著称于世，有“天下第一奇山”、
                                 “天开图画”、“松海云川”之称。</p>
                             </div>

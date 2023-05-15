@@ -370,15 +370,19 @@
                                 </a>
                                 <div class="product_info">
                                     <h4> 智慧矿山 </h4>
-                                    <ul class="product_rating">
+                                    <span>☆</span>
+                                    <br>
+<!--                                    <ul class="product_rating">
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
-                                    </ul><span class="product_price">人工智能助力矿山智能化建设</span>
+                                    </ul> -->
+                                    <span class="product_price">人工智能助力矿山智能化建设</span>
                                 </div>
-                                <div class="product-action">
+                                <!-- 弹出购物车小图标 -->
+<!--                                <div class="product-action">
                                     <div class="product-action-inner">
                                         <div class="product-action-item">
                                             <a href="shopping-cart.html"><i class="icon-glyph-13"></i></a>
@@ -387,7 +391,7 @@
                                             <a href="404-notfound.html"><i class="icon-glyph-52"></i></a>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -399,15 +403,18 @@
                                 </a>
                                 <div class="product_info">
                                     <h4> 智慧电力 </h4>
-                                    <ul class="product_rating">
+                                    <span>☆</span>
+                                    <br>
+<!--                                    <ul class="product_rating">
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
-                                    </ul><span class="product_price">人工智能助力电力智能化建设</span>
+                                    </ul> -->
+                                    <span class="product_price">人工智能助力电力智能化建设</span>
                                 </div>
-                                <div class="product-action">
+<!--                                <div class="product-action">
                                     <div class="product-action-inner">
                                         <div class="product-action-item">
                                             <a href="shopping-cart.html"><i class="icon-glyph-13"></i></a>
@@ -416,7 +423,7 @@
                                             <a href="404-notfound.html"><i class="icon-glyph-52"></i></a>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -428,15 +435,18 @@
                                 </a>
                                 <div class="product_info">
                                     <h4> 区域工业互联网平台 </h4>
-                                    <ul class="product_rating">
+                                    <span>☆</span>
+                                    <br>
+<!--                                    <ul class="product_rating">
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
-                                    </ul><span class="product_price">AI助力区域产业降本增效</span>
+                                    </ul> -->
+                                    <span class="product_price">AI助力区域产业降本增效</span>
                                 </div>
-                                <div class="product-action">
+<!--                                <div class="product-action">
                                     <div class="product-action-inner">
                                         <div class="product-action-item">
                                             <a href="shopping-cart.html"><i class="icon-glyph-13"></i></a>
@@ -445,7 +455,7 @@
                                             <a href="404-notfound.html"><i class="icon-glyph-52"></i></a>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -457,15 +467,18 @@
                                 </a>
                                 <div class="product_info">
                                     <h4> 讯飞设备保障 </h4>
-                                    <ul class="product_rating">
+                                    <span>☆</span>
+                                    <br>
+<!--                                    <ul class="product_rating">
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
                                         <li><i class="bi bi-star-fill"></i></li>
-                                    </ul><span class="product_price">降低产能损失提高设备检修效率</span>
+                                    </ul> -->
+                                    <span class="product_price">降低产能损失提高设备检修效率</span>
                                 </div>
-                                <div class="product-action">
+<!--                                <div class="product-action">
                                     <div class="product-action-inner">
                                         <div class="product-action-item">
                                             <a href="shopping-cart.html"><i class="icon-glyph-13"></i></a>
@@ -474,7 +487,7 @@
                                             <a href="404-notfound.html"><i class="icon-glyph-52"></i></a>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -482,68 +495,6 @@
             </div>
         </section>
         <!-- end product section -->
-
-        <!-- pricing section -->
-        <section class="pricing-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="base-header">
-                            <small>Our Special Plan</small>
-                            <h3>Our Pricing</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 col-sm-12">
-                        <div class="pricing-box">
-                            <h4>Basic Plan</h4>
-                            <h2>$27<span>/month</span></h2>
-                            <ul>
-                                <li>3 Bedrooms cleaning</li>
-                                <li>Vacuuming</li>
-                                <li>2 Bathroom cleaning</li>
-                                <li>Mirror Cleaning</li>
-                                <li>1 Livingroom cleaning</li>
-                                <li>Window Sills</li>
-                            </ul>
-                            <a class="more-link" href="contact.html"> Order Now </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                        <div class="pricing-box active">
-                            <h4>Premium Plan</h4>
-                            <h2>$29<span>/month</span></h2>
-                            <ul>
-                                <li>3 Bedrooms cleaning</li>
-                                <li>Vacuuming</li>
-                                <li>2 Bathroom cleaning</li>
-                                <li>Mirror Cleaning</li>
-                                <li>1 Livingroom cleaning</li>
-                                <li>Window Sills</li>
-                            </ul>
-                            <a class="more-link" href="contact.html"> Order Now </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                        <div class="pricing-box">
-                            <h4>Standard Plan</h4>
-                            <h2>$68<span>/month</span></h2>
-                            <ul>
-                                <li>3 Bedrooms cleaning</li>
-                                <li>Vacuuming</li>
-                                <li>2 Bathroom cleaning</li>
-                                <li>Mirror Cleaning</li>
-                                <li>1 Livingroom cleaning</li>
-                                <li>Window Sills</li>
-                            </ul>
-                            <a class="more-link" href="contact.html"> Order Now </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end pricing section -->
 
         <!-- project section -->
         <section class="project-section">
@@ -702,83 +653,8 @@
         </section>
         <!-- end team section -->
 
-        <!-- testimonial section -->
-        <section class="testimonial-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="base-header">
-                            <small>Client Satisfait</small>
-                            <h3>What Client's Say</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-sm-12 testimonial_img">
-                        <div class="testimonial_img">
-                            <img src="static/picture/testimonial1.jpg" alt="">
-                            <img src="static/picture/testimonial2.jpg" alt="">
-                            <img src="static/picture/testimonial3.jpg" alt="">
-                            <img src="static/picture/testimonial4.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <section id="testimonials" class="testimonials section-bg">
-                            <div class="slides-1 swiper" data-aos="fade-up" data-aos-delay="100">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="testimonial-items">
-                                            <div class="testimonial-content">
-                                                <div class="testi_info">
-                                                    <p>Organically grown crops tend use natural fertilizer like manure
-                                                        to improve growth to plant as amet cons adip scing elited id
-                                                        lectus quis dui euismod con after.</p>
-                                                </div>
-                                                <div class="testi_img"><img src="static/picture/testimonial3.jpg" alt="">
-                                                    <h4>Adam Crew<span>Manager</span></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><!-- End testimonial item -->
-                                    <div class="swiper-slide">
-                                        <div class="testimonial-items">
-                                            <div class="testimonial-content">
-                                                <div class="testi_info">
-                                                    <p>Organically grown crops tend use natural fertilizer like manure
-                                                        to improve growth to plant as amet cons adip scing elited id
-                                                        lectus quis dui euismod con after.</p>
-                                                </div>
-                                                <div class="testi_img"><img src="static/picture/testimonial1.jpg" alt="">
-                                                    <h4>Adam Crew<span>Manager</span></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><!-- End testimonial item -->
-                                    <div class="swiper-slide">
-                                        <div class="testimonial-items">
-                                            <div class="testimonial-content">
-                                                <div class="testi_info">
-                                                    <p>Organically grown crops tend use natural fertilizer like manure
-                                                        to improve growth to plant as amet cons adip scing elited id
-                                                        lectus quis dui euismod con after.</p>
-                                                </div>
-                                                <div class="testi_img"><img src="static/picture/testimonial2.jpg" alt="">
-                                                    <h4>Adam Crew<span>Manager</span></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><!-- End testimonial item -->
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end testimonial section -->
-
         <!-- blog section -->
-        <section class="blog-section">
+  <!--      <section class="blog-section">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-4">
@@ -841,7 +717,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- end blog section -->
 
         <!-- footer section -->

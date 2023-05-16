@@ -790,10 +790,10 @@
 			return {
 				pictures: [             //轮播图
 					{src: "https://imgguancha.gmw.cn/attachement/png/site2/20210204/f44d305ea4db218627381d.png",alt: "一带一路",index: "0",ref: "picture"},
-					{src: "./static/picture/sildeshow2.jpg",alt: "汽车",index: "1",ref: "picture"},
-					{src: "./static/picture/sildeshow3.jpg",alt: "黄山",index: "2",ref: "picture"},
-					{src: "./static/picture/sildeshow4.jpg",alt: "茶叶",index: "3",ref: "picture"},
-					{src: "./static/picture/sildeshow5.jpg",alt: "电子",index: "4",ref: "picture"},
+					{src: "./static/picture/slideshow2.jpg",alt: "汽车",index: "1",ref: "picture"},
+					{src: "./static/picture/slideshow3.jpg",alt: "茶叶",index: "2",ref: "picture"},
+					{src: "./static/picture/slideshow4.jpg",alt: "黄山",index: "3",ref: "picture"},
+					{src: "./static/picture/slideshow5.jpg",alt: "电子",index: "4",ref: "picture"},
 				],
         goods: [],              //产品列表
 				mouseEnter: false,      //鼠标是否悬浮在整个区域上

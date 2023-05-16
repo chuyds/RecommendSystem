@@ -66,19 +66,7 @@ export default {
         "label": "旅游景点",
         "value": 5
       }],
-      goods:[{
-        "id": "101",
-        "name": "奇瑞瑞虎",
-        "description": "好开",
-        "url": "",
-        "category": 1
-      },{
-        "id": "101",
-        "name": "奇瑞瑞虎",
-        "description": "好开",
-        "url": "",
-        "category": 1
-      }],
+      goods:[],
       goodsOfCategory:[],
     }
   },
@@ -116,7 +104,7 @@ export default {
           category = this.fieldOptions[i].value;
         }
       }
-      alert(category);
+      // alert(category);
 
       this.getListByCategory(category);
     },

@@ -790,10 +790,10 @@
 			return {
 				pictures: [             //轮播图
 					{src: "https://imgguancha.gmw.cn/attachement/png/site2/20210204/f44d305ea4db218627381d.png",alt: "一带一路",index: "0",ref: "picture"},
-					{src: "/static/picture/slideshow1.jpg",alt: "汽车",index: "1",ref: "picture"},
-					{src: "https://ts1.cn.mm.bing.net/th/id/R-C.b196b408634f2ce5134dcf8ead4b8e59?rik=pdN5KKTNSansVg&riu=http%3a%2f%2fimg.mm4000.com%2ffile%2f0%2f5d%2f9b1a116d73.jpg&ehk=3i5WDN140E3CU1XKf1inmGX3sFKYHUgNUD3VVSBvh44%3d&risl=&pid=ImgRaw&r=0",alt: "黄山",index: "2",ref: "picture"},
-					{src: "https://th.bing.com/th/id/R.07ca4de0567767ee8a941530613e8fb0?rik=7HeC7NE8EAUnTw&riu=http%3a%2f%2faticoc.com%2fuploadfiles%2f2021%2f06%2f20210630182313678.jpg%3fMzMuanBn&ehk=QtjaEYrwyH1h6uQaqe%2bv%2fME6Uz0RT6CA0YIxNWSIecQ%3d&risl=&pid=ImgRaw&r=0",alt: "茶叶",index: "3",ref: "picture"},
-					{src: "https://www.gpbctv.com/uploads/20211028/1635434179YB7xkJ.jpg",alt: "电子",index: "4",ref: "picture"},
+					{src: "./static/picture/sildeshow2.jpg",alt: "汽车",index: "1",ref: "picture"},
+					{src: "./static/picture/sildeshow3.jpg",alt: "黄山",index: "2",ref: "picture"},
+					{src: "./static/picture/sildeshow4.jpg",alt: "茶叶",index: "3",ref: "picture"},
+					{src: "./static/picture/sildeshow5.jpg",alt: "电子",index: "4",ref: "picture"},
 				],
         goods: [],              //产品列表
 				mouseEnter: false,      //鼠标是否悬浮在整个区域上

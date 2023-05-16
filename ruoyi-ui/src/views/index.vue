@@ -617,8 +617,8 @@
                                 <img src="../../public/static/picture/head_logo2.png" alt="">
                             </div>
                             <div class="team_info">
-                                <h4>章燎原</h4>
-                                <p>三只松鼠电子商务有限公司创始人兼CEO</p>
+                                <h4>李斌</h4>
+                                <p>蔚来汽车董事长兼CEO</p>
 <!--                                <ul class="team_social">
                                     <li><a href="javascript:void(0)"><i class="bi bi-facebook"></i></a>
                                     </li>
@@ -636,8 +636,8 @@
                                 <img src="../../public/static/picture/head_logo3.png" alt="">
                             </div>
                             <div class="team_info">
-                                <h4>田明</h4>
-                                <p>合肥美亚光电技术股份有限公司董事长</p>
+                                <h4>朱一明</h4>
+                                <p>长鑫存储董事长兼CEO</p>
 <!--                                <ul class="team_social">
                                     <li><a href="javascript:void(0)"><i class="bi bi-facebook"></i></a>
                                     </li>

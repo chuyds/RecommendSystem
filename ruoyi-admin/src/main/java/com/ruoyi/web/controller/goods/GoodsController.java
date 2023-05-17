@@ -1,10 +1,7 @@
 package com.ruoyi.web.controller.goods;
 
-import com.ruoyi.framework.web.domain.server.Sys;
 import com.ruoyi.system.domain.SysGood;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;

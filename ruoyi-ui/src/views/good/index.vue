@@ -17,18 +17,17 @@
     </el-form>
 
     <el-row>
-      <el-col :span="6" v-for="(good,index) in goods" class="card-box">
-        <el-card v-if="pageIndex === parseInt(index/pageCount) +1">
+      <el-col :span="6" v-for="(good,index) in goods" class="card-box" style="margin: 0;overflow: hidden;">
+        <el-card v-if="pageIndex === parseInt(index/pageCount) +1" style="height: 310px;">
           <img id="image" :src="good.imageUrl" alt="">
           <div id="text-description">
-            <span style="color: red;">{{good.name+":"}}</span>
+            <span style="color: red;">{{good.name+"："}}</span>
             <span>{{good.description}}</span>
           </div>
         </el-card>
       </el-col>
     </el-row>
     <el-pagination
-      id="page"
       background
       style="text-align: center;"
       layout="prev, pager, next"
@@ -77,7 +76,7 @@ export default {
       }],
       goods:[],     //存储产品列表
       goodsOfCategory:[],     //category类别的产品列表
-      pageCount:4,            //分页时，每页显示的产品数量
+      pageCount:8,            //分页时，每页显示的产品数量
       pageIndex:1             //当前页码
     }
   },

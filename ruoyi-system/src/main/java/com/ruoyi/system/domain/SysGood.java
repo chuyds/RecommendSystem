@@ -65,7 +65,7 @@ public class SysGood {
 
     @Override
     public String toString() {
-        return "SysGood={" +
+        return "SysGood{" +
                 "id=" + id +
                 '}';
     }

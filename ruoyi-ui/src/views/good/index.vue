@@ -16,17 +16,20 @@
 
     </el-form>
 
+    <!-- 显示产品 -->
     <el-row>
       <el-col :span="6" v-for="(good,index) in goods" class="card-box" style="margin: 0;overflow: hidden;">
         <el-card v-if="pageIndex === parseInt(index/pageCount) +1" style="height: 310px;">
           <img id="image" :src="good.imageUrl" alt="">
           <div id="text-description">
-            <span style="color: red;">{{good.name+"："}}</span>
+            <a style="color: red;" href="javascript:void(0)">{{good.name+"："}}</a>
             <span>{{good.description}}</span>
           </div>
         </el-card>
       </el-col>
     </el-row>
+
+    <!-- 页码列表 -->
     <el-pagination
       background
       style="text-align: center;"

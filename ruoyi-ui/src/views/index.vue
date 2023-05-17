@@ -217,10 +217,6 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="video_wrp">
-<!--
-                            <div class="play_video"><a class="play_btn" href="javascript:;"><i class="bi bi-play-fill"></i></a>
-                            </div>
-                           -->
                             <p>奇瑞2022</p>
                             <h2>2022年奇瑞汽车销售情况喜人<br> 成为25年来最佳</h2>
                         </div>
@@ -275,13 +271,6 @@
                                     <h4> 智慧矿山 </h4>
                                     <span>☆</span>
                                     <br>
-<!--                                    <ul class="product_rating">
-                                        <li><i class="bi bi-star-fill"></i></li>
-                                        <li><i class="bi bi-star-fill"></i></li>
-                                        <li><i class="bi bi-star-fill"></i></li>
-                                        <li><i class="bi bi-star-fill"></i></li>
-                                        <li><i class="bi bi-star-fill"></i></li>
-                                    </ul> -->
                                     <span class="product_price">AI助力矿山智能化建设</span>
                                 </div>
                                 <!-- 弹出购物车小图标 -->
@@ -308,13 +297,6 @@
                                     <h4> 智慧电力 </h4>
                                     <span>☆</span>
                                     <br>
-<!--                                    <ul class="product_rating">
-                                        <li><i class="bi bi-star-fill"></i></li>
-                                        <li><i class="bi bi-star-fill"></i></li>
-                                        <li><i class="bi bi-star-fill"></i></li>
-                                        <li><i class="bi bi-star-fill"></i></li>
-                                        <li><i class="bi bi-star-fill"></i></li>
-                                    </ul> -->
                                     <span class="product_price">AI助力电力智能化建设</span>
                                 </div>
 <!--                                <div class="product-action">
@@ -340,13 +322,6 @@
                                     <h4> 区域工业互联网平台 </h4>
                                     <span>☆</span>
                                     <br>
-<!--                                    <ul class="product_rating">
-                                        <li><i class="bi bi-star-fill"></i></li>
-                                        <li><i class="bi bi-star-fill"></i></li>
-                                        <li><i class="bi bi-star-fill"></i></li>
-                                        <li><i class="bi bi-star-fill"></i></li>
-                                        <li><i class="bi bi-star-fill"></i></li>
-                                    </ul> -->
                                     <span class="product_price">AI助力区域产业降本增效</span>
                                 </div>
 <!--                                <div class="product-action">
@@ -372,13 +347,6 @@
                                     <h4> 讯飞设备保障 </h4>
                                     <span>☆</span>
                                     <br>
-<!--                                    <ul class="product_rating">
-                                        <li><i class="bi bi-star-fill"></i></li>
-                                        <li><i class="bi bi-star-fill"></i></li>
-                                        <li><i class="bi bi-star-fill"></i></li>
-                                        <li><i class="bi bi-star-fill"></i></li>
-                                        <li><i class="bi bi-star-fill"></i></li>
-                                    </ul> -->
                                     <span class="product_price">降低产能损失提高设备检修效率</span>
                                 </div>
 <!--                                <div class="product-action">
@@ -768,7 +736,7 @@
                         </div>
                     </div>
 
-                    <div class="scrollup"><span class="icon-glyph-203"></span></div>
+                    <!-- <div class="scrollup"><span class="icon-glyph-203"></span></div> -->
                 </div>
             </div>
             <div class="subfooter">

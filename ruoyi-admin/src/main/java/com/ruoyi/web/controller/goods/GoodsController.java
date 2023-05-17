@@ -71,7 +71,7 @@ public class GoodsController {
     }
 
     @RequestMapping("/goods/list/category")
-    public List<SysGood> getGoodListByCategory(Integer category) {
+    public List<SysGood> getGoodsListByCategory(Integer category) {
 
         ArrayList<SysGood> listOfCategory = new ArrayList<>();
         for (SysGood good: list) {

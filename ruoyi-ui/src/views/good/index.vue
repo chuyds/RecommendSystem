@@ -18,7 +18,7 @@
 
     <el-row>
       <el-col :span="6" v-for="(good,index) in goods" class="card-box">
-        <el-card>
+        <el-card v-if="pageIndex === parseInt(index/pageCount) +1">
           <img id="image" :src="good.imageUrl" alt="">
           <div id="text-description">
             <span style="color: red;">{{good.name+":"}}</span>
@@ -27,6 +27,15 @@
         </el-card>
       </el-col>
     </el-row>
+    <el-pagination
+      id="page"
+      background
+      style="text-align: center;"
+      layout="prev, pager, next"
+      @current-change="currentChange"
+      :page-size="pageCount"
+      :total="goods.length">
+    </el-pagination>
 
   </div>
 
@@ -66,8 +75,10 @@ export default {
         "label": "旅游景点",
         "value": 5
       }],
-      goods:[],
-      goodsOfCategory:[],
+      goods:[],     //存储产品列表
+      goodsOfCategory:[],     //category类别的产品列表
+      pageCount:4,            //分页时，每页显示的产品数量
+      pageIndex:1             //当前页码
     }
   },
   computed: {},
@@ -82,19 +93,12 @@ export default {
         this.goods = response;
       });
 
-      // this.goodsOfCategory = this.goods;
     },
     getListByCategory(category) {     //获取category类别商品列表
       listGoodByCategory(category).then(response => {
         this.goods = response;
       });
 
-      // this.goodsOfCategory = null;
-      // for (var i = 0; i < this.goods.length; i++) {
-      //   if(this.goods[i].category===category){
-      //     this.goodsOfCategory.push(this.goods[i]);
-      //   }
-      // }
     },
     submitForm() {
       var category;
@@ -112,6 +116,9 @@ export default {
       this.$refs['findForm'].resetFields();
       this.getList();
     },
+    currentChange(pageNum) {
+      this.pageIndex = pageNum;
+    }
   }
 }
 

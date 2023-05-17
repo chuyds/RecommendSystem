@@ -221,7 +221,7 @@
                             <div class="play_video"><a class="play_btn" href="javascript:;"><i class="bi bi-play-fill"></i></a>
                             </div>
                            -->
-                            <p>芜湖奇瑞2022</p>
+                            <p>奇瑞2022</p>
                             <h2>2022年奇瑞汽车销售情况喜人<br> 成为25年来最佳</h2>
                         </div>
                         <div class="funfact_wapr row">
@@ -789,7 +789,7 @@
 		data() {
 			return {
 				pictures: [             //轮播图
-					{src: "https://imgguancha.gmw.cn/attachement/png/site2/20210204/f44d305ea4db218627381d.png",alt: "一带一路",index: "0",ref: "picture"},
+					{src: "./static/picture/slideshow1.png",alt: "一带一路",index: "0",ref: "picture"},
 					{src: "./static/picture/slideshow2.jpg",alt: "汽车",index: "1",ref: "picture"},
 					{src: "./static/picture/slideshow3.jpg",alt: "茶叶",index: "2",ref: "picture"},
 					{src: "./static/picture/slideshow4.jpg",alt: "黄山",index: "3",ref: "picture"},

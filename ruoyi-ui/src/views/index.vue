@@ -4,14 +4,6 @@
     <div class="grid-content bg-purple-dark">
       <!-- 最外层div -->
       <div id="slide" class="outest" @mouseover="mouseEnter = true" @mouseleave="mouseEnter = false" >
-<!--       <div class="slider-text slider-child">
-            <h5>服务导航</h5>
-            <h2>安徽省优势产能云服务<br>推荐系统 & </h2>
-            <p>欢迎使用安徽省云服务推荐系统，希望对您有所帮助！</p>
-           <div>
-                <a href="contact.html" class="more-link">Contact Us</a>
-            </div>
-        </div> -->
         <!-- 向左img -->
         <img class="icon _left" src="../img/左箭头.png" alt="向左" v-show="mouseEnter" @click="gotoLast()"/>
         <!-- 主要图片 -->
@@ -1075,5 +1067,15 @@
       border-radius: 90px;
       z-index: 5;
       margin-right: 5px;
+  }
+
+  a {
+    color: white;
+    transition: all 0.3s;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: deepskyblue;
   }
 </style>

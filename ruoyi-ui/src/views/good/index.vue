@@ -19,10 +19,10 @@
     <!-- 显示产品 -->
     <el-row>
       <el-col :span="6" v-for="(good,index) in goods" class="card-box" style="margin: 0;overflow: hidden;">
-        <el-card v-if="pageIndex === parseInt(index/pageCount) +1" style="height: 310px;">
+        <el-card v-if="pageIndex === parseInt(index/pageCount) +1" style="height: 320px;">
           <img id="image" :src="good.imageUrl" alt="">
           <div id="text-description">
-            <a style="color: red;" href="javascript:void(0)">{{good.name+"："}}</a>
+            <a href="javascript:void(0)"><h6  style="text-align: center;">{{good.name}}</h6></a>
             <span>{{good.description}}</span>
           </div>
         </el-card>
@@ -64,18 +64,15 @@ export default {
       fieldOptions: [{
         "label": "汽车",
         "value": 1
-      }, {
-        "label": "电子产品",
-        "value": 2
       },{
         "label": "酒",
-        "value": 3
+        "value": 2
       },{
         "label": "茶叶",
-        "value": 4
+        "value": 3
       },{
         "label": "旅游景点",
-        "value": 5
+        "value": 4
       }],
       goods:[],     //存储产品列表
       goodsOfCategory:[],     //category类别的产品列表
@@ -148,8 +145,17 @@ export default {
     }
 
     #image{
-      width: 250px;
+      width: 260px;
       height: 200px;
+    }
+
+    h6 {
+      color: #FF7F50;
+      transition: all 0.3s;
+      text-decoration: none;
+    }
+    h6:hover {
+      color: #1E90FF;
     }
 
 </style>

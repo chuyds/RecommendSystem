@@ -558,8 +558,8 @@
                                 <img src="../../public/static/picture/head_logo1.png" alt="">
                             </div>
                             <div class="team_info">
-                                <h4>刘庆峰</h4>
-                                <p>科大讯飞董事长</p>
+                                <h4>尹同跃</h4>
+                                <p>奇瑞汽车董事长</p>
 <!--                                <ul class="team_social">
                                     <li><a href="javascript:void(0)"><i class="bi bi-facebook"></i></a>
                                     </li>
@@ -579,14 +579,6 @@
                             <div class="team_info">
                                 <h4>李斌</h4>
                                 <p>蔚来汽车董事长兼CEO</p>
-<!--                                <ul class="team_social">
-                                    <li><a href="javascript:void(0)"><i class="bi bi-facebook"></i></a>
-                                    </li>
-                                    <li><a href="javascript:void(0)"><i class="bi bi-twitter"></i></a>
-                                    </li>
-                                    <li><a href="javascript:void(0)"><i class="bi bi-linkedin"></i></a>
-                                    </li>
-                                </ul> -->
                             </div>
                         </div>
                     </div>
@@ -596,16 +588,8 @@
                                 <img src="../../public/static/picture/head_logo3.png" alt="">
                             </div>
                             <div class="team_info">
-                                <h4>朱一明</h4>
-                                <p>长鑫存储董事长兼CEO</p>
-<!--                                <ul class="team_social">
-                                    <li><a href="javascript:void(0)"><i class="bi bi-facebook"></i></a>
-                                    </li>
-                                    <li><a href="javascript:void(0)"><i class="bi bi-twitter"></i></a>
-                                    </li>
-                                    <li><a href="javascript:void(0)"><i class="bi bi-linkedin"></i></a>
-                                    </li>
-                                </ul> -->
+                                <h4>梁金辉</h4>
+                                <p>古井集团董事长</p>
                             </div>
                         </div>
                     </div>

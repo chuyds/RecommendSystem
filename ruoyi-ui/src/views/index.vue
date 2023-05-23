@@ -69,7 +69,7 @@
                     <div class="col-12">
                         <div class="base-header">
                             <small>安徽省高新产业</small>
-                            <h3>AI + 产业</h3>
+                            <h3>AI + 汽车</h3>
                         </div>
                     </div>
                 </div>
@@ -83,7 +83,7 @@
                             </div>
                             <div class="service_text">
                                 <a href="service-page.html">
-                                    <h4>AI + 汽车</h4>
+                                    <h4>AI + 驾驶</h4>
                                 </a>
                                 <p>NIO Assisted and Intelligent Driving蔚来自动驾驶，从地图定位到感知算法，从底层系统到控制策略，拥有全栈自动驾驶技术能力；
                                 逐步实现高速、城区、泊车和换电场景的全覆盖，解放时间，减少事故，带来安全放松的点到点自动驾驶体验。</p>
@@ -95,15 +95,14 @@
                         <div class="service-item">
                             <div class="img_serv">
                                 <a href="service-page.html">
-                                    <img src="https://t12.baidu.com/it/u=2684164636,201624218&fm=30&app=106&f=JPEG?w=640&h=366&s=F30386AC92A3CEE74E027109030070DA" alt="service">
+                                    <img src="https://www.nio.cn/cdn-static/mynio/images/nio-power/nio-power-hero-banner-desktop.jpg" alt="service">
                                 </a>
                             </div>
                             <div class="service_text">
                                 <a href="service-page.html">
-                                    <h4>AI + 半导体</h4>
+                                    <h4>AI + Power</h4>
                                 </a>
-                                <p>半导体产业是战略新兴产业，是安徽省产业制造转型升级的得力抓手，是以智能制造、数字制造提升传统产业的突破口。
-                                其中典型的代表有长鑫存储，打破国外存储半导体领域的封锁，用自身硬实力征服了众多用户，成为中国新时代发展中又一耀眼的名片。</p>
+                                <p>NIOPower网络是一种智能充电解决方案，旨在为电动汽车用户提供可靠的充电服务。NIOPower网络的主要特点是可伸缩性和智能性，配备了一系列高效的充电器，它使用云技术和人工智能技术来管理充电过程，从而为用户提供更便捷的充电服务。</p>
                             </div>
                             <a class="serv_link" href="service-page.html"><i class="icon-glyph-40"></i></a>
                         </div>
@@ -112,16 +111,15 @@
                         <div class="service-item">
                             <div class="img_serv">
                                 <a href="service-page.html">
-                                    <img src="https://x0.ifengimg.com/res/2021/64DF5645307DCDAA7D48C5899A11E65D575997B5_size74_w800_h530.jpeg" alt="service">
+                                    <img src="https://n.sinaimg.cn/translate/w1280h720/20171217/Ms5K-fypsqka4303147.jpg" alt="service">
                                 </a>
                             </div>
                             <div class="service_text">
                                 <a href="service-page.html">
-                                    <h4>AI + 工业</h4>
+                                    <h4>AI + NOMI</h4>
                                 </a>
-                                <p>科大讯飞，以“让AI赋能工业场景”为研发理念，研发出了讯飞工业AI一体机，
-                                其基于讯飞智能语音技术打造的能为应用系统开发提供语音转写、语音合成、语义理解、
-                                声纹识别能力的软硬一体设备，可以满足用户在应用系统开发过程中集成语音AI能力的需求。</p>
+                                <p>蔚来的人工智能技术覆盖了多个方面，包括智能驾驶、智能语音、智能虚拟人等。利用人工智能技术，蔚来可以为用户提供更为精准的驾驶体验，减少驾驶员的疲劳和安全风险等方面应用广泛。
+                                NOMI是一款智能语音助理，允许驾驶员通过自然语音与车辆进行对话和控制。</p>
                             </div>
                             <a class="serv_link" href="service-page.html"><i class="icon-glyph-40"></i></a>
                         </div>
@@ -247,8 +245,8 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="base-header">
-                            <small>智能化工业</small>
-                            <h3>科大讯飞为工业化产业实现智能化升级</h3>
+                            <small>构建全场景智能出行体系 </small>
+                            <h3>奇瑞致力打造智能汽车新生态</h3>
                         </div>
                     </div>
                 </div>
@@ -257,13 +255,13 @@
                         <div class="testimonial-item">
                             <div class="inner-item">
                                 <a href="javascript:void(0)" class="product-img">
-                                    <img src="	https://www.iflytek.com/static/img/tab3-9.6adcab5.png" alt="">
+                                    <img src="https://img.chery.cn/mall/item5.18/2023051815443961127977.png" alt="">
                                 </a>
                                 <div class="product_info">
-                                    <h4> 智慧矿山 </h4>
+                                    <h4> 全新一代瑞虎3x </h4>
                                     <span>☆</span>
                                     <br>
-                                    <span class="product_price">AI助力矿山智能化建设</span>
+                                    <span class="product_price">采用复合材料车身设计并配备有多项智能科技。</span>
                                 </div>
                                 <!-- 弹出购物车小图标 -->
 <!--                                <div class="product-action">
@@ -283,13 +281,13 @@
                         <div class="testimonial-item">
                             <div class="inner-item">
                                 <a href="javascript:void(0)" class="product-img">
-                                    <img src="	https://www.iflytek.com/static/img/tab3-8.0c43cbb.png" alt="">
+                                    <img src="https://img.chery.cn/mall/item7%E6%9C%88%E7%A7%AF%E5%88%86%E5%95%86%E5%9F%8E%E4%B8%8A%E6%96%B0%E4%BA%A7%E5%93%81/2022070115221850846284.png" alt="">
                                 </a>
                                 <div class="product_info">
-                                    <h4> 智慧电力 </h4>
+                                    <h4>瑞虎8PLUS 鲲鹏版</h4>
                                     <span>☆</span>
                                     <br>
-                                    <span class="product_price">AI助力电力智能化建设</span>
+                                    <span class="product_price">采用领先的鲲鹏芯片技术，搭载华为鸿蒙OS操作系统。</span>
                                 </div>
 <!--                                <div class="product-action">
                                     <div class="product-action-inner">
@@ -308,13 +306,13 @@
                         <div class="testimonial-item">
                             <div class="inner-item">
                                 <a href="javascript:void(0)" class="product-img">
-                                    <img src="https://www.iflytek.com/static/img/tab3-6.fbb249d.png" alt="">
+                                    <img src="https://img.chery.cn/mall/item2023%E6%AC%BE%E7%91%9E%E8%99%8E5x/%E5%A4%B4%E5%9B%BE/2023042720570198593116.png" alt="">
                                 </a>
                                 <div class="product_info">
-                                    <h4> 区域工业互联网平台 </h4>
+                                    <h4>2023款 瑞虎5x</h4>
                                     <span>☆</span>
                                     <br>
-                                    <span class="product_price">AI助力区域产业降本增效</span>
+                                    <span class="product_price">搭载全新的1.5T涡轮增压发动机，并配备ACC,AEB等一系列智能科技。</span>
                                 </div>
 <!--                                <div class="product-action">
                                     <div class="product-action-inner">
@@ -333,13 +331,13 @@
                         <div class="testimonial-item">
                             <div class="inner-item">
                                 <a href="javascript:void(0)" class="product-img">
-                                    <img src="https://www.iflytek.com/static/img/tab3-4.dee210b.png" alt="">
+                                    <img src="https://img.chery.cn/mall/item%E7%91%9E%E8%99%8E9/2023022720300118815673.png" alt="">
                                 </a>
                                 <div class="product_info">
-                                    <h4> 讯飞设备保障 </h4>
+                                    <h4> 瑞虎9 </h4>
                                     <span>☆</span>
                                     <br>
-                                    <span class="product_price">降低产能损失提高设备检修效率</span>
+                                    <span class="product_price">豪华SUV车型造型流畅动感，搭载高性能发动机，采用智能科技配置。</span>
                                 </div>
 <!--                                <div class="product-action">
                                     <div class="product-action-inner">

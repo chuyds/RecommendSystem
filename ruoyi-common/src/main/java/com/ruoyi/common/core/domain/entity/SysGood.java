@@ -1,4 +1,4 @@
-package com.ruoyi.system.domain;
+package com.ruoyi.common.core.domain.entity;
 
 public class SysGood {
     //产品id
@@ -12,6 +12,8 @@ public class SysGood {
     //产品类别
     private Integer category;
 
+    private double price;
+
     public SysGood() {
     }
 
@@ -21,6 +23,15 @@ public class SysGood {
         this.description = description;
         this.imageUrl = imageUrl;
         this.category = category;
+    }
+
+    public SysGood(String id, String name, String description, String imageUrl, Integer category, double price) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.imageUrl = imageUrl;
+        this.category = category;
+        this.price = price;
     }
 
     public String getId() {
@@ -63,10 +74,22 @@ public class SysGood {
         this.category = category;
     }
 
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
     @Override
     public String toString() {
         return "SysGood{" +
-                "id=" + id +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", imageUrl='" + imageUrl + '\'' +
+                ", category=" + category +
                 '}';
     }
 }

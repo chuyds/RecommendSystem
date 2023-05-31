@@ -1,6 +1,6 @@
 package com.ruoyi.web.controller.goods;
 
-import com.ruoyi.system.domain.SysGood;
+import com.ruoyi.common.core.domain.entity.SysGood;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

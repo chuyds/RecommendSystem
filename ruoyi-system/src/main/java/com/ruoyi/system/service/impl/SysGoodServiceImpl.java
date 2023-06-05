@@ -16,12 +16,12 @@ public class SysGoodServiceImpl implements ISysGoodService {
     @Override
     public ResponseResult getAllGoodsList() {
         List<SysGood> allGoodsList = goodMapper.getAllGoodsList();
-        return new ResponseResult(1,"数据查询成功",allGoodsList);
+        return new ResponseResult(0,"数据查询成功",allGoodsList);
     }
 
     @Override
     public ResponseResult getGoodsListOfCategory(Integer category) {
         List<SysGood> goodsListOfCategory = goodMapper.getGoodsListOfCategory(category);
-        return new ResponseResult(1,"数据查询成功",goodsListOfCategory);
+        return new ResponseResult(0,"数据查询成功",goodsListOfCategory);
     }
 }

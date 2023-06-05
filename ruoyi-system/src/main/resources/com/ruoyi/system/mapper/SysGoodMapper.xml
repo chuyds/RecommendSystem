@@ -3,13 +3,15 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.ruoyi.system.mapper.SysGoodMapper">
-    <select id="getAllGoodsList" resultType="com.ruoyi.common.core.domain.entity.SysGood">
+    <sql id="selectGoods">
         select good_id id,good_name name,good_description description,good_image_url imageUrl,good_category category,good_price price
         from goods
+    </sql>
+    <select id="getAllGoodsList" resultType="com.ruoyi.common.core.domain.entity.SysGood">
+        <include refid="selectGoods"/>
     </select>
     <select id="getGoodsListOfCategory" resultType="com.ruoyi.common.core.domain.entity.SysGood">
-        select good_id id,good_name name,good_description description,good_image_url imageUrl,good_category category,good_price price
-        from goods
-        where category = #{category}
+        <include refid="selectGoods"/>
+        where good_category = #{category}
     </select>
 </mapper>

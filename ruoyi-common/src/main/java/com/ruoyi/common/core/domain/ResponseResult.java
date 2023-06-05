@@ -1,7 +1,7 @@
 package com.ruoyi.common.core.domain;
 
 public class ResponseResult {
-    //响应码
+    //响应码,0表示成功，1表示失败
     private Integer code;
     //提示信息
     private String msg;

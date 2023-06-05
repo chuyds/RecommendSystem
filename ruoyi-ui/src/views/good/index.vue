@@ -36,7 +36,8 @@
       layout="prev, pager, next"
       @current-change="currentChange"
       :page-size="pageCount"
-      :total="goods.length">
+      :total="goods.length"
+      :current-page="pageIndex">
     </el-pagination>
 
   </div>
@@ -89,15 +90,14 @@ export default {
   methods: {
     getList() {     //获取全部商品列表
       listGood().then(response => {
-        this.goods = response;
+        this.goods = response.data;
       });
-
     },
     getListByCategory(category) {     //获取category类别商品列表
       listGoodByCategory(category).then(response => {
-        this.goods = response;
+        this.goods = response.data;
       });
-
+      this.pageIndex = 1;           //重置页码
     },
     submitForm() {
       var category;

@@ -14,8 +14,6 @@ public class SysGood {
 
     private double price;
 
-    private double recommendedValue;
-
     public SysGood() {
     }
 
@@ -27,14 +25,13 @@ public class SysGood {
         this.category = category;
     }
 
-    public SysGood(String id, String name, String description, String imageUrl, Integer category, double price, double recommendedValue) {
+    public SysGood(String id, String name, String description, String imageUrl, Integer category, double price) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.imageUrl = imageUrl;
         this.category = category;
         this.price = price;
-        this.recommendedValue = recommendedValue;
     }
 
     public String getId() {
@@ -83,14 +80,6 @@ public class SysGood {
 
     public void setPrice(double price) {
         this.price = price;
-    }
-
-    public double getRecommendedValue() {
-        return recommendedValue;
-    }
-
-    public void setRecommendedValue(double recommendedValue) {
-        this.recommendedValue = recommendedValue;
     }
 
     @Override

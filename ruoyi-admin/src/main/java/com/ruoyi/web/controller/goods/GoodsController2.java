@@ -13,7 +13,7 @@ import java.util.List;
 public class GoodsController2 {
     @Autowired
     private ISysGoodService goodService;
-    @RequestMapping("/goods/list/category")
+    @RequestMapping("/goods/list/category")      //返回某一类别产品列表
     public ResponseResult getGoodsListByCategory(Integer category) {
         ResponseResult result = goodService.getGoodsListOfCategory(category);
         return result;
